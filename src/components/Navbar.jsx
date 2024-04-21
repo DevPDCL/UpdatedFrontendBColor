@@ -33,8 +33,7 @@ const Navbar = () => {
       <header className="bg-white ">
         <nav
           className={`${styles.paddingX} w-full flex h-[80px] items-center shadow-2xl fixed top-[30px] z-20 bg-[#F5FFFA]`}
-          aria-label="Global"
-        >
+          aria-label="Global">
           <div className="flex flex-row items-center w-full justify-center mx-auto max-w-7xl">
             <div className="flex  lg:flex-1">
               <Link
@@ -43,8 +42,7 @@ const Navbar = () => {
                 onClick={() => {
                   setActive("");
                   window.scrollTo(0, 0);
-                }}
-              >
+                }}>
                 <img
                   src={logo}
                   alt="logo"
@@ -56,8 +54,7 @@ const Navbar = () => {
               <button
                 type="button"
                 className="-m-2.5 rounded-md text-gray-700"
-                onClick={() => setMobileMenuOpen(true)}
-              >
+                onClick={() => setMobileMenuOpen(true)}>
                 {" "}
                 <Bars3Icon className="h-6 w-6 " aria-hidden="true" />
               </button>
@@ -70,15 +67,13 @@ const Navbar = () => {
                       {" "}
                       <Link
                         to="/patient"
-                        activeClassName="navbar__link--active"
-                      >
+                        activeClassName="navbar__link--active">
                         {" "}
                         <p className="text-emerald-900/80 items-center flex flex-row text-[14px] ms-0 me-1 font-medium font-ubuntu">
                           <a href="">
                             {" "}
                             <span
-                              className={`pl-1 text-[14px] font-medium font-ubuntu hidden md:block cursor-pointer hover:text-gray-400 active`}
-                            >
+                              className={`pl-1 text-[14px] font-medium font-ubuntu hidden md:block cursor-pointer hover:text-gray-400 active`}>
                               Patient Portal
                             </span>
                           </a>
@@ -110,7 +105,7 @@ const Navbar = () => {
                   <div className="flex flex-row ">
                     <a>
                       {" "}
-                      <Link to="/doctorsearch">
+                      <Link to="/doctordetail">
                         {" "}
                         <p className="text-emerald-900/80 items-center flex flex-row text-[14px] ms-0 me-1 font-medium font-ubuntu">
                           <a href="">
@@ -181,8 +176,7 @@ const Navbar = () => {
                         <p
                           type="button"
                           data-dropdown-toggle="language-dropdown-menu"
-                          className="ms-auto text-[#006642] inline-flex items-end font-ubuntu font-medium justify-end text-sm rounded-lg cursor-pointer"
-                        >
+                          className="ms-auto text-[#006642] inline-flex items-end font-ubuntu font-medium justify-end text-sm rounded-lg cursor-pointer">
                           About Us
                         </p>
                       </PopoverHandler>
@@ -193,8 +187,7 @@ const Navbar = () => {
                             <p
                               type="button"
                               data-dropdown-toggle="language-dropdown-menu"
-                              className="ms-auto items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
-                            >
+                              className="ms-auto items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer">
                               <span className="text-emerald-900/80 hover:text-[#000000] text-[14px] ms-0 mx-auto font-medium font-ubuntu">
                                 Objectives & Goals
                               </span>
@@ -207,8 +200,7 @@ const Navbar = () => {
                             <p
                               type="button"
                               data-dropdown-toggle="language-dropdown-menu"
-                              className="ms-auto  items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
-                            >
+                              className="ms-auto  items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer">
                               <span className="text-emerald-900/80 hover:text-[#000000] text-[14px] ms-0 mx-auto font-medium font-ubuntu">
                                 Message from Chairman
                               </span>
@@ -221,8 +213,7 @@ const Navbar = () => {
                             <p
                               type="button"
                               data-dropdown-toggle="language-dropdown-menu"
-                              className="ms-auto inline-flex items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
-                            >
+                              className="ms-auto inline-flex items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer">
                               <span className="text-emerald-900/80 hover:text-[#000000] text-[14px] ms-0 mx-auto font-medium font-ubuntu">
                                 Message from Managing Director
                               </span>
@@ -236,8 +227,7 @@ const Navbar = () => {
                             <p
                               type="button"
                               data-dropdown-toggle="language-dropdown-menu"
-                              className="ms-auto inline-flex items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
-                            >
+                              className="ms-auto inline-flex items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer">
                               <span className="text-emerald-900/80 hover:text-[#000000] text-[14px] ms-0 mx-auto font-medium font-ubuntu">
                                 Management Team
                               </span>
@@ -251,8 +241,7 @@ const Navbar = () => {
                             <p
                               type="button"
                               data-dropdown-toggle="language-dropdown-menu"
-                              className="ms-auto inline-flex items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer"
-                            >
+                              className="ms-auto inline-flex items-center font-ubuntu justify-center px-4 py-2 text-sm rounded-lg cursor-pointer">
                               <span className="text-emerald-900/80 hover:text-[#000000] text-[14px] ms-0 mx-auto font-medium font-ubuntu">
                                 Our Technologies
                               </span>
@@ -273,14 +262,12 @@ const Navbar = () => {
                   height="30px"
                   viewBox="0 0 32 32"
                   version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g
                     id="SVGRepo_tracerCarrier"
                     stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></g>
+                    stroke-linejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
                     {" "}
                     <title>download</title>{" "}
@@ -301,16 +288,14 @@ const Navbar = () => {
           as="div"
           className="lg:hidden "
           open={mobileMenuOpen}
-          onClose={setMobileMenuOpen}
-        >
+          onClose={setMobileMenuOpen}>
           <div className="fixed  inset-0 z-10" />
           <Dialog.Panel className="fixed inset-y-0 h-auto top-[110px] right-0 z-10 w-full  bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center  justify-between">
               <button
                 type="button"
                 className="-m-2.5 ms-auto rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
+                onClick={() => setMobileMenuOpen(false)}>
                 <XMarkIcon className="h-6 w-6 " aria-hidden="true" />
               </button>
             </div>
@@ -501,14 +486,10 @@ const Navbar = () => {
                             </p>
                           </Link>{" "}
                         </a>
-
-                       
                       </div>
                     </li>
                     <li className="inline-flex flex-row justify-start items-start">
                       <div className="flex flex-row ">
-                       
-
                         <a>
                           {" "}
                           <Link to="/tech">
@@ -528,8 +509,7 @@ const Navbar = () => {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                     Log in
                   </a>
                 </div>

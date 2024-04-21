@@ -42982,7 +42982,7 @@ const doctorData1 = {
       drDegree: "MBBS,DTCD,FCCP (Ex. Professor) Dhaka Medical College,Dhaka",
       chember: [
         {
-          branch: "Shantinagar",
+          branch: "English Road",
           building: "Bhaban-2",
           room: "408",
           weekday: [
@@ -43715,6 +43715,92 @@ const doctorData1 = {
       oldPatient: "1500",
       report: "Free",
       image: PROF_DR_MD_MOHSIN_HOSSAIN,
+    },
+    {
+      drID: 19,
+      drName: "Prof. Dr. Khan Abul Kalam Azad",
+      drSpecilist: "Medicine",
+      drDegree:
+        "MBBS (DMC), FCPS (Medicine), MD (Internal Med.), FACP (USA). Dhaka Medical College & Hospital.",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-1",
+          room: "303",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "05:00 PM - 09:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "05:00 PM - 09:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "05:00 PM - 09:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "05:00 PM - 09:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "05:00 PM - 09:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "05:00 PM - 09:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+        {
+          branch: "Shantinagar",
+          building: "Bhaban-2",
+          room: "408",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "04:00 PM - 06:00 PM",
+            },
+          ],
+          assistantName: "Anis",
+          assistantGender: "Male",
+          ext: "111421",
+          assistantMobile: "01768431923",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Male",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: PROF_DR_KHAN_ABUL_KALAM_AZAD,
     },
   ],
 };
