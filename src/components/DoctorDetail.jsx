@@ -40,18 +40,16 @@ const DoctorCard = ({ doctor }) => {
       </div>
     );
   };
-        const cardBackgroundColor =
-          doctor.drGender === "Female"
-            ? "bg-gradient-to-b from-white to-[#FCE4F1]"
-            : "bg-gradient-to-b from-white to-[#f0fff0]";
+  const cardBackgroundColor =
+    doctor.drGender === "Female"
+      ? "bg-gradient-to-b from-white to-[#fce8f3]"
+      : "bg-gradient-to-b from-white to-[#f0fff0]";
 
-            const backgroundColor =
-              doctor.drGender === "Female" ? "[#FCE4F1]" : "[#f0fff0]";
+  const backgroundColor =
+    doctor.drGender === "Female" ? "" : "bg-[#f0fff0]";
 
-                            const textColor =
-                              doctor.drGender === "Female"
-                                ? "[#5E2750]"
-                                : "[#006642]";
+  const textColor =
+    doctor.drGender === "Female" ? "text-[#5E2750]" : "text-[#006642]";
 
   return (
     <div
@@ -70,9 +68,9 @@ const DoctorCard = ({ doctor }) => {
             </div>
           )}
         </div>
-        <div className={`card-name bg-${backgroundColor} p-2 pt-4 text-center`}>
+        <div className={`card-name ${backgroundColor} p-2 pt-4 text-center`}>
           <h1
-            className={`text-${textColor} font-ubuntu font-bold text-xl truncate`}>
+            className={`${textColor} font-ubuntu font-bold text-xl truncate`}>
             {doctor.drName}
           </h1>
         </div>
@@ -106,56 +104,56 @@ const DoctorDetail = () => {
   const [selectedSpecialization, setSelectedSpecialization] = useState("");
   const [selectedDay, setSelectedDay] = useState("");
   const [lastDoctorIndex, setLastDoctorIndex] = useState(12); // Initial number of doctors to display
-const branches = Array.from(
-  new Set(
-    doctorData1.doctors.flatMap((doc) => doc.chember.map((ch) => ch.branch))
-  )
-);
-const specializations = Array.from(
-  new Set(doctorData1.doctors.map((doc) => doc.drSpecilist))
-);
+  const branches = Array.from(
+    new Set(
+      doctorData1.doctors.flatMap((doc) => doc.chember.map((ch) => ch.branch))
+    )
+  );
+  const specializations = Array.from(
+    new Set(doctorData1.doctors.map((doc) => doc.drSpecilist))
+  );
 
-useEffect(() => {
-  setDisplayedDoctors(doctorData1.doctors.slice(0, lastDoctorIndex));
-}, [lastDoctorIndex]);
+  useEffect(() => {
+    setDisplayedDoctors(doctorData1.doctors.slice(0, lastDoctorIndex));
+  }, [lastDoctorIndex]);
 
-useEffect(() => {
-  let result = doctorData1.doctors;
+  useEffect(() => {
+    let result = doctorData1.doctors;
 
-  if (selectedBranch) {
-    result = result.filter((doctor) =>
-      doctor.chember.some((ch) => ch.branch === selectedBranch)
-    );
-  }
+    if (selectedBranch) {
+      result = result.filter((doctor) =>
+        doctor.chember.some((ch) => ch.branch === selectedBranch)
+      );
+    }
 
-  if (selectedSpecialization) {
-    result = result.filter(
-      (doctor) => doctor.drSpecilist === selectedSpecialization
-    );
-  }
+    if (selectedSpecialization) {
+      result = result.filter(
+        (doctor) => doctor.drSpecilist === selectedSpecialization
+      );
+    }
 
-  if (selectedDay) {
-    result = result.filter((doctor) =>
-      doctor.chember.some((ch) =>
-        ch.weekday.some((wd) => wd.day === selectedDay)
-      )
-    );
-  }
+    if (selectedDay) {
+      result = result.filter((doctor) =>
+        doctor.chember.some((ch) =>
+          ch.weekday.some((wd) => wd.day === selectedDay)
+        )
+      );
+    }
 
-  if (searchTerm) {
-    result = result.filter((doctor) =>
-      doctor.drName.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }
+    if (searchTerm) {
+      result = result.filter((doctor) =>
+        doctor.drName.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
 
-  setDisplayedDoctors(result.slice(0, lastDoctorIndex));
-}, [
-  selectedBranch,
-  selectedSpecialization,
-  selectedDay,
-  searchTerm,
-  lastDoctorIndex,
-]);
+    setDisplayedDoctors(result.slice(0, lastDoctorIndex));
+  }, [
+    selectedBranch,
+    selectedSpecialization,
+    selectedDay,
+    searchTerm,
+    lastDoctorIndex,
+  ]);
 
   // Function to handle lazy loading of doctors
   const loadMoreDoctors = () => {
@@ -260,4 +258,3 @@ useEffect(() => {
 };
 
 export default DoctorDetail;
-
