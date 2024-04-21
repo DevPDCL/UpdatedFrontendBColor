@@ -113,12 +113,16 @@ const Works = () => {
  
   return (
     <>
-      <div className=" absolute top-20 left-[10%] w-[900px] h-72 bg-[#B2D8B2] rounded-2xl opacity-30 mix-blend-multiply blur-2xl animate-blob .animation-delay-2000">
+      <div className=" absolute top-10 left-[20%] w-[30%] h-72 bg-[#B2D8B2] rounded-full opacity-30 mix-blend-multiply blur-2xl animate-blob .animation-delay-2000">
         {" "}
       </div>
-      <div className=" absolute top-[10%] left-[50%] w-72 h-72  bg-[#F0FFF0]  rounded-2xl blur-2xl mix-blend-multiply animate-blob .animation-delay-4000">
+      <div className=" absolute top-5 left-[40%] w-[30%] h-72  bg-[#F0FFF0]  rounded-2xl blur-2xl mix-blend-multiply animate-blob .animation-delay-4000">
         {" "}
       </div>
+      <div className=" absolute top-10 left-[50%] w-[30%] h-72 bg-[#B2D8B2] rounded-full opacity-30 mix-blend-multiply blur-2xl animate-blob .animation-delay-6000">
+        {" "}
+      </div>
+
       <div className="relative fontFamily-ubuntu">
         <div className=" overflow-hidden  mt-[-140px] py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
