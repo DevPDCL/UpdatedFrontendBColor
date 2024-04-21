@@ -4,10 +4,28 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      animation: {
+        blink: "blink 1s linear infinite",
+        blob: "blob 7s infinite",
+      },
       keyframes: {
         ping: {
           "0%, 70%, 100%": { opacity: 1 },
           "35%": { opacity: 0 },
+        },
+        blob: {
+          "0%": {
+            transform: "translate(0px,0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px,100px) scale(1.2)",
+          },
+          "66%": {
+            transform: "translate(0px,90px) scale(1.2)",
+          },
+          "100%": {
+            transform: "translate(0px,0px) scale(1)",
+          },
         },
       },
       fontFamily: {
@@ -38,11 +56,7 @@ module.exports = {
       backgroundImage: {},
     },
   },
-  animation: {
-    // This is required to use the custom keyframe
-    // ... existing animations
-    blink: "blink 1s linear infinite", // Define the blink animation
-  },
+
   plugins: [
     function ({ addUtilities }) {
       addUtilities({

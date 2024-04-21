@@ -24,6 +24,7 @@ const DoctorCard = ({ doctor }) => {
     const midpoint = Math.ceil(days.length / 2);
     const firstColumn = days.slice(0, midpoint);
     const secondColumn = days.slice(midpoint);
+
     return (
       <div className="flex">
         <ul className="list-disc pl-5 w-1/2">
@@ -39,9 +40,22 @@ const DoctorCard = ({ doctor }) => {
       </div>
     );
   };
+        const cardBackgroundColor =
+          doctor.drGender === "Female"
+            ? "bg-gradient-to-b from-white to-[#FCE4F1]"
+            : "bg-gradient-to-b from-white to-[#f0fff0]";
+
+            const backgroundColor =
+              doctor.drGender === "Female" ? "[#FCE4F1]" : "[#f0fff0]";
+
+                            const textColor =
+                              doctor.drGender === "Female"
+                                ? "[#5E2750]"
+                                : "[#006642]";
 
   return (
-    <div className="card-container text-gray-500 bg-gradient-to-b from-white to-[#f0fff0] hover:bg-gray-100 shadow-2xl rounded-2xl sm:w-[299px] overflow-hidden flex flex-col justify-between">
+    <div
+      className={`card-container text-gray-500 ${cardBackgroundColor} hover:bg-gray-100 shadow-2xl rounded-2xl sm:w-[299px] overflow-hidden flex flex-col justify-between`}>
       <div>
         <div className="card-header relative w-full">
           {doctor.image ? (
@@ -56,8 +70,9 @@ const DoctorCard = ({ doctor }) => {
             </div>
           )}
         </div>
-        <div className="card-name bg-[#f0fff0] p-2 pt-4 text-center">
-          <h1 className="text-[#006642] font-ubuntu font-bold text-xl truncate">
+        <div className={`card-name bg-${backgroundColor} p-2 pt-4 text-center`}>
+          <h1
+            className={`text-${textColor} font-ubuntu font-bold text-xl truncate`}>
             {doctor.drName}
           </h1>
         </div>
@@ -90,7 +105,7 @@ const DoctorDetail = () => {
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSpecialization, setSelectedSpecialization] = useState("");
   const [selectedDay, setSelectedDay] = useState("");
-  const [lastDoctorIndex, setLastDoctorIndex] = useState(10); // Initial number of doctors to display
+  const [lastDoctorIndex, setLastDoctorIndex] = useState(12); // Initial number of doctors to display
 const branches = Array.from(
   new Set(
     doctorData1.doctors.flatMap((doc) => doc.chember.map((ch) => ch.branch))

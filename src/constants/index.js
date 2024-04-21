@@ -43040,56 +43040,7 @@ const doctorData1 = {
       report: "Free",
       image: PROF_DR_BISWAS_AKHTAR_HOSSAIN,
     },
-    {
-      drID: 5,
-      drName: "Asst. Prof. Dr. Hena Khatun",
-      drSpecilist: "Chest Medicine",
-      drDegree: "MBBS,BCS,DTCD,MD (Dhaka Medical College,Dhaka)",
-      chember: [
-        {
-          branch: "Shantinagar",
-          building: "Bhaban-2",
-          room: "413",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "07:30 PM - 09:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "07:30 PM - 09:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "07:30 PM - 09:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "07:30 PM - 09:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "07:30 PM - 09:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "07:30 PM - 09:00 PM",
-            },
-          ],
-          assistantName: "Anis",
-          assistantGender: "Male",
-          ext: "111421",
-          assistantMobile: "01768431923",
-        },
-      ],
-      drNumber: "01711563450",
-      email: "Khatun@gmail.com",
-      drGender: "Female",
-      newPatientVisit: "2000",
-      oldPatient: "2000",
-      report: "Free",
-      image: ASST_PROF_DR_HENA_KHATUN,
-    },
+
     {
       drID: 6,
       drName: "Prof. Dr. Aparna Das",
@@ -43388,6 +43339,56 @@ const doctorData1 = {
       oldPatient: "1000",
       report: "Free",
       image: DR_MOSTAFA_KAMAL_AREFIN,
+    },
+    {
+      drID: 5,
+      drName: "Asst. Prof. Dr. Hena Khatun",
+      drSpecilist: "Chest Medicine",
+      drDegree: "MBBS,BCS,DTCD,MD (Dhaka Medical College,Dhaka)",
+      chember: [
+        {
+          branch: "Shantinagar",
+          building: "Bhaban-2",
+          room: "413",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "07:30 PM - 09:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "07:30 PM - 09:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "07:30 PM - 09:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "07:30 PM - 09:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "07:30 PM - 09:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "07:30 PM - 09:00 PM",
+            },
+          ],
+          assistantName: "Anis",
+          assistantGender: "Male",
+          ext: "111421",
+          assistantMobile: "01768431923",
+        },
+      ],
+      drNumber: "01711563450",
+      email: "Khatun@gmail.com",
+      drGender: "Female",
+      newPatientVisit: "2000",
+      oldPatient: "2000",
+      report: "Free",
+      image: ASST_PROF_DR_HENA_KHATUN,
     },
     {
       drID: 12,
