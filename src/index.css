@@ -12,6 +12,19 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .animation-delay-6000 {
+    animation-delay: 6s;
+  }
+}
 
 .hash-span {
   margin-top: -100px;
@@ -209,9 +222,9 @@
   .animation-delay-4000 {
     animation-delay: 4s;
   }
-        .animation-delay-6000 {
-          animation-delay: 6s;
-        }
+  .animation-delay-6000 {
+    animation-delay: 6s;
+  }
 }
 
 @keyframes blink {

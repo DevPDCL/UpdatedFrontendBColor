@@ -31,12 +31,12 @@ const Tech = ({ message, children }) => {
                 <ul className="text-white dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a href="#" className="font-ubuntu hover:underline">
-                      House #16, Road # 2, Dhanmondi R/A, Dhaka-1205, Bangladesh
+                      House #16, Road # 2, Dhanmondi R/A, <br></br>Dhaka-1205, Bangladesh
                     </a>
                   </li>
                   <li className="mb-4">
                     <a href="#" className="font-ubuntu hover:underline">
-                      Phone : 09666 787801
+                      Phone : 09666 787801, 10636
                     </a>
                   </li>
                   <li className="mb-4">

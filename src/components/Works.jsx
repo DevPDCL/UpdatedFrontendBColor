@@ -100,6 +100,7 @@ const ProjectCard = ({
                 className={`text-[14px] p-2 font-ubuntu ${tag.color}`}
               >
                 #{tag.name}
+
               </p>
             ))}
           </div> */}
@@ -113,13 +114,13 @@ const Works = () => {
  
   return (
     <>
-      <div className=" absolute top-10 left-[20%] w-[30%] h-72 bg-[#B2D8B2] rounded-full opacity-30 mix-blend-multiply blur-2xl animate-blob .animation-delay-2000">
+      <div className=" absolute top-10 left-[20%] w-[30%] h-72 bg-[#B2D8B2] blur-2xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
         {" "}
       </div>
-      <div className=" absolute top-5 left-[40%] w-[30%] h-72  bg-[#F0FFF0]  rounded-2xl blur-2xl mix-blend-multiply animate-blob .animation-delay-4000">
+      <div className=" absolute top-5 left-[40%] w-[30%] h-72  bg-[#1b7ced] blur-2xl  rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
         {" "}
       </div>
-      <div className=" absolute top-10 left-[50%] w-[30%] h-72 bg-[#B2D8B2] rounded-full opacity-30 mix-blend-multiply blur-2xl animate-blob .animation-delay-6000">
+      <div className=" absolute top-10 left-[60%] w-[30%] h-72 bg-[#B2D8B2] blur-2xl  rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
         {" "}
       </div>
 

@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       animation: {
         blink: "blink 1s linear infinite",
-        blob: "blob 5s infinite",
+        blob: "blob 9s infinite",
       },
       keyframes: {
         ping: {
@@ -18,10 +18,10 @@ module.exports = {
             transform: "translate(0px,0px) scale(1)",
           },
           "33%": {
-            transform: "translate(-60px,50px) scale(1)",
+            transform: "translate(-60px,50px) scale(1.1)",
           },
           "66%": {
-            transform: "translate(60px,60px) scale(1)",
+            transform: "translate(60px,80px) scale(0.9)",
           },
           "100%": {
             transform: "translate(0px,0px) scale(1)",
