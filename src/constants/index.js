@@ -42906,7 +42906,7 @@ const doctorData1 = {
       drID: 2,
       drName: "Asst. Prof. Dr. Uthpol Kumar Datta",
       drSpecilist: "ENT, Head & Neck Surgery",
-      drDegree: "MBBS.BCS.MS.BSMMUMBBS.BCS.MS.BSMMU",
+      drDegree: "MBBS.BCS.MS.BSMMUMBBS BCS.MS.BSMMU",
       chember: [
         {
           branch: "English Road",

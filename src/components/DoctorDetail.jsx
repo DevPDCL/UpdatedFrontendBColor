@@ -20,33 +20,40 @@ const searchBoxVariants = {
 };
 
 const DoctorCard = ({ doctor }) => {
-  const renderWorkingDays = (days) => {
-    const midpoint = Math.ceil(days.length / 2);
-    const firstColumn = days.slice(0, midpoint);
-    const secondColumn = days.slice(midpoint);
-
-    return (
-      <div className="flex">
-        <ul className="list-disc pl-5 w-1/2">
-          {firstColumn.map((day, index) => (
-            <li key={index}>{day.day}</li>
-          ))}
-        </ul>
-        <ul className="list-disc pl-5 w-1/2">
-          {secondColumn.map((day, index) => (
-            <li key={index}>{day.day}</li>
-          ))}
-        </ul>
-      </div>
+ const renderWorkingDays = (chambers) => {
+    const allDays = chambers.flatMap((chamber) =>
+      chamber.weekday.map((wd) => wd.day)
     );
-  };
+    // Remove duplicates
+    const uniqueDays = Array.from(new Set(allDays));
+
+    // Split the days into two columns for rendering
+    const midpoint = Math.ceil(uniqueDays.length / 2);
+    const firstColumn = uniqueDays.slice(0, midpoint);
+    const secondColumn = uniqueDays.slice(midpoint);
+
+   return (
+     <div className="flex">
+       <ul className="list-disc pl-5 w-1/2">
+         {firstColumn.map((day, index) => (
+           <li key={index}>{day}</li>
+         ))}
+       </ul>
+       <ul className="list-disc pl-5 w-1/2">
+         {secondColumn.map((day, index) => (
+           <li key={index}>{day}</li>
+         ))}
+       </ul>
+     </div>
+   );
+ };
   const cardBackgroundColor =
     doctor.drGender === "Female"
       ? "bg-gradient-to-b from-white to-[#fce8f3]"
       : "bg-gradient-to-b from-white to-[#f0fff0]";
 
   const backgroundColor =
-    doctor.drGender === "Female" ? "" : "bg-[#f0fff0]";
+    doctor.drGender === "Female" ? "bg-[#fce8f3]" : "bg-[#f0fff0]";
 
   const textColor =
     doctor.drGender === "Female" ? "text-[#5E2750]" : "text-[#006642]";
@@ -69,8 +76,7 @@ const DoctorCard = ({ doctor }) => {
           )}
         </div>
         <div className={`card-name ${backgroundColor} p-2 pt-4 text-center`}>
-          <h1
-            className={`${textColor} font-ubuntu font-bold text-xl truncate`}>
+          <h1 className={`${textColor} font-ubuntu font-bold text-xl truncate`}>
             {doctor.drName}
           </h1>
         </div>
@@ -89,7 +95,7 @@ const DoctorCard = ({ doctor }) => {
           </p>
           <div className="py-2 text-sm">
             <strong>Working Days:</strong>
-            {renderWorkingDays(doctor.chember.flatMap((ch) => ch.weekday))}
+            {renderWorkingDays(doctor.chember)}
           </div>
         </div>
       </div>
@@ -103,6 +109,7 @@ const DoctorDetail = () => {
   const [selectedBranch, setSelectedBranch] = useState("");
   const [selectedSpecialization, setSelectedSpecialization] = useState("");
   const [selectedDay, setSelectedDay] = useState("");
+  const [showFemaleDoctors, setShowFemaleDoctors] = useState(false); // State for female doctors
   const [lastDoctorIndex, setLastDoctorIndex] = useState(12); // Initial number of doctors to display
   const branches = Array.from(
     new Set(
@@ -145,6 +152,9 @@ const DoctorDetail = () => {
         doctor.drName.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
+        if (showFemaleDoctors) {
+          result = result.filter((doctor) => doctor.drGender === "Female");
+        }
 
     setDisplayedDoctors(result.slice(0, lastDoctorIndex));
   }, [
@@ -153,6 +163,7 @@ const DoctorDetail = () => {
     selectedDay,
     searchTerm,
     lastDoctorIndex,
+    showFemaleDoctors
   ]);
 
   // Function to handle lazy loading of doctors
@@ -178,7 +189,7 @@ const DoctorDetail = () => {
       <Navbar />
       <Sidemenu />
       <Bottommenu />
-      <div className="sticky top-[99px] z-10  rounded-xl shadow-2xl bg-white flex flex-col-reverse gap-2 lg:flex-row p-5 row-span-1 mx-12 xl:mx-auto xl:max-w-7xl justify-between">
+      <div className="sticky top-[99px] z-10  rounded-xl shadow-2xl bg-white flex flex-col-reverse gap-2 xl:flex-row p-5 row-span-1 mx-12 xl:mx-auto xl:max-w-7xl justify-between">
         <motion.input
           className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200  rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
           type="text"
@@ -246,6 +257,21 @@ const DoctorDetail = () => {
             </option>
           ))}
         </motion.select>
+        <motion.label
+          className="flex items-center gap-2 px-2 py-1 border text-[#5E2750] border-[#5E2750] bg-[#fce8f3] rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
+          layout
+          transition={spring}
+          whileTap={{ scale: 0.9 }}
+          variants={buttonVariants}
+          whileHover="hover">
+          Female
+          <motion.input
+            type="checkbox"
+            checked={showFemaleDoctors}
+            onChange={() => setShowFemaleDoctors(!showFemaleDoctors)}
+            className="form-checkbox text-PDCL-green rounded"
+          />
+        </motion.label>
       </div>
       <div className="doctor-list flex mx-auto pb-10 px-3 sm:px-0 pt-[150px] max-w-7xl justify-center flex-wrap gap-5">
         {displayedDoctors.map((doctor) => (
@@ -256,5 +282,6 @@ const DoctorDetail = () => {
     </div>
   );
 };
+
 
 export default DoctorDetail;
