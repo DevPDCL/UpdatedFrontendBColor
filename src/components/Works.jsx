@@ -49,6 +49,7 @@ const ProjectCard = ({
   tags,
   video,
   source_code_link,
+  link
 }) => {
   return (
     <div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>

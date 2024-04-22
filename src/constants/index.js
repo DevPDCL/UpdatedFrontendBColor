@@ -346,10 +346,11 @@ const projects = [
     ],
     video: diagn,
     source_code_link: "http://populardiagnostic.com/",
+    link: "/",
   },
   {
     id: 2,
-    name: "HEALTH CONSULT",
+    name: "HEALTH CONSULTATION",
     description:
       "Popular Diagnostic Centre Ltd. is an advanced Centre providing the diagnostic imaging services in an elevated ambience, completed by service and report efficiency.",
     tags: [
@@ -362,8 +363,9 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    video: cons,
+    video: pakages,
     source_code_link: "http://populardiagnostic.com/",
+    link: "/doctorsearch",
   },
   {
     id: 3,
@@ -380,8 +382,9 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    video: pakages,
+    video: cons,
     source_code_link: "http://populardiagnostic.com/",
+    link: "/health",
   },
 ];
 
