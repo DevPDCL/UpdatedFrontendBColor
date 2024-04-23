@@ -54,12 +54,12 @@ const ProjectCard = ({
   return (
     <div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <div className="grid md:grid-row-3 items-center sm:w-[379px] w-full justify-center mx-auto  md:gap-0 ">
-        <div className="text-black m-2 bg-gray-100/5 shadow rounded  w-auto text-center">
+        <div className="text-black m-2 bg-gray-500/5 shadow-md rounded-xl  w-auto text-center">
           <div className="relative w-auto h-auto">
             <video
               src={video}
               alt="project_image"
-              className="w-full h-[230px] rounded object-cover opacity-90"
+              className="w-full h-[230px] rounded-t-xl object-cover opacity-90"
               autoPlay
               loop
               muted
@@ -116,7 +116,7 @@ const Works = () => {
       <div className="relative fontFamily-ubuntu">
         <div className=" overflow-hidden  mt-[-140px] py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-2xl grid-rows-1 rounded shadow bg-gray-100/5 p-5 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-rows-1">
+            <div className="mx-auto grid max-w-2xl grid-rows-1 rounded-3xl shadow-xl bg-gradient-to-b from-[#F5FFFA]/0 to-gray-500/5 p-5 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-rows-1 opacity-90">
               <div className="lg:pr-8 lg:pt-4">
                 <div className="flex flex-wrap items-center justify-center mx-auto ">
                   <div className="flex flex-col items-center  mx-auto">
