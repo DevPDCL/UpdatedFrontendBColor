@@ -129,20 +129,25 @@ const Branch = () => {
       <Navbar />
       <Sidemenu />
       <Bottommenu />
-      
 
       <div className="sticky top-[99px] z-10 rounded-xl  shadow-2xl bg-white flex flex-col-reverse gap-2 sm:flex-row p-5 row-span-1 mx-12 xl:mx-auto xl:max-w-7xl justify-between">
-        <motion.button
-          className=" bg-gray-900/50 hover:bg-[#006642] text-white font-ubuntu font-medium py-2 px-4 rounded-md focus:outline-none shadow-md"
-          onClick={handleFilterToggle}
+        <motion.label
+          className={` ${
+            filterByCity ? "bg-[#006642]" : "bg-gray-500"
+          } hover: text-white font-ubuntu font-medium py-2 px-4 rounded-md focus:outline-none shadow-md`}
           layout
           transition={spring}
           whileTap={{ scale: 0.9 }}
           variants={buttonVariants}
-          whileHover="hover"
-        >
-          {filterByCity ? "Show All Branches" : "Inside Dhaka"}
-        </motion.button>
+          whileHover="hover">
+          Inside Dhaka
+          <motion.input
+            type="checkbox"
+            checked={filterByCity}
+            onChange={handleFilterToggle}
+            className="ml-2 form-checkbox text-PDCL-green rounded"
+          />
+        </motion.label>
 
         <motion.input
           className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200  rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
