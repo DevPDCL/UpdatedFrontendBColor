@@ -173,7 +173,7 @@ const DoctorDetail = () => {
       window.innerHeight + document.documentElement.scrollTop ===
       document.documentElement.offsetHeight
     ) {
-      setLastDoctorIndex((prevIndex) => prevIndex + 10); // Load 10 more doctors
+      setLastDoctorIndex((prevIndex) => prevIndex + 12); 
     }
   };
 

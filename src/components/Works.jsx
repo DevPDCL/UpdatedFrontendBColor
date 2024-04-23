@@ -106,7 +106,7 @@ const Works = () => {
       <div className=" absolute top-10 left-[20%] w-[30%] h-full bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
         {" "}
       </div>
-      <div className=" absolute top-5 left-[40%] w-[30%] h-full  bg-[#1b7ced] blur-3xl  rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
+      <div className=" absolute top-5 left-[40%] w-[30%] h-full  bg-[#1b7ced] blur-3xl  rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-4000">
         {" "}
       </div>
       <div className=" absolute top-10 left-[60%] w-[30%] h-full bg-[#B2D8B2] blur-3xl  rounded-full opacity-50 mix-blend-multiply animate-blob animation-delay-6000">
