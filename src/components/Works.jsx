@@ -54,7 +54,7 @@ const ProjectCard = ({
   return (
     <div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <div className="grid md:grid-row-3 items-center sm:w-[379px] w-full justify-center mx-auto  md:gap-0 ">
-        <div className="text-black m-2 bg-gray-500/5 shadow-md rounded-xl  w-auto text-center">
+        <div className="text-black m-2 bg-gradient-to-b from-[#F5FFFA]/0 to-[#f0fff0]/60  shadow-md rounded-xl  w-auto text-center">
           <div className="relative w-auto h-auto">
             <video
               src={video}
@@ -103,20 +103,20 @@ const Works = () => {
  
   return (
     <>
-      <div className=" absolute top-10 left-[20%] w-[30%] h-full bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
+      <div className=" absolute top-10 left-[20%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
         {" "}
       </div>
-      <div className=" absolute top-5 left-[40%] w-[30%] h-full  bg-[#1b7ced] blur-3xl  rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-4000">
+      <div className=" absolute top-5 left-[40%] w-[30%] h-[50%]  bg-[#1b7ced] blur-3xl  rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-4000">
         {" "}
       </div>
-      <div className=" absolute top-10 left-[60%] w-[30%] h-full bg-[#B2D8B2] blur-3xl  rounded-full opacity-50 mix-blend-multiply animate-blob animation-delay-6000">
+      <div className=" absolute top-10 left-[60%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl  rounded-full opacity-50 mix-blend-multiply animate-blob animation-delay-6000">
         {" "}
       </div>
 
       <div className="relative fontFamily-ubuntu">
         <div className=" overflow-hidden  mt-[-140px] py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-2xl grid-rows-1 rounded-3xl shadow-xl bg-gradient-to-b from-[#F5FFFA]/0 to-gray-500/5 p-5 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-rows-1 opacity-90">
+            <div className="mx-auto grid max-w-2xl grid-rows-1 rounded-3xl shadow-xl bg-gradient-to-b from-[#F5FFFA]/0 to-[#f0fff0]/60 p-5 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-rows-1 opacity-90">
               <div className="lg:pr-8 lg:pt-4">
                 <div className="flex flex-wrap items-center justify-center mx-auto ">
                   <div className="flex flex-col items-center  mx-auto">

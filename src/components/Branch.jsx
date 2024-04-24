@@ -65,7 +65,6 @@ const ProjectCard = ({
   const handleCloseModal = () => setIsOpen(false);
 
   return (
-    
     <div className="bg-gradient-to-b from-white to-[#f0fff0] hover:bg-gray-100 shadow-2xl rounded-2xl sm:w-[299px] w-full">
       <div className="relative w-full">
         <img
@@ -89,9 +88,8 @@ const ProjectCard = ({
           transition={spring}
           whileTap={{ scale: 0.9 }}
           variants={buttonVariants}
-          whileHover="hover"
-        >
-          View Details
+          whileHover="hover">
+          Authority & Map
         </motion.button>
         {isOpen && (
           <Details branchPage={branchPage} onClose={handleCloseModal} />

@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       animation: {
         blink: "blink 1s linear infinite",
-        blob: "blob 9s infinite",
+        blob: "blob 7s infinite",
       },
       keyframes: {
         ping: {
