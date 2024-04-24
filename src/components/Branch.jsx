@@ -65,7 +65,7 @@ const ProjectCard = ({
   const handleCloseModal = () => setIsOpen(false);
 
   return (
-    <div className="bg-gradient-to-b from-white to-[#f0fff0] hover:bg-gray-100 shadow-2xl rounded-2xl sm:w-[299px] w-full">
+    <div className="bg-[#f0fff0] shadow-2xl rounded-2xl sm:w-[299px] w-full">
       <div className="relative w-full">
         <img
           src={image}
@@ -123,6 +123,15 @@ const Branch = () => {
 
   return (
     <div className="bg-[#F5FFFA] ">
+      <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
+        {" "}
+      </div>
+      <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-4000">
+        {" "}
+      </div>
+      <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
+        {" "}
+      </div>
       <Nav />
       <Navbar />
       <Sidemenu />

@@ -20,7 +20,7 @@ const searchBoxVariants = {
 };
 
 const DoctorCard = ({ doctor }) => {
- const renderWorkingDays = (chambers) => {
+  const renderWorkingDays = (chambers) => {
     const allDays = chambers.flatMap((chamber) =>
       chamber.weekday.map((wd) => wd.day)
     );
@@ -32,25 +32,25 @@ const DoctorCard = ({ doctor }) => {
     const firstColumn = uniqueDays.slice(0, midpoint);
     const secondColumn = uniqueDays.slice(midpoint);
 
-   return (
-     <div className="flex">
-       <ul className="list-disc pl-5 w-1/2">
-         {firstColumn.map((day, index) => (
-           <li key={index}>{day}</li>
-         ))}
-       </ul>
-       <ul className="list-disc pl-5 w-1/2">
-         {secondColumn.map((day, index) => (
-           <li key={index}>{day}</li>
-         ))}
-       </ul>
-     </div>
-   );
- };
+    return (
+      <div className="flex">
+        <ul className="list-disc pl-5 w-1/2">
+          {firstColumn.map((day, index) => (
+            <li key={index}>{day}</li>
+          ))}
+        </ul>
+        <ul className="list-disc pl-5 w-1/2">
+          {secondColumn.map((day, index) => (
+            <li key={index}>{day}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
   const cardBackgroundColor =
     doctor.drGender === "Female"
-      ? "bg-gradient-to-b from-white to-[#fce8f3]"
-      : "bg-gradient-to-b from-white to-[#f0fff0]";
+      ? "bg-gradient-to-b from-[#F5FFFA]/20 to-[#fce8f3]/90"
+      : "bg-gradient-to-b from--[#F5FFFA]/20 to-[#f0fff0]/90";
 
   const backgroundColor =
     doctor.drGender === "Female" ? "bg-[#fce8f3]" : "bg-[#f0fff0]";
@@ -60,14 +60,14 @@ const DoctorCard = ({ doctor }) => {
 
   return (
     <div
-      className={`card-container text-gray-500 ${cardBackgroundColor} hover:bg-gray-100 shadow-2xl rounded-2xl sm:w-[299px] overflow-hidden flex flex-col justify-between`}>
+      className={`transition ease-in-out delay-150 card-container hover:-translate-y-1 hover:scale-105 duration-300  card-container text-gray-500 ${cardBackgroundColor} shadow-2xl rounded-2xl sm:w-[299px] flex flex-col justify-between`}>
       <div>
         <div className="card-header relative w-full">
           {doctor.image ? (
             <img
               src={doctor.image}
-              alt={`${doctor.drName}'s profile`}
-              className="w-full shadow-xl rounded-3xl object-cover opacity-95 p-2"
+              alt={`${doctor.drName}'s picture`}
+              className="w-full shadow-xl rounded-3xl object-cover p-2"
             />
           ) : (
             <div className="no-image font-ubuntu flex justify-center items-center h-36">
@@ -152,9 +152,9 @@ const DoctorDetail = () => {
         doctor.drName.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
-        if (showFemaleDoctors) {
-          result = result.filter((doctor) => doctor.drGender === "Female");
-        }
+    if (showFemaleDoctors) {
+      result = result.filter((doctor) => doctor.drGender === "Female");
+    }
 
     setDisplayedDoctors(result.slice(0, lastDoctorIndex));
   }, [
@@ -163,7 +163,7 @@ const DoctorDetail = () => {
     selectedDay,
     searchTerm,
     lastDoctorIndex,
-    showFemaleDoctors
+    showFemaleDoctors,
   ]);
 
   // Function to handle lazy loading of doctors
@@ -173,7 +173,7 @@ const DoctorDetail = () => {
       window.innerHeight + document.documentElement.scrollTop ===
       document.documentElement.offsetHeight
     ) {
-      setLastDoctorIndex((prevIndex) => prevIndex + 12); 
+      setLastDoctorIndex((prevIndex) => prevIndex + 12);
     }
   };
 
@@ -185,6 +185,16 @@ const DoctorDetail = () => {
 
   return (
     <div className="bg-[#F5FFFA]">
+      <div className=" fixed top-[10%] left-[80%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
+        {" "}
+      </div>
+      <div className=" fixed top-[50%] left-[85%] w-[40%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
+        {" "}
+      </div>
+      <div className=" fixed top-[25%] left-[85%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
+        {" "}
+      </div>
+
       <Nav />
       <Navbar />
       <Sidemenu />
@@ -282,6 +292,5 @@ const DoctorDetail = () => {
     </div>
   );
 };
-
 
 export default DoctorDetail;

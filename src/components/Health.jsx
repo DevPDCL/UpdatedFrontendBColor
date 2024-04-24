@@ -12,7 +12,7 @@ const PackageCard = ({ packageData }) => {
   const totalCost = calculateTotalCost(packageData.packageIncludes);
   const savings = calculateSavings(totalCost, packageData.discountedPrice);
   return (
-    <div className="relative bg-[#f0fff0] z-10 max-w-7xl rounded-2xl overflow-hidden shadow-2xl p-4 m-4">
+    <div className="relative bg-[#f0fff0]/50 z-10 max-w-7xl rounded-2xl overflow-hidden shadow-2xl p-4 m-4">
       <div className="absolute top-8 left-[18%] transform -rotate-45 -translate-x-1/2 translate-y-1/2 bg-[#1b7ced] shadow-xl px-[25%] py-3">
         <p className="text-[#ffffff] text-xl font-bold whitespace-nowrap">
           Save!{" "}
@@ -67,6 +67,16 @@ const PackageCard = ({ packageData }) => {
 const Health = () => {
   return (
     <div className="bg-[#F5FFFA]">
+      <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
+        {" "}
+      </div>
+      <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-4000">
+        {" "}
+      </div>
+      <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply animate-blob animation-delay-6000">
+        {" "}
+      </div>
+
       <Nav />
       <Navbar />
       <Sidemenu />

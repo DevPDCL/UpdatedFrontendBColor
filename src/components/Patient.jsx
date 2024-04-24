@@ -11,7 +11,7 @@ const searchBoxVariants = {
 
 const BranchCard = ({ branch, handleReportDownload }) => {
   return (
-    <div className="bg-gradient-to-b from-white to-[#f0fff0] hover:bg-gray-200 shadow-2xl m-2 rounded-2xl sm:w-[150px] w-full transform hover:scale-105 transition duration-300 ease-in-out">
+    <div className="bg-gradient-to-b from-[#F5FFFA]/10 to-[#f0fff0]/80 hover:bg-gray-200 shadow-2xl m-2 rounded-2xl sm:w-[150px] w-full transform hover:scale-105 transition duration-300 ease-in-out">
       <li
         key={branch.braID}
         className="text-gray-600 branch-card cursor-pointer flex items-center justify-center"
@@ -94,6 +94,15 @@ const Patient = () => {
             onChange={handleSearchChange}
             whileHover="hover"
           />
+        </div>
+        <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
+          {" "}
+        </div>
+        <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-4000">
+          {" "}
+        </div>
+        <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply animate-blob animation-delay-6000">
+          {" "}
         </div>
         <div className="report-container w-full bg-[#F5FFFA] flex flex-wrap justify-between">
           {" "}
