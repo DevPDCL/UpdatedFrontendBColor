@@ -72,6 +72,18 @@ module.exports = {
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         },
+        ".gradient-sidebar-flow": {
+          backgroundImage:
+            "linear-gradient(to right, #32325d, #c8c8c8 40%, #32325d 80%)",
+          backgroundSize: "200% 100%",
+          animation: "flow 5s linear infinite",
+          "@keyframes flow": {
+            "0%": { backgroundPosition: "100% 0" },
+            "100%": { backgroundPosition: "-100% 0" },
+          },
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+        },
       });
     },
   ],

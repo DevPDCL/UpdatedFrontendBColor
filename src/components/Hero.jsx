@@ -388,7 +388,7 @@ const handleClick1 = () => {
                           whileTap={{ scale: 0.9 }}
                           variants={buttonVariants}
                           whileHover="hover">
-                          Female
+                          Female Doctors
                           <input
                             type="checkbox"
                             checked={showFemaleDoctors}
