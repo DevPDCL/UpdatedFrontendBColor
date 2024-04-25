@@ -22,7 +22,7 @@ const ProjectCard = (
   return (
     <>
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-        <div className="bg-gradient-to-b from-white to-[#f0fff0] hover:bg-gray-100 shadow-2xl rounded-2xl h-auto sm:w-[299px] w-full">
+        <div className="bg-gradient-to-b from--[#F5FFFA]/20 to-[#f0fff0]/90 shadow-2xl rounded-2xl h-auto sm:w-[299px] w-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
           <Popover placement="center">
             <PopoverHandler>
               <div
@@ -77,15 +77,24 @@ function Notice({ imageSrc, altText, content }) {
   const handleCloseModal = () => setShowModal(false);
   return (
     <div className="bg-[#F5FFFA]">
+      <div className=" fixed top-[10%] left-[80%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
+        {" "}
+      </div>
+      <div className=" fixed top-[50%] left-[85%] w-[40%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
+        {" "}
+      </div>
+      <div className=" fixed top-[25%] left-[85%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
+        {" "}
+      </div>
       <Nav />
 
       <Navbar />
       <Sidemenu />
       <Bottommenu />
       <motion.div variants={textVariant()}>
-        <div className="flex flex-col pt-[200px] mx-auto max-w-7xl">
-          <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
-            Check out our Latest News & Notices
+        <div className="flex flex-col pt-[150px] mx-auto max-w-7xl">
+          <h2 className="text-gray-900/50 pb-10 text-center pl-2 text-[28px] font-bold font-ubuntu">
+            KEEPING YOU INFORMED
           </h2>
         </div>
       </motion.div>

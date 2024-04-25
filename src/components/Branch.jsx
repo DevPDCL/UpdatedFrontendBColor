@@ -65,7 +65,7 @@ const ProjectCard = ({
   const handleCloseModal = () => setIsOpen(false);
 
   return (
-    <div className="bg-[#f0fff0] shadow-2xl rounded-2xl sm:w-[299px] w-full">
+    <div className="bg-gradient-to-b from--[#F5FFFA]/20 to-[#f0fff0]/90 shadow-2xl rounded-2xl sm:w-[299px] w-full ">
       <div className="relative w-full">
         <img
           src={image}
@@ -123,13 +123,13 @@ const Branch = () => {
 
   return (
     <div className="bg-[#F5FFFA] ">
-      <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
+      <div className=" fixed top-[10%] left-[80%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
         {" "}
       </div>
-      <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-4000">
+      <div className=" fixed top-[50%] left-[85%] w-[40%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
         {" "}
       </div>
-      <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
+      <div className=" fixed top-[25%] left-[85%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
         {" "}
       </div>
       <Nav />

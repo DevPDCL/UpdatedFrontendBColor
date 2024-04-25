@@ -12,9 +12,13 @@ function Contact() {
       <Navbar />
       <Sidemenu />
       <Bottommenu />
-
+      <div className="flex flex-col pt-[200px] mx-auto max-w-7xl">
+        <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
+          CONNECTING WITH US
+        </h2>
+      </div>
       <div
-        className={`inset-0 justify-center pt-[150px] items-center mb-[20px]   text-center flex flex-wrap `}>
+        className={`inset-0 justify-center  items-center mb-[20px]   text-center flex flex-wrap `}>
         <div className="max-w-7xl">
           <div className=" p-10  text-start">
             <h1 className="text-slate-900/50 text-center font-ubuntu font-extrabold text-[36px]">

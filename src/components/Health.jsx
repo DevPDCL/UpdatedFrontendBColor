@@ -81,7 +81,12 @@ const Health = () => {
       <Navbar />
       <Sidemenu />
       <Bottommenu />
-      <div className="flex mx-auto pb-10 pt-[150px] z-10 max-w-7xl justify-center flex-wrap gap-7">
+      <div className="flex flex-col pt-[200px] mx-auto max-w-7xl">
+        <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
+          HEALTH PACKAGES AND DISCOUNTS
+        </h2>
+      </div>
+      <div className="flex mx-auto pb-10 z-10 max-w-7xl justify-center flex-wrap gap-7">
         {healthPackages.map((packageData) => (
           <PackageCard key={packageData.packageID} packageData={packageData} />
         ))}

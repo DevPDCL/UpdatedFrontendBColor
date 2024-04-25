@@ -60,7 +60,7 @@ const DoctorCard = ({ doctor }) => {
 
   return (
     <div
-      className={`transition ease-in-out delay-150 card-container hover:-translate-y-1 hover:scale-105 duration-300  card-container text-gray-500 ${cardBackgroundColor} shadow-2xl rounded-2xl sm:w-[299px] flex flex-col justify-between`}>
+      className={`transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300  card-container text-gray-500 ${cardBackgroundColor} shadow-2xl rounded-2xl sm:w-[299px] flex flex-col justify-between`}>
       <div>
         <div className="card-header relative w-full">
           {doctor.image ? (
