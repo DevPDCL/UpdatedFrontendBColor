@@ -5,6 +5,7 @@ import {
   Cor,
   Nav,
   Sidemenu,
+  Search,
   Navbar,
   Bottommenu,
   Tech,
@@ -20,7 +21,7 @@ function Layout() {
       <Sidemenu />
       <Bottommenu />
       <Hero />
-
+      <Search />
       <Works />
       <Feedbacks />
       <Cor  />

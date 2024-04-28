@@ -17,7 +17,7 @@ const Bottommenu = () => {
   }, []);
   return (
     <div className="">
-      <div className="  sm:hidden  mx-auto">
+      <div className=" relative z-30 sm:hidden  mx-auto">
         <Link to="/branch" target="_blank" rel="noopener noreferrer">
           {" "}
           <Tooltip

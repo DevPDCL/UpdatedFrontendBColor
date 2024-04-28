@@ -18,7 +18,7 @@ const Sidemenu = () => {
       <div className="hidden fixed md:block">
         <div>
           <Link to="/branch" target="_blank" rel="noopener noreferrer">
-            <div className="flex gap-2 fixed top-[350px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
+            <div className="flex gap-2 fixed top-[200px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
               <p className="font-ubuntu gradient-sidebar-flow">
                 Hotline
               </p>
@@ -32,7 +32,7 @@ const Sidemenu = () => {
             </div>
           </Link>
           <Link to="/branch" target="_blank" rel="noopener noreferrer">
-            <div className="flex gap-2 fixed top-[400px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
+            <div className="flex gap-2 fixed top-[240px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
               <p className="font-ubuntu gradient-sidebar-flow">
                 Messanger
               </p>
@@ -46,7 +46,7 @@ const Sidemenu = () => {
             </div>
           </Link>
           <Link to="/patient" target="_blank" rel="noopener noreferrer">
-            <div className="flex gap-2 fixed top-[450px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
+            <div className="flex gap-2 fixed top-[280px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
               <p className="font-ubuntu gradient-sidebar-flow">
                 Report Download
               </p>
@@ -60,7 +60,7 @@ const Sidemenu = () => {
             </div>
           </Link>
           <Link to="/sample" target="_blank" rel="noopener noreferrer">
-            <div className="flex gap-2 fixed top-[500px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
+            <div className="flex gap-2 fixed top-[320px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
               <p className="font-ubuntu gradient-sidebar-flow">
                 Sample Collection
               </p>
@@ -74,7 +74,7 @@ const Sidemenu = () => {
             </div>
           </Link>
           <Link to="/" target="_blank" rel="noopener noreferrer">
-            <div className="flex gap-2 fixed top-[550px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
+            <div className="flex gap-2 fixed top-[360px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
               <p className="font-ubuntu gradient-sidebar-flow">
                 Video Consutancy
               </p>
@@ -88,7 +88,7 @@ const Sidemenu = () => {
             </div>
           </Link>
           <Link to="/complain" target="_blank" rel="noopener noreferrer">
-            <div className="flex gap-2 fixed top-[600px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
+            <div className="flex gap-2 fixed top-[400px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
               <p className="font-ubuntu gradient-sidebar-flow">
                 Complain Submition
               </p>

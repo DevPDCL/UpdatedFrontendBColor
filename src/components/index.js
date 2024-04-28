@@ -10,6 +10,7 @@ import Technology from "./Technology";
 import Navbar from "./Navbar";
 import About from "./About";
 import Tech from "./Tech";
+import Search from "./Search";
 import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
@@ -51,6 +52,7 @@ export {
   Sign,
   Layout,
   Sidemenu,
+  Search,
   Patient,
   Complain,
   Hero,

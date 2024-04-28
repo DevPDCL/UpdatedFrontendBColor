@@ -113,14 +113,14 @@ const Works = () => {
         {" "}
       </div>
 
-      <div className="relative fontFamily-ubuntu">
+      <div className="relative  fontFamily-ubuntu">
         <div className=" overflow-hidden  mt-[-140px] py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-2xl grid-rows-1 rounded-3xl shadow-xl bg-gradient-to-b from-[#F5FFFA]/0 to-[#f0fff0]/60 p-5 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-rows-1 opacity-90">
+            <div className="mx-auto grid max-w-2xl grid-rows-1 rounded-3xl  bg-gradient-to-b from-[#F5FFFA]/0 to-[#f0fff0]/60 p-5 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-rows-1 opacity-90">
               <div className="lg:pr-8 lg:pt-4">
-                <div className="flex flex-wrap items-center justify-center mx-auto ">
+                <div className="flex flex-wrap  items-center justify-center mx-auto ">
                   <div className="flex flex-col items-center  mx-auto">
-                    <div className="p-5 items-center mx-auto text-center">
+                    <div className="p-5 items-center  mx-auto text-center">
                       <h6 className="text-slate-900  font-bold font-ubuntu text-[60px]">
                         <Number n={22} />
                       </h6>

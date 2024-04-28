@@ -6,6 +6,7 @@ import {
   Sample,
   Contact,
   Health,
+  Search,
   DoctorDetail,
   DoctorSearch,
   Technology,
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/patient" element={<Patient />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sample" element={<Sample />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/doctordetail" element={<DoctorDetail />} />
           <Route path="/doctorsearch" element={<DoctorSearch />} />
           <Route path="/tech" element={<Technology />} />
