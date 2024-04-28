@@ -6,13 +6,12 @@ import { Input, Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 function Contact() {
   return (
-    <div className="bg-[#F5FFFA]">
+    <div className="bg-[#ffffff]">
       <Nav />
-
       <Navbar />
       <Sidemenu />
       <Bottommenu />
-      <div className="flex flex-col pt-[200px] mx-auto max-w-7xl">
+      <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
         <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
           CONNECTING WITH US
         </h2>

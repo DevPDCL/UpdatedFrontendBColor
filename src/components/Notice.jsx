@@ -75,23 +75,13 @@ function Notice({ imageSrc, altText, content }) {
   const handleOpenModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
   return (
-    <div className="bg-[#F5FFFA]">
-      <div className=" fixed top-[10%] left-[80%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
-        {" "}
-      </div>
-      <div className=" fixed top-[50%] left-[85%] w-[40%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
-        {" "}
-      </div>
-      <div className=" fixed top-[25%] left-[85%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
-        {" "}
-      </div>
+    <div className="bg-[#ffffff]">
       <Nav />
-
       <Navbar />
       <Sidemenu />
       <Bottommenu />
       <motion.div variants={textVariant()}>
-        <div className="flex flex-col pt-[150px] mx-auto max-w-7xl">
+        <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
           <h2 className="text-gray-900/50 pb-10 text-center pl-2 text-[28px] font-bold font-ubuntu">
             KEEPING YOU INFORMED
           </h2>

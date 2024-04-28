@@ -75,13 +75,13 @@ const Patient = () => {
   };
 
   return (
-    <div className="bg-[#F5FFFA]">
+    <div className="bg-[#ffffff]">
       <Nav />
       <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div className="p-10 flex sm:w-[80%] flex-wrap mx-auto max-w-7xl">
-        <div className="flex flex-col w-full  pt-[100px] pb-10">
+        <div className="flex flex-col w-full  pt-[10px] pb-10">
           <h2 className="text-gray-500/50 pb-2 text-center pl-2 text-[36px] font-bold font-ubuntu">
             EMPOWERING PATIENTS: THE PATIENT PORTAL
           </h2>
@@ -99,13 +99,13 @@ const Patient = () => {
             whileHover="hover"
           />
         </div>
-        <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
+        <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-40 mix-blend-multiply  animate-blob animation-delay-2000">
           {" "}
         </div>
-        <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-4000">
+        <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
           {" "}
         </div>
-        <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply animate-blob animation-delay-6000">
+        <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-40 mix-blend-multiply animate-blob animation-delay-6000">
           {" "}
         </div>
         <div className="report-container w-full bg-[#F5FFFA] flex flex-wrap justify-between">

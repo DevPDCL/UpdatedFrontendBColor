@@ -31,7 +31,7 @@ const Sidemenu = () => {
               </svg>
             </div>
           </Link>
-          <Link to="/branch" target="_blank" rel="noopener noreferrer">
+          <Link to="/" target="_blank" rel="noopener noreferrer">
             <div className="flex gap-2 fixed top-[240px] right-0 opacity-60 hover:opacity-100 hover:cursor-pointer font-extrabold">
               <p className="font-ubuntu gradient-sidebar-flow">
                 Messanger

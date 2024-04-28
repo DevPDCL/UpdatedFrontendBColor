@@ -122,22 +122,19 @@ const Branch = () => {
   };
 
   return (
-    <div className="bg-[#F5FFFA] ">
-      <div className=" fixed top-[10%] left-[80%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
-        {" "}
-      </div>
-      <div className=" fixed top-[50%] left-[85%] w-[40%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
-        {" "}
-      </div>
-      <div className=" fixed top-[25%] left-[85%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
-        {" "}
-      </div>
+    <div className="bg-[#ffffff] ">
       <Nav />
       <Navbar />
       <Sidemenu />
       <Bottommenu />
+        
+        <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
+          <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
+            BRANCHES
+          </h2>
+        </div>
 
-      <div className="sticky top-[99px] z-10 rounded-xl  shadow-2xl bg-white flex flex-col-reverse gap-2 sm:flex-row p-5 row-span-1 mx-12 xl:mx-auto xl:max-w-7xl justify-between">
+      <div className="sticky top-[70px] z-10 rounded-xl  shadow-2xl bg-white flex flex-col-reverse gap-2 sm:flex-row p-5 row-span-1 mx-12 xl:mx-auto xl:max-w-7xl justify-between">
         <motion.label
           className={` ${
             filterByCity ? "bg-[#006642]" : "bg-gray-500"

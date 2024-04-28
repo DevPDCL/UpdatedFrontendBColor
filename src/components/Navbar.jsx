@@ -30,9 +30,9 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-white ">
+      <header className="bg-white sticky -top-[1px] z-30 shadow-2xl">
         <nav
-          className={`${styles.paddingX} w-full flex h-[80px] items-center shadow-2xl fixed top-[30px] z-20 bg-[#F5FFFA]`}
+          className={`w-full flex h-[75px] items-center`}
           aria-label="Global">
           <div className="flex flex-row items-center w-full justify-center mx-auto max-w-7xl">
             <div className="flex  lg:flex-1">

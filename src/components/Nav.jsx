@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className={`${styles.paddingX} shadow-lg   w-full fixed h-[30px] top-0 z-20 flex flex-col items-center justify-center bg-emerald-900`}>
+        className={`${styles.paddingX} shadow-lg w-full h-[35px] top-0 z-20 flex flex-col items-center justify-center bg-emerald-900`}>
         <div className="w-full h-[30px]  flex flex-wrap items-center   justify-between max-w-7xl text-[#ffffff] ">
           <div className="flex flex-row items-center  justify-start me-auto">
             <div className="flex flex-row items-center  justify-center ">

@@ -14,7 +14,7 @@ import {
 
 function Layout() {
   return (
-    <div className="bg-[#F5FFFA]">
+    <div className="bg-[#ffffff]">
       <Nav  />
 
       <Navbar  />

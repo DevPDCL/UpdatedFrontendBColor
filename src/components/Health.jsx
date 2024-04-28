@@ -66,7 +66,7 @@ const PackageCard = ({ packageData }) => {
 
 const Health = () => {
   return (
-    <div className="bg-[#F5FFFA]">
+    <div className="bg-[#ffffff]">
       <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
         {" "}
       </div>
@@ -81,7 +81,7 @@ const Health = () => {
       <Navbar />
       <Sidemenu />
       <Bottommenu />
-      <div className="flex flex-col pt-[200px] mx-auto max-w-7xl">
+      <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
         <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
           HEALTH PACKAGES AND DISCOUNTS
         </h2>

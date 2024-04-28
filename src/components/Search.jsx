@@ -228,9 +228,9 @@ const Search = () => {
   return (
     <>
       <div
-        className={`${styles.paddingX}  pt-20 pb-20 flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center sm:w-[80%]  flex-col text-gray-900`}
+        className={`${styles.paddingX} -mt-20 pb-20 flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center sm:w-[80%]  flex-col text-gray-900`}
       >
-        <div className="bg-white rounded">
+        <div className=" rounded">
           <div class="mb-4 ">
             <ul class=" text-sm font-medium text-center text-gray-900 rounded shadow sm:flex">
               <li class="w-full p-1 focus-within:z-10">

@@ -184,111 +184,109 @@ const DoctorDetail = () => {
   }, []);
 
   return (
-    <div className="bg-[#F5FFFA]">
-      <div className=" fixed top-[10%] left-[80%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply  animate-blob animation-delay-2000">
-        {" "}
-      </div>
-      <div className=" fixed top-[50%] left-[85%] w-[40%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
-        {" "}
-      </div>
-      <div className=" fixed top-[25%] left-[85%] w-[30%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-30 mix-blend-multiply animate-blob animation-delay-6000">
-        {" "}
-      </div>
-
+    <div className="bg-[#ffffff]">
       <Nav />
       <Navbar />
       <Sidemenu />
       <Bottommenu />
-      <div className="sticky top-[99px] z-10  rounded-xl shadow-2xl bg-white flex flex-col-reverse gap-2 xl:flex-row p-5 row-span-1 mx-12 xl:mx-auto xl:max-w-7xl justify-between">
-        <motion.input
-          className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200  rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
-          type="text"
-          placeholder="Search by doctor's name..."
-          layout
-          transition={spring}
-          whileTap={{ scale: 0.9 }}
-          variants={buttonVariants}
-          whileHover="hover"
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+      <div>
+        <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
+          <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
+            CONSULTANTS
+          </h2>
+        </div>
 
-        <motion.select
-          className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
-          onChange={(e) => setSelectedBranch(e.target.value)}
-          layout
-          transition={spring}
-          whileTap={{ scale: 0.9 }}
-          variants={buttonVariants}
-          whileHover="hover">
-          <option value="">Select Branch</option>
-          {branches.map((branch) => (
-            <option key={branch} value={branch}>
-              {branch}
-            </option>
-          ))}
-        </motion.select>
-
-        <motion.select
-          className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
-          onChange={(e) => setSelectedSpecialization(e.target.value)}
-          layout
-          transition={spring}
-          whileTap={{ scale: 0.9 }}
-          variants={buttonVariants}
-          whileHover="hover">
-          <option value="">Select Specialization</option>
-          {specializations.map((spec) => (
-            <option key={spec} value={spec}>
-              {spec}
-            </option>
-          ))}
-        </motion.select>
-
-        <motion.select
-          className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
-          onChange={(e) => setSelectedDay(e.target.value)}
-          layout
-          transition={spring}
-          whileTap={{ scale: 0.9 }}
-          variants={buttonVariants}
-          whileHover="hover">
-          <option value="">Select Day</option>
-          {[
-            "Saturday",
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-          ].map((day) => (
-            <option key={day} value={day}>
-              {day}
-            </option>
-          ))}
-        </motion.select>
-        <motion.label
-          className="flex items-center gap-2 px-2 py-1 border text-[#5E2750] border-[#5E2750] bg-[#fce8f3] rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
-          layout
-          transition={spring}
-          whileTap={{ scale: 0.9 }}
-          variants={buttonVariants}
-          whileHover="hover">
-          Female
+        <div className="sticky top-[74px] z-10  rounded-xl shadow-2xl bg-white flex flex-col-reverse gap-2 xl:flex-row p-5 row-span-1 mx-12 xl:mx-auto xl:max-w-7xl justify-between">
           <motion.input
-            type="checkbox"
-            checked={showFemaleDoctors}
-            onChange={() => setShowFemaleDoctors(!showFemaleDoctors)}
-            className="form-checkbox text-PDCL-green rounded"
+            className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200  rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
+            type="text"
+            placeholder="Search by doctor's name..."
+            layout
+            transition={spring}
+            whileTap={{ scale: 0.9 }}
+            variants={buttonVariants}
+            whileHover="hover"
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
-        </motion.label>
+
+          <motion.select
+            className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
+            onChange={(e) => setSelectedBranch(e.target.value)}
+            layout
+            transition={spring}
+            whileTap={{ scale: 0.9 }}
+            variants={buttonVariants}
+            whileHover="hover">
+            <option value="">Select Branch</option>
+            {branches.map((branch) => (
+              <option key={branch} value={branch}>
+                {branch}
+              </option>
+            ))}
+          </motion.select>
+
+          <motion.select
+            className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
+            onChange={(e) => setSelectedSpecialization(e.target.value)}
+            layout
+            transition={spring}
+            whileTap={{ scale: 0.9 }}
+            variants={buttonVariants}
+            whileHover="hover">
+            <option value="">Select Specialization</option>
+            {specializations.map((spec) => (
+              <option key={spec} value={spec}>
+                {spec}
+              </option>
+            ))}
+          </motion.select>
+
+          <motion.select
+            className="px-2 py-1 border text-[#006642] border-PDCL-green bg-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
+            onChange={(e) => setSelectedDay(e.target.value)}
+            layout
+            transition={spring}
+            whileTap={{ scale: 0.9 }}
+            variants={buttonVariants}
+            whileHover="hover">
+            <option value="">Select Day</option>
+            {[
+              "Saturday",
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+            ].map((day) => (
+              <option key={day} value={day}>
+                {day}
+              </option>
+            ))}
+          </motion.select>
+          <motion.label
+            className="flex items-center gap-2 px-2 py-1 border text-[#5E2750] border-[#5E2750] bg-[#fce8f3] rounded-lg focus:outline-none focus:ring-1 focus:ring-PDCL-green"
+            layout
+            transition={spring}
+            whileTap={{ scale: 0.9 }}
+            variants={buttonVariants}
+            whileHover="hover">
+            Female
+            <motion.input
+              type="checkbox"
+              checked={showFemaleDoctors}
+              onChange={() => setShowFemaleDoctors(!showFemaleDoctors)}
+              className="form-checkbox text-PDCL-green rounded"
+            />
+          </motion.label>
+        </div>
+        <div className="doctor-list flex mx-auto pb-10 px-3 sm:px-0 pt-[50px] max-w-7xl justify-center flex-wrap gap-5">
+          {displayedDoctors.map((doctor) => (
+            <DoctorCard key={doctor.drID} doctor={doctor} />
+          ))}
+        </div>
+        <Tech />
       </div>
-      <div className="doctor-list flex mx-auto pb-10 px-3 sm:px-0 pt-[150px] max-w-7xl justify-center flex-wrap gap-5">
-        {displayedDoctors.map((doctor) => (
-          <DoctorCard key={doctor.drID} doctor={doctor} />
-        ))}
-      </div>
-      <Tech />
     </div>
   );
 };
