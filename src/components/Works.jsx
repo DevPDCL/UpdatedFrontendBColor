@@ -4,7 +4,8 @@ import { logo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn } from "../utils/motion";
-
+import video from "../assets/contacts.mp4";
+import { styles } from "../styles";
 function Number({ n }){
    const countRef = useRef(null);
    useEffect(() => {
@@ -237,8 +238,22 @@ const Works = () => {
           </p>
         </a>
       </div>
+      <section className="w-full h-[400px] pt-20  relative justify-top items-bottom">
+        <video
+          className=" w-full h-[400px] object-cover object-top top-0 left-0"
+          src={video}
+          autoPlay
+          loop
+          muted
+        />
+        <div className="absolute w-full h-[400px]  top-20 left-0 bg-[#00664a]/70"></div>
+
+        <div
+          className={`${styles.paddingX} absolute  flex    mx-auto inset-1 justify-center items-bottom text-center   flex-col text-gray-900`}
+        ></div>
+      </section>
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default Works
