@@ -249,8 +249,24 @@ const Works = () => {
         <div className="absolute w-full h-[400px]  top-20 left-0 bg-[#00664a]/70"></div>
 
         <div
-          className={`${styles.paddingX} absolute  flex    mx-auto inset-1 justify-center items-bottom text-center   flex-col text-gray-900`}
-        ></div>
+          className={`${styles.paddingX} absolute  flex   max-w-7xl mx-auto inset-1 justify-center items-center text-center pt-[120px]  flex-col text-gray-900`}
+        >
+          <h1 className="text-white text-[32px]  font-ubuntu font-bold">
+            Do you need Emergency Medical Care? <br></br> Call @ 10636
+          </h1>
+          <p className="text-white text-[14px] font-medium">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>{" "}
+            Quisque porttitor dictum turpis nec gravida.
+          </p>
+          <div className="flex flex-row">
+            <button className="bg-white border rounded mt-10 m-2 p-3 hover:bg-blue-500 hover:text-white">
+              Contact Now
+            </button>
+            <button className="bg-none border rounded mt-10 m-2 p-3 hover:bg-gray-500 hover:text-white">
+              Learn More
+            </button>
+          </div>
+        </div>
       </section>
     </>
   );

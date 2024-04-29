@@ -20,7 +20,7 @@ function Cor() {
         Service Partners
       </h3>
 
-      <div className=" flex flex-row flex-wrap  sm:w-[80%] max-w-screen-xl mx-auto justify-center">
+      <div className=" flex flex-row flex-wrap p-5 sm:w-[80%] max-w-screen-xl mx-auto justify-center">
         {service.map((technology) => (
           <div className="w-[300px] p-5 h-28" key={technology.name}>
             <img src={technology.icon} />
