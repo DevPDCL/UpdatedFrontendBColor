@@ -15,7 +15,7 @@ const textVariants = {
 };
 
 const buttonVariants = {
-  hidden: { x: 100, opacity: 0 },
+  hidden: { xim : 100, opacity: 0 },
   visible: { x: 0, opacity: 1 },
 };
 
@@ -36,7 +36,7 @@ const Hero = () => {
     <>
       <section className="relative">
         <video
-          className="h-[500px] sm:h-[700px] w-full object-cover object-top top-0 left-0 pb-[1px]"
+          className="h-[500px] sm:h-[500px] w-full object-cover object-top top-0 left-0 pb-[1px]"
           src={video}
           autoPlay
           loop
