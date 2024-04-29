@@ -35,7 +35,7 @@ const Navbar = () => {
           className={`w-full flex h-[75px] items-center`}
           aria-label="Global">
           <div className="flex flex-row items-center w-full justify-center mx-auto max-w-7xl">
-            <div className="flex  lg:flex-1">
+            <div className="flex pl-5 lg:flex-1">
               <Link
                 to="/"
                 className="flex items-center gap-0"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 />
               </Link>
             </div>
-            <div className="flex ms-auto lg:hidden">
+            <div className="flex ms-auto pr-5 lg:hidden">
               <button
                 type="button"
                 className="-m-2.5 rounded-md text-gray-700"
