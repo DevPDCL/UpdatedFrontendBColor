@@ -67,13 +67,13 @@ const PackageCard = ({ packageData }) => {
 const Health = () => {
   return (
     <div className="bg-[#ffffff]">
-      <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply  animate-blob animation-delay-2000">
+      <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-20 mix-blend-multiply  animate-blob animation-delay-2000">
         {" "}
       </div>
-      <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-4000">
+      <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-10 mix-blend-multiply animate-blob animation-delay-4000">
         {" "}
       </div>
-      <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-50 mix-blend-multiply animate-blob animation-delay-6000">
+      <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-6000">
         {" "}
       </div>
 
