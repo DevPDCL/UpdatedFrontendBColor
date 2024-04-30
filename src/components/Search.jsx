@@ -228,8 +228,7 @@ const Search = () => {
   return (
     <>
       <div
-        className={`${styles.paddingX} -mt-20 flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center sm:w-[80%]  flex-col text-gray-900`}
-      >
+        className={`${styles.paddingX} -mt-20 flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center sm:w-[80%]  flex-col text-gray-900`}>
         <div className=" rounded">
           <div class="mb-4 ">
             <ul class=" text-sm font-medium text-center text-gray-900 rounded shadow sm:flex">
@@ -245,8 +244,7 @@ const Search = () => {
                         : ""
                     `}
                   aria-current="page"
-                  onClick={() => handleTabClick("styled-profile")}
-                >
+                  onClick={() => handleTabClick("styled-profile")}>
                   Doctors
                 </a>
               </li>
@@ -262,8 +260,7 @@ const Search = () => {
                         : ""
                     `}
                   aria-current="page"
-                  onClick={() => handleTabClick("styled-profile1")}
-                >
+                  onClick={() => handleTabClick("styled-profile1")}>
                   Appoinment
                 </a>
               </li>
@@ -279,8 +276,7 @@ const Search = () => {
                         : ""
                     `}
                   aria-current="page"
-                  onClick={() => handleTabClick("styled-profile2")}
-                >
+                  onClick={() => handleTabClick("styled-profile2")}>
                   Test Prices
                 </a>
               </li>
@@ -294,21 +290,19 @@ const Search = () => {
               }`}
               id="styled-profile"
               role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
+              aria-labelledby="profile-tab">
               <p class="text-sm text-gray-900 ">
-                <form className="max-w-7xl mx-auto ">
-                  <div className="grid md:grid-cols-9  md:gap-0">
-                    <div className="relative z-0 col-span-5   p-1 w-full mb-0 group">
+                <form className="max-w-7xl mx-auto">
+                  <div className="grid md:grid-cols-9 md:gap-0">
+                    <div className="relative z-0 col-span-3 p-1 w-full mb-0 group">
                       <select
-                        className="block py-2.5 px-0 w-full text-sm rounded-lg  focus:outline-none focus:ring-0 focus:border-PDCL-green  text-gray-900 bg-gray-300 placeholder-gray-900  peer pl-2"
+                        className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
                         onChange={(e) => setSelectedBranch1(e.target.value)}
                         layout
                         transition={spring}
                         whileTap={{ scale: 0.9 }}
                         variants={buttonVariants}
-                        whileHover="hover"
-                      >
+                        whileHover="hover">
                         <option value="">Select Branch</option>
                         {branches.map((branch) => (
                           <option key={branch} value={branch}>
@@ -317,7 +311,7 @@ const Search = () => {
                         ))}
                       </select>
                     </div>
-                    <div className="relative z-0 w-full p-1 col-span-4 mb-0 group">
+                    <div className="relative z-0 w-full p-1 col-span-2 mb-0 group">
                       <select
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
                         onChange={(e) =>
@@ -327,8 +321,7 @@ const Search = () => {
                         transition={spring}
                         whileTap={{ scale: 0.9 }}
                         variants={buttonVariants}
-                        whileHover="hover"
-                      >
+                        whileHover="hover">
                         <option value="">Select Specialization</option>
                         {specializations.map((spec) => (
                           <option key={spec} value={spec}>
@@ -337,7 +330,7 @@ const Search = () => {
                         ))}
                       </select>
                     </div>
-                    <div className="relative col-span-5 p-1 mb-0 group">
+                    <div className="relative col-span-2 p-1 mb-0 group">
                       <select
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
                         onChange={(e) => setSelectedDay(e.target.value)}
@@ -345,8 +338,7 @@ const Search = () => {
                         transition={spring}
                         whileTap={{ scale: 0.9 }}
                         variants={buttonVariants}
-                        whileHover="hover"
-                      >
+                        whileHover="hover">
                         <option value="">Select Day</option>
                         {[
                           "Saturday",
@@ -363,15 +355,14 @@ const Search = () => {
                         ))}
                       </select>
                     </div>
-                    <div className="relative col-span-4 p-1 mb-0 group">
+                    <div className="relative col-span-2 p-1 mb-0 group">
                       <label
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
                         layout
                         transition={spring}
                         whileTap={{ scale: 0.9 }}
                         variants={buttonVariants}
-                        whileHover="hover"
-                      >
+                        whileHover="hover">
                         Female Doctor
                         <input
                           type="checkbox"
@@ -433,8 +424,7 @@ const Search = () => {
               }`}
               id="styled-profile1"
               role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
+              aria-labelledby="profile-tab">
               <p class="text-sm text-gray-900 ">
                 <form className="max-w-screen-xl mx-auto">
                   <div className="grid md:grid-cols-9 md:gap-1">
@@ -442,13 +432,11 @@ const Search = () => {
                       <Link
                         to="http://appointment.populardiagnostic.com/appointment"
                         target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                        rel="noopener noreferrer">
                         <button
                           type="button"
                           className="text-gray-600 w-full rounded block col-span-7 mb-2 h-[43px] hover:text-gray-900 border bg-gray-300 shadow-2xl  border-none focus:ring-4 focus:outline-none focus:ring-[#006642] font-ubuntu text-[16px] font-bold px-5 py-2.5 text-center "
-                          onClick={handleClick1}
-                        >
+                          onClick={handleClick1}>
                           Make An Appointment{" "}
                           <span className="animate-ping">Now</span>
                         </button>
@@ -466,8 +454,7 @@ const Search = () => {
                                   : "opacity-50 cursor-not-allowed"
                               }`}
                               onClick={handleSearchClick}
-                              disabled={showSearchInput}
-                            >
+                              disabled={showSearchInput}>
                               <p class>
                                 Chat{" "}
                                 <span class=" drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,0.5)] text-white gradient-alt-flow">
@@ -484,8 +471,7 @@ const Search = () => {
                                   : ""
                               }`}
                               onClick={(handleSearchClick, handleShowClick)}
-                              disabled={!showSearchInput}
-                            >
+                              disabled={!showSearchInput}>
                               Chat Human Consultant
                             </button>
                           )}
@@ -494,8 +480,7 @@ const Search = () => {
                               <form class=" w-full col-span-7 mr-2 mb-1">
                                 <label
                                   for="default-search"
-                                  class="mb-1 text-sm font-medium text-gray-900 sr-only"
-                                ></label>
+                                  class="mb-1 text-sm font-medium text-gray-900 sr-only"></label>
 
                                 <div class="relative">
                                   <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -504,8 +489,7 @@ const Search = () => {
                                       aria-hidden="true"
                                       xmlns="http://www.w3.org/2000/svg"
                                       fill="none"
-                                      viewBox="0 0 20 20"
-                                    >
+                                      viewBox="0 0 20 20">
                                       <path
                                         stroke="currentColor"
                                         stroke-linecap="round"
@@ -533,8 +517,7 @@ const Search = () => {
                                       />
                                       <button
                                         type="submit"
-                                        class="text-white absolute  end-0 bottom-1 top-1 m-1 bg-[#00664a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 "
-                                      >
+                                        class="text-white absolute  end-0 bottom-1 top-1 m-1 bg-[#00664a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 ">
                                         Send
                                       </button>
                                     </div>
@@ -554,8 +537,7 @@ const Search = () => {
                                       />
                                       <button
                                         type="submit"
-                                        class="text-white absolute end-0  bottom-0 top-0 m-1 bg-[#00664a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 "
-                                      >
+                                        class="text-white absolute end-0  bottom-0 top-0 m-1 bg-[#00664a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 ">
                                         Send
                                       </button>{" "}
                                     </div>
@@ -568,8 +550,7 @@ const Search = () => {
                                       {messages.map((message, index) => (
                                         <div
                                           key={index}
-                                          className="bg-gray-100 white-space:pre-wrap rounded-lg p-4 text-sm"
-                                        >
+                                          className="bg-gray-100 white-space:pre-wrap rounded-lg p-4 text-sm">
                                           <Message
                                             key={index}
                                             message={message}
@@ -601,8 +582,7 @@ const Search = () => {
                                     className={`text-gray-600 w-full rounded block col-span-2 mb-0 h-[35px] hover:text-gray-900 border bg-gray-300 shadow-2xl  border-none focus:ring-4 focus:outline-none focus:ring-[#006642] font-ubuntu text-[16px] font-bold px-4  text-center   ${
                                       isVisible ? "" : "hidden"
                                     }`}
-                                    onClick={(handleClick, handleSearchClick)}
-                                  >
+                                    onClick={(handleClick, handleSearchClick)}>
                                     <span className="">Back</span>
                                   </button>
                                 </div>
@@ -622,8 +602,7 @@ const Search = () => {
               }`}
               id="styled-profile2"
               role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
+              aria-labelledby="profile-tab">
               <p class="text-sm text-gray-900">
                 <form className="max-w-7xl mx-auto">
                   <div className="grid md:grid-cols-9 md:gap-1">
@@ -631,8 +610,7 @@ const Search = () => {
                       <select
                         value={selectedBranch}
                         onChange={handleBranchChange}
-                        className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
-                      >
+                        className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer">
                         <option value="">Select Branch</option>
                         {ServiceCost.map((branch) => (
                           <option key={branch.braId} value={branch.braId}>
