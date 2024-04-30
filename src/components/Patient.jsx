@@ -85,7 +85,6 @@ const Patient = () => {
           <h2 className="text-gray-500/50 pb-2 text-center pl-2 text-[36px] font-bold font-ubuntu">
             EMPOWERING PATIENTS: THE PATIENT PORTAL
           </h2>
-
           <h2 className="text-gray-500/50 pt-10 pb-2 text-center pl-2 text-[28px] font-bold font-ubuntu">
             ONLINE REPORT DOWNLOAD
           </h2>
@@ -99,16 +98,7 @@ const Patient = () => {
             whileHover="hover"
           />
         </div>
-        <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-40 mix-blend-multiply  animate-blob animation-delay-2000">
-          {" "}
-        </div>
-        <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-15 mix-blend-multiply animate-blob animation-delay-4000">
-          {" "}
-        </div>
-        <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-40 mix-blend-multiply animate-blob animation-delay-6000">
-          {" "}
-        </div>
-        <div className="report-container w-full bg-[#F5FFFA] flex flex-wrap justify-between">
+        <div className="report-container w-full flex flex-wrap justify-between">
           {" "}
           {/* Use flexbox with justify-between for even card distribution */}
           <div className="border-x-2 px-3 flex flex-wrap w-full md:w-1/2">
