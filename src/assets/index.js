@@ -200,6 +200,14 @@ import PROF_DR_MOHAMMAD_SAFIUDDIN from "./DoctorImage/PROF_DR_MOHAMMAD_SAFIUDDIN
 import PROF_DR_Q_TARIKUL_ISLAM from "./DoctorImage/PROF_DR_Q_TARIKUL_ISLAM.png";
 import PROF_DR_SHAKIL_GHAFUR from "./DoctorImage/PROF_DR_SHAKIL_GHAFUR.png";
 import PROF_DR_SHYMAL_SARKER from "./DoctorImage/PROF_DR_SHYMAL_SARKER.png";
+import DR_JOYSREE_SAHA from "./DoctorImage/DR_JOYSREE_SAHA.png";
+import PROF_DR_KANAK_KANTI_BARUA from "./DoctorImage/PROF_DR_KANAK_KANTI_BARUA.png";
+import PROF_DR_MRS_FARHAT_HOSSAIN from "./DoctorImage/PROF_DR_MRS_FARHAT_HOSSAIN.png";
+import PROF_DR_MD_SHAFIQUL_ISLAM from "./DoctorImage/PROF_DR_MD_SHAFIQUL_ISLAM.png";
+import PROF_DR_MRS_SHAHIN_RAHMAN_CHOW from "./DoctorImage/PROF_DR_MRS_SHAHIN_RAHMAN_CHOW.png";
+
+
+
 import Hospital_Building from "./Hospital_Building.png";
 
 export {
@@ -396,5 +404,10 @@ export {
   PROF_DR_Q_TARIKUL_ISLAM,
   PROF_DR_SHAKIL_GHAFUR,
   PROF_DR_SHYMAL_SARKER,
+  DR_JOYSREE_SAHA,
+  PROF_DR_KANAK_KANTI_BARUA,
+  PROF_DR_MRS_FARHAT_HOSSAIN,
+  PROF_DR_MD_SHAFIQUL_ISLAM,
+  PROF_DR_MRS_SHAHIN_RAHMAN_CHOW,
   Hospital_Building,
 };

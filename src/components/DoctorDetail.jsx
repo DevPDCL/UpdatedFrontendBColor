@@ -20,33 +20,32 @@ const searchBoxVariants = {
 };
 
 const DoctorCard = ({ doctor }) => {
-  const renderWorkingDays = (chambers) => {
-    const allDays = chambers.flatMap((chamber) =>
-      chamber.weekday.map((wd) => wd.day)
-    );
-    // Remove duplicates
-    const uniqueDays = Array.from(new Set(allDays));
+  // const renderWorkingDays = (chambers) => {
+  //   const allDays = chambers.flatMap((chamber) =>
+  //     chamber.weekday.map((wd) => wd.day)
+  //   );
+  //   const uniqueDays = Array.from(new Set(allDays));
 
-    // Split the days into two columns for rendering
-    const midpoint = Math.ceil(uniqueDays.length / 2);
-    const firstColumn = uniqueDays.slice(0, midpoint);
-    const secondColumn = uniqueDays.slice(midpoint);
+  //   // Split the days into two columns for rendering
+  //   const midpoint = Math.ceil(uniqueDays.length / 2);
+  //   const firstColumn = uniqueDays.slice(0, midpoint);
+  //   const secondColumn = uniqueDays.slice(midpoint);
 
-    return (
-      <div className="flex">
-        <ul className="list-disc pl-5 w-1/2">
-          {firstColumn.map((day, index) => (
-            <li key={index}>{day}</li>
-          ))}
-        </ul>
-        <ul className="list-disc pl-5 w-1/2">
-          {secondColumn.map((day, index) => (
-            <li key={index}>{day}</li>
-          ))}
-        </ul>
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="flex">
+  //       <ul className="list-disc pl-5 w-1/2">
+  //         {firstColumn.map((day, index) => (
+  //           <li key={index}>{day}</li>
+  //         ))}
+  //       </ul>
+  //       <ul className="list-disc pl-5 w-1/2">
+  //         {secondColumn.map((day, index) => (
+  //           <li key={index}>{day}</li>
+  //         ))}
+  //       </ul>
+  //     </div>
+  //   );
+  // };
   const cardBackgroundColor =
     doctor.drGender === "Female"
       ? "bg-gradient-to-b from-[#F5FFFA]/20 to-[#fce8f3]/90"
@@ -87,16 +86,16 @@ const DoctorCard = ({ doctor }) => {
           <p className="text-sm py-2">
             <strong>Degrees:</strong> {doctor.drDegree}
           </p>
-          <p className="text-sm">
+          {/* <p className="text-sm">
             <strong>Branch:</strong>{" "}
             {doctor.chember
               .map((ch) => `${ch.branch}, Room: ${ch.room}`)
               .join("; ")}
-          </p>
-          <div className="py-2 text-sm">
+          </p> */}
+          {/* <div className="py-2 text-sm">
             <strong>Working Days:</strong>
             {renderWorkingDays(doctor.chember)}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

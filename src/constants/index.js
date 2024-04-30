@@ -157,6 +157,11 @@ import {
   PROF_DR_Q_TARIKUL_ISLAM,
   PROF_DR_SHAKIL_GHAFUR,
   PROF_DR_SHYMAL_SARKER,
+  DR_JOYSREE_SAHA,
+  PROF_DR_KANAK_KANTI_BARUA,
+  PROF_DR_MRS_FARHAT_HOSSAIN,
+  PROF_DR_MD_SHAFIQUL_ISLAM,
+  PROF_DR_MRS_SHAHIN_RAHMAN_CHOW,
 } from "../assets";
 
 const navLinks = [
@@ -43804,6 +43809,235 @@ const doctorData1 = {
       oldPatient: "1000",
       report: "Free",
       image: PROF_DR_KHAN_ABUL_KALAM_AZAD,
+    },
+    {
+      drID: 20,
+      drName: "DR JOYSREE SAHA",
+      drSpecilist: "Gynaecology",
+      drDegree:
+        "MBBS (DMC), FCPS (Gynae). Popular Medicile College & Hospital, Dhaka.",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-6",
+          room: "508",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "04:00 PM - 10:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "04:00 PM - 10:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "04:00 PM - 10:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "04:00 PM - 10:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "04:00 PM - 10:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "04:00 PM - 10:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1200",
+      oldPatient: "1000",
+      report: "500",
+      image: DR_JOYSREE_SAHA,
+    },
+    {
+      drID: 21,
+      drName: "PROF DR KANAK KANTI BARUA",
+      drSpecilist: "Neuro Surgery",
+      drDegree: "MBBS, FCPS (Surgery), MS (Neurosurgery), Ph.D, FICS. BSMMU.",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-3",
+          room: "412",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "05:00 PM - 08:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+        {
+          branch: "Chattogram",
+          building: "Bhaban-1",
+          room: "201",
+          weekday: [
+            {
+              day: "Friday",
+              time: "08:00 AM - 12:00 PM",
+            },
+          ],
+          assistantName: "Kuddus",
+          assistantGender: "Male",
+          ext: "111421",
+          assistantMobile: "01768431923",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Male",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: PROF_DR_KANAK_KANTI_BARUA,
+    },
+    {
+      drID: 22,
+      drName: "PROF DR MRS FARHAT HOSSAIN",
+      drSpecilist: "Gynaecology",
+      drDegree:
+        "MBBS (Dhaka), FCPS (Gayne), Fellow-Gynae Oncology (TATA Memorial Hospital, India). Sir Salimullah Medical College & Mitford Hospital, Dhaka.",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-1",
+          room: "303",
+          weekday: [
+            {
+              day: "Sunday",
+              time: "06:00 PM - 08:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "06:00 PM - 08:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "06:00 PM - 08:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: PROF_DR_MRS_FARHAT_HOSSAIN,
+    },
+    {
+      drID: 23,
+      drName: "PROF DR MD SHAFIQUL ISLAM",
+      drSpecilist: "Neuro Surgery",
+      drDegree:
+        "MBBS, MS, PhD (Japan), Trained in Neuro Intervention & Stroke (Japan, India & Germany). Professor & Head of the Department, Dhaka Medical College & Hospital, Dhaka.",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-6",
+          room: "409",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "03:00 PM - 07:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "02:30 PM - 04:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "02:00 PM - 03:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Male",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: PROF_DR_MD_SHAFIQUL_ISLAM,
+    },
+    {
+      drID: 24,
+      drName: "PROF DR MRS SHAHIN RAHMAN CHOW",
+      drSpecilist: "Gynaecology",
+      drDegree:
+        "MBBS (DMC), FCPS (Medicine), MD (Internal Med.), FACP (USA). Dhaka Medical College & Hospital.",
+      chember: [
+        {
+          branch: "Shantinagar",
+          building: "Bhaban-2",
+          room: "313",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "05:00 PM - 09:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "05:00 PM - 09:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "05:00 PM - 09:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: PROF_DR_MRS_SHAHIN_RAHMAN_CHOW,
     },
   ],
 };

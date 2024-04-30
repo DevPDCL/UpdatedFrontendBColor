@@ -35,6 +35,7 @@ import DoctorSearch from "./DoctorSearch";
 import Director from "./Director";
 import Chairman from "./Chairman";
 import Goals from "./Goals";
+import Error from "./Error"
 export {
   Branch,
   Notice,
@@ -72,4 +73,5 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Error,
 };
