@@ -112,7 +112,7 @@ const Works = () => {
                 <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center group">
                   <div className="rounded-full p-3 border-2 border-gray-600  group-hover:bg-gray-600">
                     <svg
-                      className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white"
+                      className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white group-hover:-rotate-45 transition-300 "
                       viewBox="0 0 640 512"
                       xmlns="http://www.w3.org/2000/svg">
                       {/*! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
