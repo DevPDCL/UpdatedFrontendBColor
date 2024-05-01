@@ -56,7 +56,7 @@ const routes = [
       { path: "/login", element: <Login /> },
       { path: "/sample", element: <Sample /> },
       { path: "/search", element: <Search /> },
-      { path: "/doctordetail", element: <DoctorDetail /> },
+      { path: "/doctordetail/:doctorId", element: <DoctorDetail /> },
       { path: "/doctorsearch", element: <DoctorSearch /> },
       { path: "/tech", element: <Technology /> },
       { path: "/sign", element: <Sign /> },
@@ -82,15 +82,11 @@ const routes = [
   },
 ];
 
-
 const router = createBrowserRouter(routes);
-
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-
   </React.StrictMode>
 );
