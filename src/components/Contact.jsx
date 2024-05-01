@@ -126,7 +126,7 @@ function Contact() {
       </div>
 
       <div
-        className={`inset-0 justify-center items-center mb-[20px]  text-center flex flex-wrap  text-white`}>
+        className={`inset-0 justify-center items-center  text-center flex flex-wrap  text-white`}>
         <div className="flex-col  max-w-screen-xl container rounded sm:w-[80%]  block items-stretch md:flex-row  mt-[20px] mx-auto">
           <div className="relative flex flex-wrap p-2">
             <iframe
@@ -140,7 +140,7 @@ function Contact() {
 
           <div className="w-full">
             <ul
-              className="flex mb-0 ml-2 mr-2 list-none flex-wrap pt-1 pb-2 flex-row"
+              className="flex ml-2 mr-2 list-none flex-wrap pt-1 pb-2 flex-row"
               role="tablist">
               <li className="-mb-px mr-2 last:mr-0 flex-auto text-center"></li>
             </ul>
