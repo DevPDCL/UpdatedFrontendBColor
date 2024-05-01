@@ -77,8 +77,6 @@ const Health = () => {
         {" "}
       </div>
 
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
@@ -91,7 +89,6 @@ const Health = () => {
           <PackageCard key={packageData.packageID} packageData={packageData} />
         ))}
       </div>
-      <Tech />
     </div>
   );
 };

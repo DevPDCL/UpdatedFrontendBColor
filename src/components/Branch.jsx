@@ -123,8 +123,6 @@ const Branch = () => {
 
   return (
     <div className="bg-[#ffffff] ">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
         
@@ -169,7 +167,6 @@ const Branch = () => {
           <ProjectCard key={project.branchID} {...project} />
         ))}
       </div>
-      <Tech />
     </div>
   );
 };

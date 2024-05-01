@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 const Goals = () => {
   return (
     <div className="bg-[#F5FFFA]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
 
@@ -121,7 +119,6 @@ const Goals = () => {
           </div>
         </div>
       </div>
-      <Tech />
     </div>
   );
 }

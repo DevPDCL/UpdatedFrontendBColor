@@ -5,8 +5,6 @@ import { DrMostafizurRahman } from "../assets";
 const Director = () => {
   return (
     <section className="bg-[#F5FFFA]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div className="overflow-hidden bg-white py-24 sm:py-32">
@@ -74,7 +72,6 @@ const Director = () => {
           </div>
         </div>
       </div>
-      <Tech />
     </section>
   );
 }

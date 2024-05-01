@@ -5,8 +5,6 @@ import { LateTaheraAkhter } from "../assets";
 const Chairman = () => {
   return (
     <div className="bg-[#F5FFFA]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div className="overflow-hidden  bg-white py-24 sm:py-32">
@@ -61,7 +59,6 @@ const Chairman = () => {
           </div>
         </div>
       </div>
-      <Tech />
     </div>
   );
 };

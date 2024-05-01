@@ -184,8 +184,6 @@ const DoctorDetail = () => {
 
   return (
     <div className="bg-[#ffffff]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div>
@@ -284,7 +282,6 @@ const DoctorDetail = () => {
             <DoctorCard key={doctor.drID} doctor={doctor} />
           ))}
         </div>
-        <Tech />
       </div>
     </div>
   );

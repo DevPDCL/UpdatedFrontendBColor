@@ -15,9 +15,6 @@ import {
 function Layout() {
   return (
     <div className="bg-[#ffffff]">
-      <Nav  />
-
-      <Navbar  />
       <Sidemenu />
       <Bottommenu />
       <Hero />
@@ -25,7 +22,6 @@ function Layout() {
       <Works />
       <Feedbacks />
       <Cor  />
-      <Tech  />
     </div>
   );
 }

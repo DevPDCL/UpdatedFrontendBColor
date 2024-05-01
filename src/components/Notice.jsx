@@ -76,8 +76,6 @@ function Notice({ imageSrc, altText, content }) {
   const handleCloseModal = () => setShowModal(false);
   return (
     <div className="bg-[#ffffff]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <motion.div variants={textVariant()}>
@@ -97,7 +95,6 @@ function Notice({ imageSrc, altText, content }) {
           />
         ))}
       </div>
-      <Tech />
     </div>
   );
 }

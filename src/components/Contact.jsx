@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 function Contact() {
   return (
     <div className="bg-[#ffffff]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
@@ -149,8 +147,6 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div></div>
-      <Tech />
     </div>
   );
 }

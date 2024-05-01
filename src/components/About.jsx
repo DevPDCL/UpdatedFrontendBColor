@@ -82,8 +82,6 @@ const About = () => {
 
   return (
     <div className="bg-[#ffffff]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
@@ -119,8 +117,6 @@ const About = () => {
           <ProjectCard key={project.manID} {...project} />
         ))}
       </div>
-      
-      <Tech />
     </div>
   );
 };

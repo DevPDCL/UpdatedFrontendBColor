@@ -76,8 +76,6 @@ const Patient = () => {
 
   return (
     <div className="bg-[#ffffff]">
-      <Nav />
-      <Navbar />
       <Sidemenu />
       <Bottommenu />
       <div className="p-10 flex sm:w-[80%] flex-wrap mx-auto max-w-7xl">
@@ -153,7 +151,6 @@ const Patient = () => {
           </div>
         </div>
       </div>
-      <Tech />
     </div>
   );
 };
