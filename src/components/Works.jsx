@@ -107,12 +107,12 @@ const Works = () => {
       <div className="relative pt-10 fontFamily-ubuntu">
         <div className=" overflow-hidden  mt-[-140px] py-24 sm:py-32">
           <div className="mx-auto">
-            <div className="flex flex-wrap justify-center items-center bg-gradient-to-b from-transparent to-[#f0fff0]/60 py-5">
+            <div className="flex flex-wrap justify-center items-center bg-gradient-to-b from-transparent to-[#f0fff0]/60  py-5">
               <div className="flex flex-col lg:flex-row gap-5 mx-auto ">
-                <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center group">
-                  <div className="rounded-full p-3 border-2 border-gray-600  group-hover:bg-gray-600">
+                <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center hover:scale-110 transition duration-500 group">
+                  <div className="rounded-full p-3 border-2 border-gray-600 hover:scale-110 group-hover:bg-gray-600 transition duration-500">
                     <svg
-                      className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white group-hover:-rotate-45 transition-300 "
+                      className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white group-hover:-rotate-12 transition duration-500  "
                       viewBox="0 0 640 512"
                       xmlns="http://www.w3.org/2000/svg">
                       {/*! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
@@ -129,10 +129,10 @@ const Works = () => {
                   </div>
                 </div>
                 <div className="flex mx-auto group">
-                  <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center">
-                    <div className="rounded-full p-3 border-2 border-gray-600  group-hover:bg-gray-600">
+                  <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center hover:scale-110 transition duration-500 group">
+                    <div className="rounded-full p-3 border-2 border-gray-600 hover:scale-110 group-hover:bg-gray-600 transition duration-500">
                       <svg
-                        className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white"
+                        className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white group-hover:-rotate-12 transition duration-500  "
                         viewBox="0 0 512 512"
                         xmlns="http://www.w3.org/2000/svg">
                         {/*! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
@@ -153,10 +153,10 @@ const Works = () => {
                   </div>
                 </div>
                 <div className="flex mx-auto group">
-                  <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center">
-                    <div className="rounded-full p-3 border-2 border-gray-600  group-hover:bg-gray-600">
+                  <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center hover:scale-110 transition duration-500 group">
+                    <div className="rounded-full p-3 border-2 border-gray-600 hover:scale-110 group-hover:bg-gray-600 transition duration-500">
                       <svg
-                        className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white"
+                        className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white group-hover:-rotate-12 transition duration-500  "
                         viewBox="0 0 512 512"
                         xmlns="http://www.w3.org/2000/svg">
                         {/*! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
@@ -177,10 +177,10 @@ const Works = () => {
                   </div>
                 </div>
                 <div className="flex mx-auto group">
-                  <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center">
-                    <div className="rounded-full p-3 border-2 border-gray-600  group-hover:bg-gray-600">
+                  <div className="p-5 items-center flex flex-row gap-5 mx-auto text-center hover:scale-110 transition duration-500 group">
+                    <div className="rounded-full p-3 border-2 border-gray-600 hover:scale-110 group-hover:bg-gray-600 transition duration-500">
                       <svg
-                        className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white"
+                        className="w-[40px] h-[60px] fill-gray-600 group-hover:fill-white group-hover:-rotate-12 transition duration-500  "
                         viewBox="0 0 448 512"
                         xmlns="http://www.w3.org/2000/svg">
                         {/*! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}
