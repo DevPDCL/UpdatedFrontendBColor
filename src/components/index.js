@@ -1,9 +1,3 @@
-import {
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas,
-} from "./canvas";
 import Hero from "./Hero";
 import Nav from "./Nav";
 import Technology from "./Technology";
@@ -11,13 +5,11 @@ import Navbar from "./Navbar";
 import About from "./About";
 import Tech from "./Tech";
 import Search from "./Search";
-import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Branch from "./Branch";
-import Count from "./Count";
 import Layout from "./Layout";
 import Sample from "./Sample";
 import Complain from "./Complain";
@@ -57,21 +49,14 @@ export {
   Patient,
   Complain,
   Hero,
-  Count,
   Sample,
   Nav,
   Navbar,
   About,
-  //Register,
   Tech,
-  Experience,
   Works,
-  Feedbacks,
   Contact,
   CanvasLoader,
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas,
   Error,
+  Feedbacks,
 };

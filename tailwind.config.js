@@ -74,7 +74,7 @@ module.exports = {
         },
         ".gradient-sidebar-flow": {
           backgroundImage:
-            "linear-gradient(to right, #585858, #ffffff 40%, #585858 80%)",
+            "linear-gradient(to right, #00664a, #585858 40%, #00664a 80%)",
           backgroundSize: "200% 100%",
           animation: "flow 5s linear infinite",
           "@keyframes flow": {

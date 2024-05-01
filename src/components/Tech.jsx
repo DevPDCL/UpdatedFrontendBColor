@@ -18,7 +18,7 @@ const Tech = ({ message, children }) => {
 
   return (
     <>
-      <footer className="flex flex-row flex-wrap mt-10  justify-center">
+      <footer className="flex flex-row flex-wrap   justify-center">
         <div className="bg-emerald-900/80   opacity-90 mx-auto w-full ">
           <Sidemenu />
           <Bottommenu />
