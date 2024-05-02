@@ -42003,6 +42003,8 @@ const doctorData1 = {
       drName: "Asso. Prof. Dr. Ashraful islam",
       drSpecilist: "Orthopaedic Surgery",
       drDegree: "MBBS. MS(Ortho)",
+      currPractice:
+        "Former Head of the Department of Orthopaedic, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "English Road",
@@ -42057,6 +42059,8 @@ const doctorData1 = {
       drName: "Asst. Prof. Dr. Uthpol Kumar Datta",
       drSpecilist: "ENT, Head & Neck Surgery",
       drDegree: "MBBS.BCS.MS.BSMMUMBBS BCS.MS.BSMMU",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "English Road",
@@ -42091,6 +42095,8 @@ const doctorData1 = {
       drName: "Prof. Dr. Shymal Sarker",
       drSpecilist: "Medicine",
       drDegree: "MBBS (Dhaka) FCPS (Medicine Specilis)",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "English Road",
@@ -42126,13 +42132,14 @@ const doctorData1 = {
       newPatient: "1000",
       oldPatient: "500",
       report: "Free",
-      image: PROF_DR_SHYMAL_SARKER,
     },
     {
       drID: 4,
       drName: "Prof. Dr. Biswas Akhtar Hossain",
       drSpecilist: "Chest Medicine",
       drDegree: "MBBS,DTCD,FCCP (Ex. Professor) Dhaka Medical College,Dhaka",
+      currPractice:
+        "Former Head of the Department of Chest Medicine, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "English Road",
@@ -42200,6 +42207,9 @@ const doctorData1 = {
       drSpecilist: "Medicine",
       drDegree:
         "MBBS,FCPS,MD,DEM Sir Salimullah Medical College & Mitford Hospital",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
+
       chember: [
         {
           branch: "Shantinagar",
@@ -42251,6 +42261,8 @@ const doctorData1 = {
       drSpecilist: "Medicine",
       drDegree:
         "MBBS,FCPS (Medicine) Professor & Head, Dept. of Medicine Holy Family Red Crescent Medical College",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
 
       chember: [
         {
@@ -42303,6 +42315,9 @@ const doctorData1 = {
       drSpecilist: "Medicine",
       drDegree:
         "MBBS,FCPS,MD,DEM Sir Salimullah Medical College & Mitford Hospital",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
+
       chember: [
         {
           branch: "Shantinagar",
@@ -42354,6 +42369,8 @@ const doctorData1 = {
       drSpecilist: "Medicine",
       drDegree:
         "MBBS, FCPS (Medicine), PhD(USA), Former Professor, Dhaka Medical College ,Dhaka",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -42405,6 +42422,8 @@ const doctorData1 = {
       drSpecilist: "Medicine",
       drDegree:
         "FCPS (Medicine), FACP (USA), FRCP (Glasgow), FRCP (Edin), MACP (USA). Popular Medicile College & Hospital, Dhaka.",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -42456,6 +42475,8 @@ const doctorData1 = {
       drSpecilist: "Medicine",
       drDegree:
         "MBBS (DMC), FCPS (Medicine), MD (Internal Med.), FACP (USA). Dhaka Medical College & Hospital.",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -42498,6 +42519,8 @@ const doctorData1 = {
       drName: "Asst. Prof. Dr. Hena Khatun",
       drSpecilist: "Chest Medicine",
       drDegree: "MBBS,BCS,DTCD,MD (Dhaka Medical College,Dhaka)",
+      currPractice:
+        "Former Head of the Department of Chest Medicine, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Shantinagar",
@@ -42549,6 +42572,8 @@ const doctorData1 = {
       drSpecilist: "ENT, Head & Neck Surgery",
       drDegree:
         "FCPS (Medicine), FACP (USA), FRCP (Glasgow), FRCP (Edin), MACP (USA). Popular Medicile College & Hospital, Dhaka.",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -42596,6 +42621,8 @@ const doctorData1 = {
       drSpecilist: "ENT, Head & Neck Surgery",
       drDegree:
         "MBBS, FCPS, FICS (USA), Fellow in Otology Harvard Medical School, USA. Bangladesh Medical College & Hospital, Dhaka.",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
 
       chember: [
         {
@@ -42648,6 +42675,9 @@ const doctorData1 = {
       drSpecilist: "ENT, Head & Neck Surgery",
       drDegree:
         "MBBS, FCPS, MS (ENT), FICS (USA), Microear Surgery (Bangkok, Mumbai, Malaysia), FESS & Plastic Surgery (Delhi, Chennai, Singapore). BSMMU.",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
+
       chember: [
         {
           branch: "Dhanmondi",
@@ -42699,6 +42729,8 @@ const doctorData1 = {
       drSpecilist: "ENT, Head & Neck Surgery",
       drDegree:
         "MBBS(Dhaka), BCS (Health), FCPS (ENT), Advanced Trained in Microear Sugery, Endoscopic Sinus Surgery & Cochlear, Implant Surgery (Chennai, India), Shaheed Suhrawardy Medical College and Hospital",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -42738,6 +42770,9 @@ const doctorData1 = {
       drSpecilist: "Cardiology",
       drDegree:
         "MBBS (Dhaka), MD (Cardiology), DTCD (DU), FRCP (Eden) FACC (USA), FCCP (USA), FESC, FRCP (Glasgow). (BSMMU)",
+      currPractice:
+        "Former Head of the Department of Cardiology, Dhaka Medical College Hospital",
+
       chember: [
         {
           branch: "Dhanmondi",
@@ -42789,6 +42824,8 @@ const doctorData1 = {
       drSpecilist: "Cardiology",
       drDegree:
         "MBBS,DTCD (Chest), MD (Cardiology) Advanced Training In Invasive Cardiology Clinical & Interventional Cardiologist. Professor & Ex. Head, Dept. of Cardiology Rangpur Medicial College & Hospital, Rangpur.",
+      currPractice:
+        "Former Head of the Department of Cardiology, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -42836,6 +42873,8 @@ const doctorData1 = {
       drSpecilist: "Cardiology",
       drDegree:
         "MBBS(Dhaka), BCS (Health), FCPS (ENT), Advanced Trained in Microear Sugery, Endoscopic Sinus Surgery & Cochlear, Implant Surgery (Chennai, India), Shaheed Suhrawardy Medical College and Hospital",
+      currPractice:
+        "Former Head of the Department of Cardiology, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -42875,6 +42914,9 @@ const doctorData1 = {
       drSpecilist: "Medicine",
       drDegree:
         "MBBS (DMC), FCPS (Medicine), MD (Internal Med.), FACP (USA). Dhaka Medical College & Hospital.",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
+
       chember: [
         {
           branch: "Dhanmondi",
@@ -42961,6 +43003,8 @@ const doctorData1 = {
       drSpecilist: "Gynaecology",
       drDegree:
         "MBBS (DMC), FCPS (Gynae). Popular Medicile College & Hospital, Dhaka.",
+      currPractice:
+        "Former Head of the Department of Gynaecology, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -43011,6 +43055,8 @@ const doctorData1 = {
       drName: "PROF DR KANAK KANTI BARUA",
       drSpecilist: "Neuro Surgery",
       drDegree: "MBBS, FCPS (Surgery), MS (Neurosurgery), Ph.D, FICS. BSMMU.",
+      currPractice:
+        "Former Head of the Department of Neuro Surgery, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -43073,6 +43119,9 @@ const doctorData1 = {
       drSpecilist: "Gynaecology",
       drDegree:
         "MBBS (Dhaka), FCPS (Gayne), Fellow-Gynae Oncology (TATA Memorial Hospital, India). Sir Salimullah Medical College & Mitford Hospital, Dhaka.",
+      currPractice:
+        "Former Head of the Department of Gynaecology, Dhaka Medical College Hospital",
+
       chember: [
         {
           branch: "Dhanmondi",
@@ -43112,6 +43161,8 @@ const doctorData1 = {
       drSpecilist: "Neuro Surgery",
       drDegree:
         "MBBS, MS, PhD (Japan), Trained in Neuro Intervention & Stroke (Japan, India & Germany). Professor & Head of the Department, Dhaka Medical College & Hospital, Dhaka.",
+      currPractice:
+        "Former Head of the Department of Neuro Surgery, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Dhanmondi",
@@ -43151,6 +43202,8 @@ const doctorData1 = {
       drSpecilist: "Gynaecology",
       drDegree:
         "MBBS (DMC), FCPS (Medicine), MD (Internal Med.), FACP (USA). Dhaka Medical College & Hospital.",
+      currPractice:
+        "Former Head of the Department of Gynaecology, Dhaka Medical College Hospital",
       chember: [
         {
           branch: "Shantinagar",
