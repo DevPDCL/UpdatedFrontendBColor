@@ -3,6 +3,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { doctorData1 } from "../constants"; // Import your doctor data
+import { drBackground } from "../assets";
 
 const DoctorDetail = () => {
   const { doctorId } = useParams();
@@ -37,17 +38,50 @@ const DoctorDetail = () => {
           <div className="w-full md:w-3/12 md:mx-2">
             {/* Profile Card */}
             <div className="bg-white p-3 border-t-4 border-[#006642]">
-              <div className="image overflow-hidden">
-                <img
-                  className="h-auto w-full mx-auto"
-                  src={image}
-                  alt="Profile"
-                />
+              <div className="image overflow-hidden rounded-xl shadow-xl">
+                {image ? (
+                  <img
+                    className="h-auto w-full mx-auto"
+                    src={image}
+                    alt="Profile"
+                    style={{
+                      position: "relative",
+                      zIndex: 1,
+                      backgroundImage: `url(${drBackground})`,
+                    }}
+                  />
+                ) : (
+                  <div className="no-image font-ubuntu flex flex-col justify-center items-center p-2 h-60">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="256"
+                      height="256"
+                      viewBox="0 0 256 256">
+                      <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                        <circle
+                          cx="58.145"
+                          cy="74.615"
+                          r="13.145"
+                          fill="#ffffff"
+                        />
+                        <path
+                          d="M45 40.375c-9.415 0-17.118-7.703-17.118-17.118v-6.139C27.882 7.703 35.585 0 45 0s17.118 7.703 17.118 17.118v6.139C62.118 32.672 54.415 40.375 45 40.375z"
+                          fill="#d7ffd7"
+                        />
+                        <path
+                          d="M55.078 42.803L45 54.44 34.922 42.803c-12.728 2.118-22.513 13.239-22.513 26.544v17.707c0 1.621 1.326 2.946 2.946 2.946h59.29c1.621 0 2.946-1.326 2.946-2.946V69.346c0-13.305-9.786-24.426-22.513-26.544zM67.204 76.875c0 .667-.541 1.208-1.208 1.208h-3.877v3.877c0 .667-.541 1.208-1.208 1.208H56.73c-.667 0-1.208-.541-1.208-1.208v-3.877h-3.877c-.667 0-1.208-.541-1.208-1.208v-4.179c0-.667.541-1.208 1.208-1.208h3.877V67.61c0-.667.541-1.208 1.208-1.208h4.179c.667 0 1.208.541 1.208 1.208v3.877h3.877c.667 0 1.208.541 1.208 1.208v4.179z"
+                          fill="#d7ffd7"
+                        />
+                      </g>
+                    </svg>
+                    <p className="text-gray-700">No Image Available</p>
+                  </div>
+                )}
               </div>
-              <h1 className="text-gray-700 font-bold text-xl leading-8 my-1">
+              <h1 className="pt-2 text-gray-700 font-bold text-xl leading-8 my-1">
                 {drName}
               </h1>
-              <h3 className="text-gray-600 font-lg text-semibold leading-6">
+              <h3 className="text-gray-600 font-lg font-medium leading-6">
                 Specialization: {drSpecilist}
               </h3>
               <div className="text-sm text-gray-500 hover:text-gray-600 leading-6">
@@ -135,7 +169,10 @@ const DoctorDetail = () => {
             {/* About Section  */}
             <div className="bg-white p-3 shadow-sm rounded-sm">
               <div>
-                <h1 className="text-[#006642] text-center font-bold text-[18px]"> {currPractice} </h1>
+                <h1 className="text-[#006642] text-center font-bold text-[18px]">
+                  {" "}
+                  {currPractice}{" "}
+                </h1>
               </div>
               <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
                 <span className="text-[#006642]">
@@ -182,7 +219,11 @@ const DoctorDetail = () => {
                   </div>
                   <div className="grid grid-cols-2">
                     <div className="px-4 py-2 font-semibold">Chembers</div>
-                    <div className="px-4 py-2">{chember.branch}</div>
+                    <div className="px-4 py-2 text-black">
+                      {selectedDoctor.chember
+                        .map((chamber) => chamber.branch)
+                        .join(", ")}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -194,91 +235,59 @@ const DoctorDetail = () => {
             <div className="my-4"></div>
             {/* Experience and education  */}
             <div className="bg-white p-3 shadow-sm rounded-sm">
-              <div className="grid grid-cols-2">
-                <div>
-                  <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
-                    <span className="text-[#006642]">
-                      <svg
-                        className="h-5"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        />
-                      </svg>
-                    </span>
-                    <span className="tracking-wide">Experience</span>
-                  </div>
-                  <ul className="list-inside space-y-2 text-[#006642]">
-                    <li>
-                      <div>Owner at Her Company Inc.</div>
-                      <div className="text-gray-500 text-xs">
-                        March 2020 - Now
-                      </div>
-                    </li>
-                    <li>
-                      <div>Owner at Her Company Inc.</div>
-                      <div className="text-gray-500 text-xs">
-                        March 2020 - Now
-                      </div>
-                    </li>
-                    <li>
-                      <div>Owner at Her Company Inc.</div>
-                      <div className="text-gray-500 text-xs">
-                        March 2020 - Now
-                      </div>
-                    </li>
-                    <li>
-                      <div>Owner at Her Company Inc.</div>
-                      <div className="text-gray-500 text-xs">
-                        March 2020 - Now
-                      </div>
-                    </li>
-                  </ul>
+              <div>
+                <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
+                  <span className="text-[#006642]">
+                    <svg
+                      className="h-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z" />
+                      <path
+                        fill="#fff"
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                      />
+                    </svg>
+                  </span>
+                  <span className="tracking-wide">Education</span>
                 </div>
-                <div>
-                  <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
-                    <span className="text-[#006642]">
-                      <svg
-                        className="h-5"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z" />
-                        <path
-                          fill="#fff"
-                          d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                        />
-                      </svg>
-                    </span>
-                    <span className="tracking-wide">Education</span>
-                  </div>
-                  <ul className="list-inside space-y-2 text-[#006642]">
-                    <li>
-                      <div>Masters Degree in Oxford</div>
-                      <div className="text-gray-500 text-xs">
-                        March 2020 - Now
-                      </div>
-                    </li>
-                    <li>
-                      <div>Bachelors Degree in LPU</div>
-                      <div className="text-gray-500 text-xs">
-                        March 2020 - Now
-                      </div>
-                    </li>
-                  </ul>
+                <div
+                  className="chambers-grid text-black"
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(2, 1fr)",
+                    gap: "20px",
+                  }}>
+                  {selectedDoctor.chember.map((chamber, index) => (
+                    <div
+                      key={index}
+                      className="chamber-card"
+                      style={{
+                        border: "1px solid #ccc",
+                        padding: "20px",
+                        borderRadius: "10px",
+                      }}>
+                      <h3>Branch: {chamber.branch}</h3>
+                      <p>Building: {chamber.building}</p>
+                      <p>Room: {chamber.room}</p>
+                      <div>Visiting Hours:</div>
+                      <ul>
+                        {chamber.weekday.map((day, index) => (
+                          <li key={index}>
+                            {day.day}: {day.time}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               </div>
               {/* End of Experience and education grid */}

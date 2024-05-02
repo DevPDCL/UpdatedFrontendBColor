@@ -205,6 +205,7 @@ import PROF_DR_KANAK_KANTI_BARUA from "./DoctorImage/PROF_DR_KANAK_KANTI_BARUA.p
 import PROF_DR_MRS_FARHAT_HOSSAIN from "./DoctorImage/PROF_DR_MRS_FARHAT_HOSSAIN.png";
 import PROF_DR_MD_SHAFIQUL_ISLAM from "./DoctorImage/PROF_DR_MD_SHAFIQUL_ISLAM.png";
 import PROF_DR_MRS_SHAHIN_RAHMAN_CHOW from "./DoctorImage/PROF_DR_MRS_SHAHIN_RAHMAN_CHOW.png";
+import drBackground from "./DoctorImage/drBackground.jpeg";
 
 
 
@@ -410,4 +411,5 @@ export {
   PROF_DR_MD_SHAFIQUL_ISLAM,
   PROF_DR_MRS_SHAHIN_RAHMAN_CHOW,
   Hospital_Building,
+  drBackground,
 };
