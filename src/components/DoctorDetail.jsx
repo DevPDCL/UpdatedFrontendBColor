@@ -257,7 +257,7 @@ const DoctorDetail = () => {
                       />
                     </svg>
                   </span>
-                  <span className="tracking-wide">Education</span>
+                  <span className="tracking-wide">Chember</span>
                 </div>
                 <div
                   className="chambers-grid text-black"
