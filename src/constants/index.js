@@ -42191,6 +42191,25 @@ const doctorData1 = {
             },
           ],
         },
+        {
+          branch: "Shyamoli",
+          building: "Bhaban-2",
+          room: "708",
+          weekday: [
+            {
+              day: "Sunday",
+              time: "09:00 AM - 12:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "09:00 AM - 12:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "09:00 AM - 12:00 PM",
+            },
+          ],
+        },
       ],
       drNumber: "01711364552",
       email: "mnislam3512@gmail.com",

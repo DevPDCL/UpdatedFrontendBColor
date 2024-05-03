@@ -37,10 +37,10 @@ const DoctorDetail = () => {
 
   return (
     <div className="doctor-detail bg-gray-100">
-      <div className="container mx-auto py-10 p-5">
-        <div className="md:flex no-wrap md:-mx-2">
+      <div className="sm:container mx-auto py-10 px-5">
+        <div className="flex flex-wrap -mx-2">
           {/* Left Side */}
-          <div className="w-full md:w-3/12 md:mx-2">
+          <div className="w-full md:w-3/12 px-2 mb-4">
             {/* Profile Card */}
             <div className="bg-white p-3 rounded-b-xl shadow-lg border-t-4 border-[#006642]">
               <div className="image overflow-hidden rounded-xl shadow-xl">
@@ -169,7 +169,7 @@ const DoctorDetail = () => {
             {/* End of friends card  */}
           </div>
           {/* Right Side */}
-          <div class="w-full md:w-9/12 mx-2 h-64">
+          <div className="w-full md:w-9/12 px-2">
             {/* Profile tab  */}
             {/* About Section  */}
             <div className="bg-white p-3 shadow-lg rounded-xl">
@@ -261,62 +261,56 @@ const DoctorDetail = () => {
                       />
                     </svg>
                   </span>
-                  <span className="tracking-wide">Chember</span>
+                  <span className="tracking-wide text-center">Chember</span>
                 </div>
                 <div
-                  className="chambers-grid text-black"
+                  className="chambers-grid m-0 p-0 text-black w-full md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 mx-auto"
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(2, 1fr)",
+                    gridTemplateColumns:
+                      "repeat(auto-fill, minmax(320px, 1fr))",
                     gap: "20px",
                   }}>
                   {selectedDoctor.chember.map((chamber, index) => (
                     <div
                       key={index}
-                      className="chamber-card"
-                      style={{
-                        border: "1px solid #ccc",
-                        padding: "20px",
-                        borderRadius: "10px",
-                      }}>
-                      <h3 className="text-center">{chamber.branch} Branch</h3>
+                      className="chamber-card p-4 border border-gray-300 rounded-lg">
+                      <h3 className="font-medium text-center">{chamber.branch} Branch</h3>
                       <p className="text-center">
-                        Building: {chamber.building}, Room: {chamber.room}
+                         {chamber.building}, Room: {chamber.room}
                       </p>
                       <div className="text-center">Visiting Hours</div>
-                      <div className="flex flex-col">
-                        <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                          <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-                            <div className="overflow-hidden">
-                              <table className="min-w-full text-center">
-                                <thead className="border-b">
-                                  <tr>
-                                    <th
-                                      scope="col"
-                                      className="text-sm font-medium text-gray-900 px-6 py-4">
-                                      Day
-                                    </th>
-                                    <th
-                                      scope="col"
-                                      className="text-sm font-medium text-gray-900 px-6 py-4">
-                                      Time
-                                    </th>
+                      <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                          <div className="overflow-hidden">
+                            <table className="min-w-full text-center">
+                              <thead className="border-b">
+                                <tr>
+                                  <th
+                                    scope="col"
+                                    className="text-sm font-medium text-gray-900 px-6 py-4">
+                                    Day
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="text-sm font-medium text-gray-900 px-6 py-4">
+                                    Time
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {chamber.weekday.map((day, dayIndex) => (
+                                  <tr key={dayIndex} className="border-b">
+                                    <td className="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                      {day.day}
+                                    </td>
+                                    <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                      {day.time}
+                                    </td>
                                   </tr>
-                                </thead>
-                                <tbody>
-                                  {chamber.weekday.map((day, index) => (
-                                    <tr key={index} className="border-b">
-                                      <td className="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                                        {day.day}
-                                      </td>
-                                      <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                                        {day.time}
-                                      </td>
-                                    </tr>
-                                  ))}
-                                </tbody>
-                              </table>
-                            </div>
+                                ))}
+                              </tbody>
+                            </table>
                           </div>
                         </div>
                       </div>
