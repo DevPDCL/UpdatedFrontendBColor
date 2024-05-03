@@ -4,6 +4,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { doctorData1 } from "../constants"; // Import your doctor data
 import { drBackground } from "../assets";
+import { Link } from "react-router-dom";
 
 const DoctorDetail = () => {
   const { doctorId } = useParams();
@@ -30,6 +31,10 @@ const DoctorDetail = () => {
     currPractice,
   } = selectedDoctor;
 
+  const handleClick1 = () => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="doctor-detail bg-gray-100">
       <div className="container mx-auto py-10 p-5">
@@ -37,7 +42,7 @@ const DoctorDetail = () => {
           {/* Left Side */}
           <div className="w-full md:w-3/12 md:mx-2">
             {/* Profile Card */}
-            <div className="bg-white p-3 border-t-4 border-[#006642]">
+            <div className="bg-white p-3 rounded-b-xl shadow-lg border-t-4 border-[#006642]">
               <div className="image overflow-hidden rounded-xl shadow-xl">
                 {image ? (
                   <img
@@ -106,7 +111,7 @@ const DoctorDetail = () => {
             {/* End of profile card  */}
             <div className="my-4"></div>
             {/* Friends card  */}
-            <div className="bg-white p-3 hover:shadow">
+            <div className="bg-white rounded-xl shadow-lg p-3 hover:shadow-xl">
               <div className="flex items-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
                 <span className="text-[#006642]">
                   {" "}
@@ -167,9 +172,9 @@ const DoctorDetail = () => {
           <div class="w-full md:w-9/12 mx-2 h-64">
             {/* Profile tab  */}
             {/* About Section  */}
-            <div className="bg-white p-3 shadow-sm rounded-sm">
+            <div className="bg-white p-3 shadow-lg rounded-xl">
               <div>
-                <h1 className="text-[#006642] text-center font-bold text-[18px]">
+                <h1 className="text-[#006642] p-5 text-center font-ubuntu font-bold text-[26px]">
                   {" "}
                   {currPractice}{" "}
                 </h1>
@@ -217,43 +222,42 @@ const DoctorDetail = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="grid grid-cols-2">
-                    <div className="px-4 py-2 font-semibold">Chembers</div>
-                    <div className="px-4 py-2 text-black">
-                      {selectedDoctor.chember
-                        .map((chamber) => chamber.branch)
-                        .join(", ")}
-                    </div>
-                  </div>
                 </div>
               </div>
-              <button className="block w-full text-[#006642] text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4">
-                Show Full Information
-              </button>
+              <Link
+                to="http://appointment.populardiagnostic.com/appointment"
+                target="_blank"
+                rel="noopener noreferrer">
+                <button
+                  className="block w-full text-[#006642] text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4"
+                  onClick={handleClick1}
+                  type="button">
+                  Book an Appointment
+                </button>
+              </Link>
             </div>
             {/* End of about section */}
             <div className="my-4"></div>
             {/* Experience and education  */}
-            <div className="bg-white p-3 shadow-sm rounded-sm">
+            <div className="bg-white p-3 shadow-lg rounded-xl">
               <div>
-                <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
+                <div className="flex justify-center items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
                   <span className="text-[#006642]">
                     <svg
-                      className="h-5"
                       xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z" />
+                      className="h-5"
+                      viewBox="0 0 90 90">
                       <path
-                        fill="#fff"
-                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                        d="M51.948 73.273H38.052c-1.104 0-2-0.896-2-2v-9.621h-9.621c-1.104 0-2-0.896-2-2V45.757c0-1.104 0.896-2 2-2h9.621v-9.62c0-1.104 0.896-2 2-2h13.896c1.104 0 2 0.896 2 2v9.62h9.62c1.104 0 2 0.896 2 2v13.895c0 1.104-0.896 2-2 2h-9.62v9.621C53.948 72.378 53.053 73.273 51.948 73.273z M40.052 69.273h9.896v-9.621c0-1.104 0.896-2 2-2h9.62v-9.895h-9.62c-1.104 0-2-0.896-2-2v-9.62h-9.896v9.62c0 1.104-0.896 2-2 2h-9.621v9.895h9.621c1.104 0 2 0.896 2 2V69.273z"
+                        fill="#006642"
                       />
                       <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                        d="M78.113 84.056H11.887c-1.104 0-2-0.896-2-2V30.312c0-1.104 0.896-2 2-2s2 0.896 2 2v49.745h62.226V30.067c0-1.104 0.896-2 2-2s2 0.896 2 2v51.989C80.113 83.161 79.218 84.056 78.113 84.056z"
+                        fill="#006642"
+                      />
+                      <path
+                        d="M2.002 38.835c-0.65 0-1.287-0.316-1.671-0.898c-0.608-0.922-0.354-2.163 0.568-2.771L44.687 6.274c0.679-0.449 1.561-0.439 2.231 0.019L89.13 35.184c0.911 0.624 1.145 1.869 0.521 2.78c-0.624 0.912-1.867 1.146-2.78 0.521L45.768 10.353L3.102 38.504C2.762 38.728 2.38 38.835 2.002 38.835z"
+                        fill="#006642"
                       />
                     </svg>
                   </span>
@@ -275,17 +279,47 @@ const DoctorDetail = () => {
                         padding: "20px",
                         borderRadius: "10px",
                       }}>
-                      <h3>Branch: {chamber.branch}</h3>
-                      <p>Building: {chamber.building}</p>
-                      <p>Room: {chamber.room}</p>
-                      <div>Visiting Hours:</div>
-                      <ul>
-                        {chamber.weekday.map((day, index) => (
-                          <li key={index}>
-                            {day.day}: {day.time}
-                          </li>
-                        ))}
-                      </ul>
+                      <h3 className="text-center">{chamber.branch} Branch</h3>
+                      <p className="text-center">
+                        Building: {chamber.building}, Room: {chamber.room}
+                      </p>
+                      <div className="text-center">Visiting Hours</div>
+                      <div className="flex flex-col">
+                        <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                          <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                            <div className="overflow-hidden">
+                              <table className="min-w-full text-center">
+                                <thead className="border-b">
+                                  <tr>
+                                    <th
+                                      scope="col"
+                                      className="text-sm font-medium text-gray-900 px-6 py-4">
+                                      Day
+                                    </th>
+                                    <th
+                                      scope="col"
+                                      className="text-sm font-medium text-gray-900 px-6 py-4">
+                                      Time
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {chamber.weekday.map((day, index) => (
+                                    <tr key={index} className="border-b">
+                                      <td className="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                                        {day.day}
+                                      </td>
+                                      <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        {day.time}
+                                      </td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>
