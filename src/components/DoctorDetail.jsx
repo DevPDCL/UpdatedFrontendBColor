@@ -112,7 +112,7 @@ const DoctorDetail = () => {
             <div className="my-4"></div>
             {/* Friends card  */}
             <div className="bg-white rounded-xl shadow-lg p-3 hover:shadow-xl">
-              <div className="flex items-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
+              <div className="flex items-center justify-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
                 <span className="text-[#006642]">
                   {" "}
                   <svg
@@ -131,6 +131,7 @@ const DoctorDetail = () => {
                 </span>
                 <span>More from {drSpecilist}</span>
               </div>
+              <h2 className="text-gray-500 text-center"> For different schedules</h2>
               <div className="grid grid-cols-3 text-[#006642]">
                 <div className="text-center my-2">
                   <img
@@ -169,7 +170,7 @@ const DoctorDetail = () => {
             {/* End of friends card  */}
           </div>
           {/* Right Side */}
-          <div className="w-full md:w-9/12 px-2">
+          <div className="w-full md:w-8/12 px-2">
             {/* Profile tab  */}
             {/* About Section  */}
             <div className="bg-white p-3 shadow-lg rounded-xl">
@@ -238,7 +239,7 @@ const DoctorDetail = () => {
             </div>
             {/* End of about section */}
             <div className="my-4"></div>
-            {/* Experience and education  */}
+            {/* Chamber  */}
             <div className="bg-white p-3 shadow-lg rounded-xl">
               <div>
                 <div className="flex justify-center items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">
@@ -261,23 +262,24 @@ const DoctorDetail = () => {
                       />
                     </svg>
                   </span>
-                  <span className="tracking-wide text-center">Chember</span>
+                  <span className="tracking-wide text-center">Chamber</span>
                 </div>
                 <div
                   className="chambers-grid m-0 p-0 text-black w-full md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1 mx-auto"
                   style={{
                     display: "grid",
-                    gridTemplateColumns:
-                      "repeat(auto-fill, minmax(320px, 1fr))",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
                     gap: "20px",
                   }}>
                   {selectedDoctor.chember.map((chamber, index) => (
                     <div
                       key={index}
                       className="chamber-card p-4 border border-gray-300 rounded-lg">
-                      <h3 className="font-medium text-center">{chamber.branch} Branch</h3>
+                      <h3 className="font-medium text-center">
+                        {chamber.branch} Branch
+                      </h3>
                       <p className="text-center">
-                         {chamber.building}, Room: {chamber.room}
+                        {chamber.building}, Room: {chamber.room}
                       </p>
                       <div className="text-center">Visiting Hours</div>
                       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -321,6 +323,11 @@ const DoctorDetail = () => {
               {/* End of Experience and education grid */}
             </div>
             {/* End of profile tab */}
+          </div>
+          <div className="w-full md:w-1/12 px-2">
+            <div className="flex justify-center items-center bg-white h-full rounded-xl shadow-xl">
+              <h1 className="text-black text-center">Adds</h1>
+            </div>
           </div>
         </div>
       </div>

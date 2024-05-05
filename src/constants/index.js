@@ -33,6 +33,7 @@ import {
   pakages,
   AmarlabLogo,
   purehealth,
+  AroggaLogo,
   hajj,
   home,
   about,
@@ -243,14 +244,22 @@ const technologies = [
 ];
 const service = [
   {
+    id: 1,
     name: "AmarlabLogo",
     icon: AmarlabLogo,
   },
   {
+    id: 2,
+    name: "AroggaLogo,",
+    icon: AroggaLogo,
+  },
+  {
+    id: 3,
     name: "hajj",
     icon: hajj,
   },
   {
+    id: 4,
     name: "purehealth",
     icon: purehealth,
   },

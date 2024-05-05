@@ -1,10 +1,9 @@
 import React from "react";
-import { service } from "../constants";
-import { technologies } from "../constants";
+import { service, technologies } from "../constants";
 
 function Cor() {
   return (
-    <div className="mt-[150px] -mb-[120px]">
+    <div className="mt-[150px] -mb-[10px]">
       <h3 className="text-gray-900/50 text-center text-[28px] font-ubuntu">
         Corporate Partners
       </h3>
@@ -16,13 +15,13 @@ function Cor() {
           </div>
         ))}
       </div>
-      <h3 className="text-gray-900/50  text-center  text-[28px] font-ubuntu">
+      <h3 className="text-gray-900/50 text-center text-[28px] font-ubuntu">
         Service Partners
       </h3>
 
-      <div className=" flex flex-row flex-wrap p-5 sm:w-[80%] max-w-screen-xl mx-auto justify-center">
+      <div className=" flex flex-wrap p-5 max-w-screen-xl mx-auto justify-center">
         {service.map((technology) => (
-          <div className="w-[300px] p-5 h-28" key={technology.name}>
+          <div className="w-[300px] p-5 h-28" key={technology.id}>
             <img src={technology.icon} />
           </div>
         ))}

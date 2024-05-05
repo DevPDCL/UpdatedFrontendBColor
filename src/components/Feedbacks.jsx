@@ -18,7 +18,7 @@ const FeedbackCard = ({
     <div className=" m-1 p-10 bg-gray-100/5 shadow text-start">
       <div className="flex flex-wrap   max-w-7xl   ">
         <div>
-          <div className="mt-0 flex justify-between items-end gap-0">
+          <div className="flex justify-between items-end gap-0">
             <img
               src={image}
               alt={`feedback_by`}
@@ -63,7 +63,7 @@ const FeedbackCard = ({
 const Feedbacks = () => {
   return (
     <div className={` bg-none `}>
-      <h2 className="text-center text-gray-900/50 font-bold mb-[20px] pt-40 font-ubuntu text-[28px]">
+      <h2 className="text-center text-gray-900/50 font-bold mb-[20px] pt-10 font-ubuntu text-[28px]">
         TESTIMONIALS
       </h2>
 
