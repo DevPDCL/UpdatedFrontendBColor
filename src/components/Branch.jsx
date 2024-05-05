@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import {
   Sidemenu,
-  Bottommenu,
-  Details,
-  Nav,
-  Navbar,
-  Tech,
+  Details
 } from "../components";
 import { motion } from "framer-motion";
 import { projects1 } from "../constants";
@@ -124,7 +120,6 @@ const Branch = () => {
   return (
     <div className="bg-[#ffffff] ">
       <Sidemenu />
-      <Bottommenu />
         
         <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
           <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">

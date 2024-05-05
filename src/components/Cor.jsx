@@ -4,8 +4,8 @@ import { technologies } from "../constants";
 
 function Cor() {
   return (
-    <>
-      <h3 className="text-gray-900/50  text-center text-[28px] font-ubuntu">
+    <div className="mt-[150px] -mb-[120px]">
+      <h3 className="text-gray-900/50 text-center text-[28px] font-ubuntu">
         Corporate Partners
       </h3>
 
@@ -27,7 +27,7 @@ function Cor() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

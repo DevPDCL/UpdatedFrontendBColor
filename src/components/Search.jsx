@@ -228,7 +228,7 @@ const Search = () => {
   return (
     <>
       <div
-        className={`${styles.paddingX} mt-20 flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center   flex-col text-gray-900`}
+        className={`${styles.paddingX} -mt-[50px] sm:-mt-[80px] flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center   flex-col text-gray-900`}
       >
         
           <div class="mb-4 ">

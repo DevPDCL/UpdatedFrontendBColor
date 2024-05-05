@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Sidemenu, Bottommenu, Tech } from "../components";
+import { Sidemenu } from "../components";
 import { Card, Typography } from "@material-tailwind/react";
 import { Input, Button } from "@material-tailwind/react";
 
@@ -8,7 +8,6 @@ function Contact() {
   return (
     <div className="bg-[#ffffff]">
       <Sidemenu />
-      <Bottommenu />
       <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
         <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">
           CONNECTING WITH US

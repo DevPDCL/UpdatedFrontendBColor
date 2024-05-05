@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Sidemenu, Bottommenu } from "../components";
+import { Sidemenu } from "../components";
 import img from "../assets/link.jpg";
 import "./tabs.css";
 
@@ -21,7 +21,6 @@ const Tech = ({ message, children }) => {
       <footer className="flex flex-row flex-wrap   justify-center">
         <div className="bg-emerald-900/80   opacity-90 mx-auto w-full ">
           <Sidemenu />
-          <Bottommenu />
           <form className="max-w-screen-xl mx-auto sm:w-[80%] items-center justify-center">
             <div className="grid md:grid-cols-3   md:gap-1 ">
               <div className=" p-10  text-start">

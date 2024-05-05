@@ -3,12 +3,8 @@ import {
   Feedbacks,
   Hero,
   Cor,
-  Nav,
   Sidemenu,
   Search,
-  Navbar,
-  Bottommenu,
-  Tech,
   Works,
 } from "../components";
 
@@ -16,12 +12,11 @@ function Layout() {
   return (
     <div className="bg-[#ffffff]">
       <Sidemenu />
-      <Bottommenu />
       <Hero />
       <Search />
       <Works />
+      <Cor />
       <Feedbacks />
-      <Cor  />
     </div>
   );
 }

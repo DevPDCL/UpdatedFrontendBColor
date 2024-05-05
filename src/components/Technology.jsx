@@ -3,7 +3,6 @@ import {
   Nav,
   Sidemenu,
   Navbar,
-  Bottommenu,
   Tech,
 } from "../components";
 const Technology = () => {
@@ -13,7 +12,6 @@ const Technology = () => {
         <Nav />
         <Navbar />
         <Sidemenu />
-        <Bottommenu />
       
         <Tech />
       </div>

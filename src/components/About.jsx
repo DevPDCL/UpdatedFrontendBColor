@@ -1,4 +1,4 @@
-import { Nav, Navbar, Sidemenu, Tech, Bottommenu } from "../components";
+import { Sidemenu } from "../components";
 import { topManagement } from "../constants";
 import { ServiceCost } from "../constants";
 import React, { useState } from "react";
@@ -83,7 +83,6 @@ const About = () => {
   return (
     <div className="bg-[#ffffff]">
       <Sidemenu />
-      <Bottommenu />
       <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
         <h2 className="text-gray-900/50 pb-5 text-center text-[35px] font-bold font-ubuntu">
           Top Management
