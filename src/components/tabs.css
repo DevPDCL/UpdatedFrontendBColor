@@ -53,3 +53,19 @@
   animation: pulse 4s infinite ease-in-out;
 }
 
+
+.expand span:last-child {
+  max-width: max-content;
+  /* Expand the text to its full width */
+  padding-left: 0.5rem;
+  /* Add padding to the left of the text */
+  padding-right: 0.5rem;
+  /* Add padding to the right of the text */
+  transform: scale(1);
+  /* Scale the text back to its original size */
+  transition: all 700ms ease-in-out;
+  /* Smooth transition for 700ms */
+}
+
+
+
