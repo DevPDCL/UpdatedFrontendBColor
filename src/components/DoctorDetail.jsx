@@ -328,27 +328,43 @@ const DoctorDetail = () => {
             {/* End of profile tab */}
           </div>
           <div className="w-full md:w-1/12 px-2">
-            <div className="flex justify-center flex-col items-center bg-white h-full rounded-xl shadow-xl">
-              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
-                {" "}
-                <img src={Med1} alt="" />
-                <h1 className="">Vonomax</h1>
-              </div>
-              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
-                {" "}
-                <img src={Med4} alt="" />
-                <h1 className="text-black">Vonomax</h1>
-              </div>
-              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
-                {" "}
-                <img src={Med2} alt="" />
-                <h1 className="text-black">AdeCard</h1>
-              </div>{" "}
-              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
-                {" "}
-                <img src={Med3} alt="" />
-                <h1 className="text-black">Cabergol</h1>
-              </div>
+            <div className="flex justify-center flex-col items-center font-bold  h-full rounded-xl  gap-16">
+              <a href="https://www.popular-pharma.com/products/519">
+                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                  {" "}
+                  <img src={Med1} alt="" />
+                  <h1 className=" text-[#ea7726] flex">
+                    Vono <span className="text-[#087b41]">max</span>
+                  </h1>
+                </div>
+              </a>
+              <a href="https://www.popular-pharma.com/products/519">
+                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                  {" "}
+                  <img src={Med4} alt="" />
+                  <h1 className=" text-[#ea7726] flex">
+                    Vono <span className="text-[#087b41]">max</span>
+                  </h1>
+                </div>
+              </a>
+              <a href="https://www.popular-pharma.com/products/82">
+                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                  {" "}
+                  <img src={Med2} alt="" />
+                  <h1 className=" text-gray-800 flex">
+                    Adec <span className="text-[#ea7726]">ard</span>
+                  </h1>
+                </div>
+              </a>
+              <a href="https://www.popular-pharma.com/products/129">
+                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                  {" "}
+                  <img src={Med3} alt="" />
+                  <h1 className=" text-[#087b41] flex">
+                    Caber <span className="text-[#ea7726]">gol</span>
+                  </h1>
+                </div>
+              </a>
             </div>
           </div>
         </div>
