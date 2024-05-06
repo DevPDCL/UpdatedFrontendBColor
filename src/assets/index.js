@@ -163,6 +163,7 @@ import MosaddequeHossain from "./TopManagement/MosaddequeHossain.png";
 import MostafaNurmohammadPalash from "./TopManagement/MostafaNurmohammadPalash.png";
 import MrKabirAhmed from "./TopManagement/MrKabirAhmed.png";
 import SardinRahman from "./TopManagement/SardinRahman.png";
+import MdAsadurRahman from "./TopManagement/MdAsadurRahman.png";
 
 import sliceCTScan from "./Notice/1152sliceCTScan.webp";
 import BangladeshWorkersWelfareFoundation from "./Notice/BangladeshWorkersWelfareFoundation.webp";
@@ -206,12 +207,23 @@ import PROF_DR_KANAK_KANTI_BARUA from "./DoctorImage/PROF_DR_KANAK_KANTI_BARUA.p
 import PROF_DR_MRS_FARHAT_HOSSAIN from "./DoctorImage/PROF_DR_MRS_FARHAT_HOSSAIN.png";
 import PROF_DR_MD_SHAFIQUL_ISLAM from "./DoctorImage/PROF_DR_MD_SHAFIQUL_ISLAM.png";
 import PROF_DR_MRS_SHAHIN_RAHMAN_CHOW from "./DoctorImage/PROF_DR_MRS_SHAHIN_RAHMAN_CHOW.png";
+import AssotProfDrShaoliSarker from "./DoctorImage/AssotProfDrShaoliSarker.png";
+import DrAyeshaSiddika from "./DoctorImage/DrAyeshaSiddika.png";
+import DrBithiDebnath from "./DoctorImage/DrBithiDebnath.png";
+
 import drBackground from "./DoctorImage/drBackground.jpeg";
 
-
-
-
 import Hospital_Building from "./Hospital_Building.png";
+
+
+
+
+import Med1 from "./Med/Med1.png";
+import Med2 from "./Med/Med2.png";
+import Med3 from "./Med/Med3.png";
+import Med4 from "./Med/Med4.webp";
+
+
 
 export {
   logo,
@@ -382,6 +394,7 @@ export {
   MostafaNurmohammadPalash,
   MrKabirAhmed,
   SardinRahman,
+  MdAsadurRahman,
   sliceCTScan,
   BangladeshWorkersWelfareFoundation,
   CardiacMRIMachine,
@@ -413,6 +426,13 @@ export {
   PROF_DR_MRS_FARHAT_HOSSAIN,
   PROF_DR_MD_SHAFIQUL_ISLAM,
   PROF_DR_MRS_SHAHIN_RAHMAN_CHOW,
+  AssotProfDrShaoliSarker,
+  DrAyeshaSiddika,
+  DrBithiDebnath,
   Hospital_Building,
   drBackground,
+  Med1,
+  Med2,
+  Med3,
+  Med4,
 };

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const ProjectCard = ({ manImg, manName, manDesignation }) => {
   return (
-    <div className="bg-gradient-to-b from-white to-[#00664218] hover:bg-gray-100 p-0 shadow-2xl rounded-2xl sm:w-[299px] w-full">
+    <div className="bg-gradient-to-b from-white to-[#00664218] hover:bg-gray-100 shadow-2xl rounded-2xl sm:w-[299px] w-full">
       <div className="relative w-full">
         <img
           src={manImg}
@@ -37,7 +37,7 @@ const About = () => {
   const topPosition = topManagement.slice(0, 3);
   const secondTopPosition = topManagement.slice(3, 6);
   const thirdTopPosition = topManagement.slice(6, 9);
-  const fourthTopPosition = topManagement.slice(9, 13);
+  const fourthTopPosition = topManagement.slice(9, 14);
 
   const [selectedBranch, setSelectedBranch] = useState(null);
   const [filteredServices, setFilteredServices] = useState([]);
@@ -111,7 +111,7 @@ const About = () => {
       </div>
 
       {/* Fourth section for managers */}
-      <div className="flex mx-auto p-3 py-10 max-w-7xl justify-center flex-wrap gap-4">
+      <div className="flex mx-auto p-3 py-20 justify-center flex-wrap gap-4">
         {fourthTopPosition.map((project) => (
           <ProjectCard key={project.manID} {...project} />
         ))}

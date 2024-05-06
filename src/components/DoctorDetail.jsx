@@ -3,7 +3,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { doctorData1 } from "../constants"; // Import your doctor data
-import { drBackground } from "../assets";
+import { drBackground, Med1, Med2, Med3, Med4 } from "../assets";
 import { Link } from "react-router-dom";
 
 const DoctorDetail = () => {
@@ -131,7 +131,10 @@ const DoctorDetail = () => {
                 </span>
                 <span>More from {drSpecilist}</span>
               </div>
-              <h2 className="text-gray-500 text-center"> For different schedules</h2>
+              <h2 className="text-gray-500 text-center">
+                {" "}
+                For different schedules
+              </h2>
               <div className="grid grid-cols-3 text-[#006642]">
                 <div className="text-center my-2">
                   <img
@@ -325,8 +328,27 @@ const DoctorDetail = () => {
             {/* End of profile tab */}
           </div>
           <div className="w-full md:w-1/12 px-2">
-            <div className="flex justify-center items-center bg-white h-full rounded-xl shadow-xl">
-              <h1 className="text-black text-center">Adds</h1>
+            <div className="flex justify-center flex-col items-center bg-white h-full rounded-xl shadow-xl">
+              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                {" "}
+                <img src={Med1} alt="" />
+                <h1 className="">Vonomax</h1>
+              </div>
+              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                {" "}
+                <img src={Med4} alt="" />
+                <h1 className="text-black">Vonomax</h1>
+              </div>
+              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                {" "}
+                <img src={Med2} alt="" />
+                <h1 className="text-black">AdeCard</h1>
+              </div>{" "}
+              <div className="hw-full m-2 p-2 bg-gray-200 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                {" "}
+                <img src={Med3} alt="" />
+                <h1 className="text-black">Cabergol</h1>
+              </div>
             </div>
           </div>
         </div>

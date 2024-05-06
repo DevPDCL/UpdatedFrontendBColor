@@ -243,10 +243,10 @@ const Works = () => {
             Quisque porttitor dictum turpis nec gravida.
           </p>
           <div className="flex flex-row">
-            <button className="bg-white border rounded mt-10 m-2 p-3 hover:bg-blue-500 hover:text-white">
+            <button className="bg-white border rounded mt-10 m-2 p-3 hover:bg-[#00664a] hover:text-white">
               Contact Now
             </button>
-            <button className="bg-none border rounded mt-10 m-2 p-3 hover:bg-gray-500 hover:text-white">
+            <button className="bg-none border text-white rounded mt-10 m-2 p-3 hover:bg-gray-500 hover:text-white">
               Learn More
             </button>
           </div>

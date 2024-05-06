@@ -163,6 +163,10 @@ import {
   PROF_DR_MRS_FARHAT_HOSSAIN,
   PROF_DR_MD_SHAFIQUL_ISLAM,
   PROF_DR_MRS_SHAHIN_RAHMAN_CHOW,
+  AssotProfDrShaoliSarker,
+  DrAyeshaSiddika,
+  DrBithiDebnath,
+  MdAsadurRahman,
 } from "../assets";
 
 const navLinks = [
@@ -475,6 +479,12 @@ const topManagement = [
   },
   {
     manID: 13,
+    manImg: MdAsadurRahman,
+    manName: "MD. ASADUR RAHMAN",
+    manDesignation: "Manager, Laboratory",
+  },
+  {
+    manID: 14,
     manImg: MdSahabUddin,
     manName: "Md Sahab Uddin",
     manDesignation: "Manager, (Finance & Accounts)",
@@ -43265,6 +43275,169 @@ const doctorData1 = {
       oldPatient: "1000",
       report: "Free",
       image: PROF_DR_MRS_SHAHIN_RAHMAN_CHOW,
+    },
+
+    {
+      drID: 25,
+      drName: "Assot. Prof. Dr. Shaoli Sarker",
+      drSpecilist: "Child Neurology",
+      drDegree:
+        "MBBS,FCPS(Paediatrics) Assot Professor,Department of Paediatric(Child)Neurology,Bangladesh Shishu Hospital & Institute(BSHI),Dhaka",
+      currPractice:
+        "Assot Professor, Bangladesh Shishu Hospital & Institute(BSHI),Dhaka",
+      chember: [
+        {
+          branch: "Shantinagar",
+          building: "Bhaban-2",
+          room: "313",
+          weekday: [
+            {
+              day: "Monday	",
+              time: "03:30 PM - 06:30 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "03:30 PM - 06:30 PM",
+            },
+            {
+              day: "Saturday",
+              time: "03:30 PM - 06:30 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: AssotProfDrShaoliSarker,
+    },
+    {
+      drID: 26,
+      drName: "PROF. DR. SAUMITRA SARKAR",
+      drSpecilist: "Neuro Surgery",
+      drDegree:
+        "MBBS,MS(Neurosurgary) MRCS(England),FRCS. Professor & Head Department Of Neurosurgery Shaheed Suhrawardy Medical & Hospital,Dhaka.",
+      currPractice:
+        "Head Department Of Neurosurgery Shaheed Suhrawardy Medical & Hospital,Dhaka.",
+      chember: [
+        {
+          branch: "Mymensingh",
+          building: "Bhaban-1",
+          room: "523",
+          weekday: [
+            {
+              day: "Thursday",
+              time: "02:30 PM - 10:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Male",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+    },
+    {
+      drID: 27,
+      drName: "Dr. Ayesha Siddika",
+      drSpecilist: "Skin/Dermatology",
+      drDegree:
+        "MBBS, BCS (Health), MCPS (Dermatology), MD (Dermatology) - Dhaka Medical College, Dhaka.",
+      currPractice: "MD, Dhaka Medical College, Dhaka",
+      chember: [
+        {
+          branch: "Barisal",
+          building: "Bhaban-1",
+          room: "212",
+          weekday: [
+            {
+              day: "Thursday",
+              time: "05:00 PM - 11:00 PM",
+            },
+            {
+              day: "Friday",
+              time: "09:00 AM - 08:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: DrAyeshaSiddika,
+    },
+    {
+      drID: 28,
+      drName: "Dr. Bithi Debnath",
+      drSpecilist: "Child Neurology",
+      drDegree:
+        "MBBS (DMC), BCS (Health), FCPS (Pediatrics), FCPS (Pediatric Neurology), Fellowship in Autism (South Korea). Associate Prof. National Institute of Neurosciences & Hospital, Dhaka.",
+      currPractice:
+        "Associate Prof. National Institute of Neurosciences & Hospital, Dhaka.",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-2",
+          room: "313",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "05:00 PM - 08:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: DrBithiDebnath,
     },
   ],
 };
