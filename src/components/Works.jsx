@@ -166,8 +166,8 @@ const Works = () => {
                     <div>
                       <h6 className="text-gray-600 text-center font-bold font-ubuntu text-[40px]">
                         <div className="flex items-center justify-center">
-                          <Number n={82} />
-                          <span>k+</span>
+                          <Number n={176} />
+                          <span>M+</span>
                         </div>
                       </h6>
                       <p className="text-gray-500  font-bold font-ubuntu text-[16px]">
@@ -190,7 +190,7 @@ const Works = () => {
                     <div>
                       <h6 className="text-gray-600 text-center font-bold font-ubuntu text-[40px]">
                         <div className="flex items-center justify-center">
-                          <Number n={28} />
+                          <Number n={40} />
                           <span>+</span>
                         </div>
                       </h6>

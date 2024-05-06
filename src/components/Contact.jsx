@@ -30,7 +30,7 @@ function Contact() {
               E-mail : info@populardiagnostic.com
             </p>
             <p className="mb-2 font-ubuntu text-center text-[24px]  text-gray-900">
-              Phone : 09666 787801
+              Phone : 09666 787801, 10636
             </p>
           </div>
         </div>
