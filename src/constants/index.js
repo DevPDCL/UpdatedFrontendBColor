@@ -42141,6 +42141,7 @@ const doctorData1 = {
       newPatient: "1000",
       oldPatient: "500",
       report: "Free",
+      image: PROF_DR_SHYMAL_SARKER,
     },
     {
       drID: 4,

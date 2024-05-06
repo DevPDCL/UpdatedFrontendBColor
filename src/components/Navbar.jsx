@@ -65,7 +65,7 @@ const Dropdown = ({ title, children }) => {
 };
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div className="sticky top-[1px] z-30 shadow-2xl">
       <div className="antialiased bg-gray-100 dark-mode:bg-gray-900">
