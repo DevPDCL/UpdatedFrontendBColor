@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import video from "../assets/video.mp4";
+import video from "../assets/heroVideo.mp4";
 import { motion } from "framer-motion";
 
 const contentSets = [
@@ -45,13 +45,13 @@ const Hero = () => {
     <>
       <section className="relative">
         <video
-          className="h-[500px] sm:h-[500px] w-full object-cover object-top top-0 left-0 pb-[1px]"
+          className="h-[500px] sm:h-[500px] w-full object-cover object-center top-0 left-0 pb-[1px]"
           src={video}
           autoPlay
           loop
           muted
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white flex justify-center items-center p-10">
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white flex justify-center items-center backdrop-blur-sm p-10">
           <div className="mt-0 sm:mt-[250px]">
             <motion.div
               initial="hidden"

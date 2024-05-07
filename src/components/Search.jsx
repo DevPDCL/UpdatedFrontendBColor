@@ -1,7 +1,6 @@
 import { styles } from "../styles";
 import { ServiceCost, doctorData1 } from "../constants";
 import React, { useState, useEffect } from "react";
-import video from "../assets/video.mp4";
 import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 import List from "react-virtualized/dist/commonjs/List";
 import { Link } from "react-router-dom";

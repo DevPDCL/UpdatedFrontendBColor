@@ -15,8 +15,6 @@ import Sample from "./Sample";
 import Complain from "./Complain";
 import Sidemenu from "./Sidemenu";
 import Patient from "./Patient";
-import Login from "./Login";
-import Sign from "./Sign";
 import Cor from "./Cor";
 import Notice from "./Notice";
 import Health from "./Health";
@@ -39,10 +37,8 @@ export {
   Director,
   Technology,
   Bottommenu,
-  Login,
   Health,
   Cor,
-  Sign,
   Layout,
   Sidemenu,
   Search,

@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Sidemenu, Bottommenu, Tech } from "../components";
+import { Sidemenu } from "../components";
 import { healthPackages } from "../constants";
 
 const calculateTotalCost = (tests) =>
