@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import {
@@ -10,8 +10,6 @@ import {
   Contact,
   Health,
   Search,
-  DoctorDetail,
-  DoctorSearch,
   Technology,
   Details,
   About,
@@ -33,6 +31,11 @@ import Ccomplain from "./adminpanel/Ccomplain";
 import Management from "./adminpanel/Management";
 import "./index.css";
 
+
+
+
+
+
 const App = () => {
   return (
     <div>
@@ -44,6 +47,11 @@ const App = () => {
   );
 };
 
+
+const DoctorDetail = lazy( ()=> import("./components/DoctorDetail"))
+const DoctorSearch = lazy(() => import("./components/DoctorSearch"));
+
+
 const routes = [
   {
     path: "/",
@@ -53,8 +61,24 @@ const routes = [
       { path: "/patient", element: <Patient /> },
       { path: "/sample", element: <Sample /> },
       { path: "/search", element: <Search /> },
-      { path: "/doctordetail/:doctorId", element: <DoctorDetail /> },
-      { path: "/doctorsearch", element: <DoctorSearch /> },
+      {
+        path: "/doctordetail/:doctorId",
+        element: (
+          <Suspense fallback={<h1 className="text-black"> Loading.....</h1>}>
+            {" "}
+            <DoctorDetail />{" "}
+          </Suspense>
+        ),
+      },
+      {
+        path: "/DoctorSearch",
+        element: (
+          <Suspense fallback={<h1 className="text-black"> Loading.....</h1>}>
+            {" "}
+            <DoctorSearch />{" "}
+          </Suspense>
+        ),
+      },
       { path: "/tech", element: <Technology /> },
       { path: "/goals", element: <Goals /> },
       { path: "/complain", element: <Complain /> },
