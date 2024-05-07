@@ -3,6 +3,21 @@ import { Sidemenu } from "../components";
 import img from "../assets/link.jpg";
 import "./tabs.css";
 
+const ImageComponent = ({ src, alt, width, height, className }) => {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+      loading="lazy"
+      srcset={`${src} 1x, ${src.replace(".jpg", "@2x.jpg")} 2x`}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    />
+  );
+};
+
 const Tech = ({ message, children }) => {
   const [isVisible, setIsVisible] = useState(true);
 
@@ -18,7 +33,7 @@ const Tech = ({ message, children }) => {
 
   return (
     <>
-      <footer className="flex flex-row flex-wrap   justify-center">
+      <footer className="flex flex-row flex-wrap justify-center">
         <div className="bg-[#00664a] mx-auto w-full ">
           <Sidemenu />
           <form className="max-w-screen-xl mx-auto sm:w-[80%] items-center justify-center">
@@ -30,7 +45,8 @@ const Tech = ({ message, children }) => {
                 <ul className="text-white dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a href="#" className="font-ubuntu hover:underline">
-                      House #16, Road # 2, Dhanmondi R/A, <br></br>Dhaka-1205, Bangladesh
+                      House #16, Road # 2, Dhanmondi R/A, <br></br>Dhaka-1205,
+                      Bangladesh
                     </a>
                   </li>
                   <li className="mb-4">
@@ -107,9 +123,12 @@ const Tech = ({ message, children }) => {
         </div>
         <div className="bg-[#00664a]  shadow-lg mx-auto w-full ">
           <div className=" flex mx-auto p-3 sm:w-[80%] justify-evenly max-w-screen-xl flex-wrap "></div>
-          <img
+          <ImageComponent
             src={img}
-            className="flex mt-4 p-5 sm:w-[80%]  sm:justify-center w-full max-w-7xl mx-auto "
+            alt="Payment Partners"
+            className="flex mt-4 p-5 sm:w-[80%] sm:justify-center w-full max-w-7xl mx-auto"
+            width="100%"
+            height="auto"
           />
           <div className="bg-slate-900 shadow  px-4 py-6 mt-5 md:flex md:items-center md:justify-between ">
             <div className="flex  mt-4 sm:justify-center  md:mt-0 space-x-5 rtl:space-x-reverse max-w-7xl mx-auto">
