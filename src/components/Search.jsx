@@ -110,14 +110,16 @@ const Search = () => {
       const textColor =
         doctor.drGender === "Female" ? "text-[#5E2750]" : "text-[#006642]";
       return (
-        <li
-          key={doctor.drId}
-          style={style}
-          className={`flex justify-between ${backgroundColor} px-4 py-2`}
-        >
-          <p className={`text-gray-600  font-ubuntu`}>{doctor.drName}</p>
-          <p className="text-gray-600 font-ubuntu">{doctor.drSpecilist}</p>
-        </li>
+        <Link to={`/doctordetail/${doctor.drID}`}>
+          <li
+            key={doctor.drId}
+            style={style}
+            className={`flex justify-between ${backgroundColor} px-4 py-2`}
+          >
+            <p className={`text-gray-600  font-ubuntu`}>{doctor.drName}</p>
+            <p className="text-gray-600 font-ubuntu">{doctor.drSpecilist}</p>
+          </li>
+        </Link>
       );
     };
     const [isSearchVisible, setIsSearchVisible] = useState(false);
