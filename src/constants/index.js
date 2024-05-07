@@ -330,8 +330,7 @@ const testimonials = [
     name: "Mr. Ahmed",
     designation: "CFO",
     company: "Biman Bangladesh",
-    image:
-      "http://populardiagnostic.com/public/testimonial/1-20190319155227.jpg",
+    image: javascript,
   },
   {
     testimonial:
@@ -339,8 +338,7 @@ const testimonials = [
     name: "Mr. Hasan",
     designation: "Chairperson",
     company: "Brac Bank",
-    image:
-      "http://populardiagnostic.com/public/testimonial/2-20190319153146.jpg",
+    image: nodejs,
   },
 ];
 

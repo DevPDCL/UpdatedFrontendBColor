@@ -328,7 +328,7 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/519">
                 <div className="hw-full m-2 p-2 text-center text-gray-600">
                   {" "}
-                  <img src={Med1} alt="" />
+                  <img src={Med1} alt="Suggested Medicines" />
                   <h1 className=" text-[#ea7726] flex">
                     Vono <span className="text-[#087b41]">max</span>
                   </h1>
@@ -337,7 +337,7 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/519">
                 <div className="hw-full m-2 p-2 text-center text-gray-600">
                   {" "}
-                  <img src={Med4} alt="" />
+                  <img src={Med4} alt="Suggested Medicines" />
                   <h1 className=" text-[#ea7726] flex">
                     Vono <span className="text-[#087b41]">max</span>
                   </h1>
@@ -346,7 +346,7 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/82">
                 <div className="hw-full m-2 p-2 text-center text-gray-600 ">
                   {" "}
-                  <img src={Med2} alt="" />
+                  <img src={Med2} alt="Suggested Medicines" />
                   <h1 className=" text-gray-800 flex">
                     Adec <span className="text-[#ea7726]">ard</span>
                   </h1>
@@ -355,7 +355,7 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/129">
                 <div className="hw-full m-2 p-2 text-center text-gray-600 ">
                   {" "}
-                  <img src={Med3} alt="" />
+                  <img src={Med3} alt="Suggested Medicines" />
                   <h1 className=" text-[#087b41] flex">
                     Caber <span className="text-[#ea7726]">gol</span>
                   </h1>

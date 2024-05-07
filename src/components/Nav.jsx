@@ -9,7 +9,7 @@ const Nav = () => {
         <div className="w-full h-[30px]  flex flex-wrap items-center   justify-between max-w-7xl text-[#ffffff] ">
           <div className="flex flex-row items-center  justify-start me-auto">
             <div className="flex flex-row items-center  justify-center ">
-              <a href="#" className="text-white ">
+              <a href="#" alt="Hotline" className="text-white ">
                 <svg
                   className="w-4 h-4 ml-2 fill-white"
                   viewBox="0 0 512 512"
@@ -28,7 +28,7 @@ const Nav = () => {
             </div>
 
             <div className="flex flex-row items-center  justify-center ">
-              <a href="#" className="text-white pl-2 ">
+              <a href="#" alt="Opening Hour" className="text-white pl-2 ">
                 <svg
                   className="w-4 h-4 fill-white "
                   viewBox="0 0 512 512"
@@ -44,6 +44,7 @@ const Nav = () => {
           <div className="flex flex-row items-start  justify-start ms-auto">
             <a
               href="https://www.facebook.com/populardiagnostic"
+              alt="Facebook"
               className="text-white   p-1 pl-2">
               <svg
                 className="w-4 h-4 text-white"
@@ -61,6 +62,7 @@ const Nav = () => {
 
             <a
               href="https://www.linkedin.com/company/populardiagnostic"
+              alt="LinkedIn"
               className="text-white  p-1 pl-2 ">
               <svg
                 className="w-4 h-4 text-white"
@@ -78,6 +80,7 @@ const Nav = () => {
             </a>
             <a
               href="https://www.youtube.com/@populardiagnostic"
+              alt="Youtube"
               className="text-white p-1 pl-2 mr-2 hover:text-gray-900 dark:hover:text-black">
               <svg
                 className="w-4 h-4 text-white "
