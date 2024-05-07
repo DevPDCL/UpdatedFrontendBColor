@@ -1,10 +1,9 @@
 // DoctorDetail.js
 
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { doctorData1 } from "../constants"; // Import your doctor data
 import { drBackground, Med1, Med2, Med3, Med4 } from "../assets";
-import { Link } from "react-router-dom";
 
 const DoctorDetail = () => {
   const { doctorId } = useParams();
@@ -34,6 +33,15 @@ const DoctorDetail = () => {
   const handleClick1 = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  // Filter for doctors in the same chamber and specialist, excluding the current doctor
+  const relatedDoctors = doctorData1.doctors.filter((doctor) => {
+    return (
+      doctor.chember.branch === chember.branch &&
+      doctor.drSpecilist === drSpecilist &&
+      doctor.drID.toString() !== doctorId
+    );
+  });
 
   return (
     <div className="doctor-detail bg-gray-100">
@@ -110,9 +118,9 @@ const DoctorDetail = () => {
             </div>
             {/* End of profile card  */}
             <div className="my-4"></div>
-            {/* Friends card  */}
+            {/* Similar Doctor card  */}
             <div className="bg-white rounded-xl shadow-lg p-3 hover:shadow-xl">
-              <div className="flex items-center justify-center space-x-3 font-semibold text-gray-900 text-xl leading-8">
+              <div className="flex items-center justify-center space-x-3 font-semibold text-gray-900 text-xl leading-8 font-ubuntu">
                 <span className="text-[#006642]">
                   {" "}
                   <svg
@@ -131,46 +139,33 @@ const DoctorDetail = () => {
                 </span>
                 <span>More from {drSpecilist}</span>
               </div>
-              <h2 className="text-gray-500 text-center">
+              <h2 className="text-gray-500 text-center pb-2">
                 {" "}
                 For different schedules
               </h2>
-              <div className="grid grid-cols-3 text-[#006642]">
-                <div className="text-center my-2">
-                  <img
-                    className="h-16 w-16 rounded-full mx-auto"
-                    src={image}
-                    alt=""
-                  />
-                  <a href="#">{drName}</a>
+              <hr className="p-2"></hr>
+              {relatedDoctors.length > 0 ? (
+                <div className="grid grid-cols-3 text-[#006642]">
+                  {relatedDoctors.map((doctor) => (
+                    <div key={doctor.drID} className="text-center my-2">
+                      <Link to={`/doctordetail/${doctor.drID}`}>
+                        <img
+                          className="h-16 w-16 rounded-full mx-auto"
+                          src={doctor.image}
+                          alt={doctor.drName}
+                        />
+                        <p>{doctor.drName}</p>
+                      </Link>
+                    </div>
+                  ))}
                 </div>
-                <div className="text-center my-2">
-                  <img
-                    className="h-16 w-16 rounded-full mx-auto"
-                    src={image}
-                    alt=""
-                  />
-                  <a href="#">{drName}</a>
+              ) : (
+                <div className="p-5 font-ubuntu text-center text-gray-800">
+                  No {drSpecilist} doctors available in similar branches.
                 </div>
-                <div className="text-center my-2">
-                  <img
-                    className="h-16 w-16 rounded-full mx-auto"
-                    src={image}
-                    alt=""
-                  />
-                  <a href="#">{drName}</a>
-                </div>
-                <div className="text-center my-2">
-                  <img
-                    className="h-16 w-16 rounded-full mx-auto"
-                    src={image}
-                    alt=""
-                  />
-                  <a href="#">{drName}</a>
-                </div>
-              </div>
+              )}
             </div>
-            {/* End of friends card  */}
+            {/* End of Similar Doctor card  */}
           </div>
           {/* Right Side */}
           <div className="w-full md:w-8/12 px-2">
@@ -323,14 +318,15 @@ const DoctorDetail = () => {
                   ))}
                 </div>
               </div>
-              {/* End of Experience and education grid */}
+              {/* End of Chamber grid */}
             </div>
             {/* End of profile tab */}
           </div>
           <div className="w-full md:w-1/12 px-2">
-            <div className="flex justify-center flex-col items-center font-bold  h-full rounded-xl  gap-16">
+            {/* Advertise grid */}
+            <div className="flex flex-col items-center font-bold  h-full  gap-16">
               <a href="https://www.popular-pharma.com/products/519">
-                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                <div className="hw-full m-2 p-2 text-center text-gray-600">
                   {" "}
                   <img src={Med1} alt="" />
                   <h1 className=" text-[#ea7726] flex">
@@ -339,7 +335,7 @@ const DoctorDetail = () => {
                 </div>
               </a>
               <a href="https://www.popular-pharma.com/products/519">
-                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                <div className="hw-full m-2 p-2 text-center text-gray-600">
                   {" "}
                   <img src={Med4} alt="" />
                   <h1 className=" text-[#ea7726] flex">
@@ -348,7 +344,7 @@ const DoctorDetail = () => {
                 </div>
               </a>
               <a href="https://www.popular-pharma.com/products/82">
-                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
                   {" "}
                   <img src={Med2} alt="" />
                   <h1 className=" text-gray-800 flex">
@@ -357,7 +353,7 @@ const DoctorDetail = () => {
                 </div>
               </a>
               <a href="https://www.popular-pharma.com/products/129">
-                <div className="hw-full m-2 p-2 bg-gray-100 rounded-xl text-center text-gray-600 shadow-lg border-gray-300 border-2">
+                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
                   {" "}
                   <img src={Med3} alt="" />
                   <h1 className=" text-[#087b41] flex">
@@ -366,6 +362,7 @@ const DoctorDetail = () => {
                 </div>
               </a>
             </div>
+            {/* End of Advertise grid */}
           </div>
         </div>
       </div>
