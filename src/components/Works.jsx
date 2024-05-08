@@ -4,7 +4,7 @@ import { logo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn } from "../utils/motion";
-import video from "../assets/contacts.mp4";
+import video from "../assets/healthDiagnosis.mp4";
 import { styles } from "../styles";
 function Number({ n }) {
   const countRef = useRef(null);
