@@ -19,7 +19,6 @@ import Cor from "./Cor";
 import Notice from "./Notice";
 import Health from "./Health";
 import Details from "./Details";
-import Bottommenu from "./Bottommenu";
 import DoctorDetail from "./DoctorDetail";
 import DoctorSearch from "./DoctorSearch";
 import Director from "./Director";
@@ -36,7 +35,6 @@ export {
   DoctorDetail,
   Director,
   Technology,
-  Bottommenu,
   Health,
   Cor,
   Layout,

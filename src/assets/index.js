@@ -174,13 +174,6 @@ import InsuranceCoverageEmployee from "./Notice/InsuranceCoverageEmployee.webp";
 import ISOCertified90012015 from "./Notice/ISOCertified90012015.webp";
 import RamadanNotice24 from "./Notice/RamadanNotice24.webp";
 
-import aa from "./aa.jpg";
-import aaa from "./aaa.jpg";
-import aaaa from "./aaaa.jpeg";
-import b from "./b.jpg";
-import aaaaa from "./cccc.jpg";
-import bb from "./bb.jpg";
-import bbb from "./bbb.jpg";
 import AroggaLogo from "./tech/AroggaLogo.png";
 
 import ASSO_PROF_DR_ASHRAFUL_ISLAM from "./DoctorImage/ASSO_PROF_DR_ASHRAFUL_ISLAM.png";
@@ -227,14 +220,7 @@ import Med4 from "./Med/Med4.webp";
 
 export {
   logo,
-  aa,
   RamadanNotice24,
-  aaa,
-  aaaa,
-  aaaaa,
-  b,
-  bb,
-  bbb,
   AroggaLogo,
   char,
   md,

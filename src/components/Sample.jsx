@@ -1,9 +1,7 @@
 import React from "react";
 import {
   Card,
-  CardHeader,
   CardBody,
-  Typography,
   Button,
 } from "@material-tailwind/react";
 import { Input, Select, Option } from "@material-tailwind/react";

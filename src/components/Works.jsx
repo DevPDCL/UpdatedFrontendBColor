@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { logo } from "../assets";
-import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn } from "../utils/motion";
 import video from "../assets/contacts.mp4";

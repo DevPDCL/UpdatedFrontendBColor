@@ -1,12 +1,11 @@
 import React from 'react'
-import { Nav, Navbar, Sidemenu, Tech, Bottommenu } from "../components";
+import { Sidemenu } from "../components";
 import { goals, objective } from "../assets";
 import { Link } from "react-router-dom";
 const Goals = () => {
   return (
     <div className="bg-[#F5FFFA]">
       <Sidemenu />
-      <Bottommenu />
 
       <div>
         <div className="pt-[150px] sm:w-[80%] max-w-7xl mx-auto">

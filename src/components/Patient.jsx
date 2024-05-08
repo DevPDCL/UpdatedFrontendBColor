@@ -2,7 +2,6 @@ import { Sidemenu } from ".";
 import React, { useState, useEffect } from "react";
 import { reportDownload } from "../constants";
 import { motion } from "framer-motion";
-import { Hospital_Building } from "../assets";
 
 const searchBoxVariants = {
   initial: { opacity: 1, scale: 1 },
