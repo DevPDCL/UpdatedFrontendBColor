@@ -1,27 +1,16 @@
 import {
-  mobile,
-  backend,
-  creator,
-  diagn,
-  cons,
-  pakages,
-  AmarlabLogo,
-  purehealth,
-  AroggaLogo,
-  hajj,
-  branch,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  tailwind,
-  nodejs,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  healthConsultation,
+  healthDiagnosis,
+  healthPackage,
+  Amarlab,
+  PureHealth,
+  Arogga,
+  Hajj,
+  BRACBank,
+  BGB,
+  BangladeshBiman,
+  GP,
+  DMP,
   Badda,
   Barishal,
   BoguraU1,
@@ -79,7 +68,7 @@ import {
   LateTaheraAkhter,
   MdAlauddinFCMA,
   MdSahabUddin,
-  MdZiaulHaqueFaruk1,
+  MdZiaulHaqueFaruk,
   MohammadArif,
   MosaddequeHossain,
   MostafaNurmohammadPalash,
@@ -121,161 +110,82 @@ import {
   DrAyeshaSiddika,
   DrBithiDebnath,
   MdAsadurRahman,
+  DhakaClub,
+  Nestle,
+  BAT,
+  BeximcoPharma,
+  Beximco,
 } from "../assets";
 
-const navLinks = [
-  {
-    id: "pataint",
-    title: "Patient Portal",
-  },
 
-  {
-    id: "services",
-    title: "Health Pakages",
-  },
 
-  {
-    id: "branches",
-    title: "Branches & Services",
-  },
-
-  {
-    id: "/notice",
-    title: "Notices",
-  },
-  {
-    id: "contact",
-    icon: branch,
-    title: "Contact Us",
-  },
-];
-
-const services = [
-  {
-    title: "Call for Appointment",
-    icon: mobile,
-  },
-  {
-    title: "Find Doctor",
-    icon: web,
-  },
-  {
-    title: "Test Charge",
-    icon: backend,
-  },
-  {
-    title: "Health Packages",
-    icon: creator,
-  },
-];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "BAT",
+    icon: BAT,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Beximco",
+    icon: Beximco,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "BeximcoPharma",
+    icon: BeximcoPharma,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "BangladeshBiman",
+    icon: BangladeshBiman,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "BRACBank",
+    icon: BRACBank,
+  },
+  {
+    name: "DhakaClub",
+    icon: DhakaClub,
+  },
+  {
+    name: "GP",
+    icon: GP,
   },
 
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Nestle",
+    icon: Nestle,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "DMP",
+    icon: DMP,
+  },
+  {
+    name: "BGB",
+    icon: BGB,
   },
 ];
 const service = [
   {
     id: 1,
-    name: "AmarlabLogo",
-    icon: AmarlabLogo,
+    name: "Amarlab",
+    icon: Amarlab,
   },
   {
     id: 2,
-    name: "AroggaLogo,",
-    icon: AroggaLogo,
+    name: "Arogga,",
+    icon: Arogga,
   },
   {
     id: 3,
-    name: "hajj",
-    icon: hajj,
+    name: "Hajj",
+    icon: Hajj,
   },
   {
     id: 4,
-    name: "purehealth",
-    icon: purehealth,
+    name: "PureHealth",
+    icon: PureHealth,
   },
 ];
-const experiences = [
-  {
-    title: "Popular Diagnostic",
-    company_name: "Popular Group",
-    icon: starbucks,
-    iconBg: "#1c1c1c",
-    date: "March 2020 - April 2021",
-    points: [
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-    ],
-  },
-  {
-    title: "Popular Hospital",
-    company_name: "Popular Group",
-    icon: tesla,
-    iconBg: "#1c1c1c",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-    ],
-  },
-  {
-    title: "Popular Medical College",
-    company_name: "Popular Group",
-    icon: shopify,
-    iconBg: "#1c1c1c",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-    ],
-  },
-  {
-    title: "Popular Pharmacitical",
-    company_name: "Popular Group",
-    icon: meta,
-    iconBg: "#1c1c1c",
-    date: "Jan 2023 - Present",
-    points: [
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-      "We provide all kinds of life saving medicine, which are available in all branches of Popular Diagnostics Ltd. ",
-    ],
-  },
-];
+
 
 const testimonials = [
   {
@@ -284,7 +194,7 @@ const testimonials = [
     name: "Mr. Ahmed",
     designation: "CFO",
     company: "Biman Bangladesh",
-    image: javascript,
+    image: BRACBank,
   },
   {
     testimonial:
@@ -292,7 +202,7 @@ const testimonials = [
     name: "Mr. Hasan",
     designation: "Chairperson",
     company: "Brac Bank",
-    image: nodejs,
+    image: DMP,
   },
 ];
 
@@ -312,7 +222,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    video: diagn,
+    video: healthDiagnosis,
     source_code_link: "http://populardiagnostic.com/",
     link: "/",
   },
@@ -331,7 +241,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    video: pakages,
+    video: healthConsultation,
     source_code_link: "http://populardiagnostic.com/",
     link: "/doctorsearch",
   },
@@ -350,7 +260,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    video: cons,
+    video: healthPackage,
     source_code_link: "http://populardiagnostic.com/",
     link: "/health",
   },
@@ -419,7 +329,7 @@ const topManagement = [
   },
   {
     manID: 11,
-    manImg: MdZiaulHaqueFaruk1,
+    manImg: MdZiaulHaqueFaruk,
     manName: "Md Ziaul Haque Faruk",
     manDesignation: "Manager, (Marketing)",
   },
@@ -43396,11 +43306,8 @@ const doctorData1 = {
 
 export {
   ServiceCost,
-  navLinks,
-  services,
   service,
   technologies,
-  experiences,
   testimonials,
   projects,
   topManagement,

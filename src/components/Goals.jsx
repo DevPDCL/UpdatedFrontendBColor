@@ -1,6 +1,6 @@
 import React from 'react'
 import { Sidemenu } from "../components";
-import { goals, objective } from "../assets";
+import { Dhanmondi, objective } from "../assets";
 import { Link } from "react-router-dom";
 const Goals = () => {
   return (
@@ -34,7 +34,7 @@ const Goals = () => {
               <div className="lg:pr-8 lg:pt-4">
                 <div className="lg:max-w-lg">
                   <div className="me-auto h-auto w-auto">
-                    <img src={goals} className="h-auto  p-5 w-auto" />
+                    <img src={Dhanmondi} className="h-auto  p-5 w-auto" />
                   </div>
                 </div>
               </div>

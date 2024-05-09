@@ -3,7 +3,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { doctorData1 } from "../constants"; // Import your doctor data
-import { drBackground, Med1, Med2, Med3, Med4 } from "../assets";
+import { drBackground, Adecard, Ambrosol, Amlovas, Vonomax, Anorel, Cebergol } from "../assets";
 
 const DoctorDetail = () => {
   const { doctorId } = useParams();
@@ -328,7 +328,7 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/519">
                 <div className="hw-full m-2 p-2 text-center text-gray-600">
                   {" "}
-                  <img src={Med1} alt="Suggested Medicines" />
+                  <img src={Adecard} alt="Suggested Medicines" />
                   <h1 className=" text-[#ea7726] flex">
                     Vono <span className="text-[#087b41]">max</span>
                   </h1>
@@ -337,7 +337,7 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/519">
                 <div className="hw-full m-2 p-2 text-center text-gray-600">
                   {" "}
-                  <img src={Med4} alt="Suggested Medicines" />
+                  <img src={Vonomax} alt="Suggested Medicines" />
                   <h1 className=" text-[#ea7726] flex">
                     Vono <span className="text-[#087b41]">max</span>
                   </h1>
@@ -346,7 +346,7 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/82">
                 <div className="hw-full m-2 p-2 text-center text-gray-600 ">
                   {" "}
-                  <img src={Med2} alt="Suggested Medicines" />
+                  <img src={Ambrosol} alt="Suggested Medicines" />
                   <h1 className=" text-gray-800 flex">
                     Adec <span className="text-[#ea7726]">ard</span>
                   </h1>
@@ -355,7 +355,25 @@ const DoctorDetail = () => {
               <a href="https://www.popular-pharma.com/products/129">
                 <div className="hw-full m-2 p-2 text-center text-gray-600 ">
                   {" "}
-                  <img src={Med3} alt="Suggested Medicines" />
+                  <img src={Amlovas} alt="Suggested Medicines" />
+                  <h1 className=" text-[#087b41] flex">
+                    Caber <span className="text-[#ea7726]">gol</span>
+                  </h1>
+                </div>
+              </a>
+                            <a href="https://www.popular-pharma.com/products/129">
+                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
+                  {" "}
+                  <img src={Anorel} alt="Suggested Medicines" />
+                  <h1 className=" text-[#087b41] flex">
+                    Caber <span className="text-[#ea7726]">gol</span>
+                  </h1>
+                </div>
+              </a>
+                            <a href="https://www.popular-pharma.com/products/129">
+                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
+                  {" "}
+                  <img src={Cebergol} alt="Suggested Medicines" />
                   <h1 className=" text-[#087b41] flex">
                     Caber <span className="text-[#ea7726]">gol</span>
                   </h1>

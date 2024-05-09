@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import image from "../assets/logo.png";
+import image from "../assets/logo.webp";
 
 const NavLink = ({ to, children }) => {
   const location = useLocation();

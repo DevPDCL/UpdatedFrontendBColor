@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Sidemenu } from "../components";
-import img from "../assets/link.jpg";
+import img from "../assets/link.webp";
 import "./tabs.css";
 
 const ImageComponent = ({ src, alt, width, height, className }) => {

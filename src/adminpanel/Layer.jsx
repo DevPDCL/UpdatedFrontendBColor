@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./index.css";
-import logo1 from "../assets/logo1.png";
+import logo1 from "../assets/logo1.webp";
 import control from "./assets/control.png";
 import { Link } from "react-router-dom";
 const Layer = () => {
