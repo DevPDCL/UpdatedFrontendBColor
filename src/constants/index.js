@@ -41825,7 +41825,7 @@ const healthPackages = [
 
       {
         testName:
-          "Liver Function Test \n(SGPT, Alkaline Phosphar, S.Bilirubin)",
+          "Liver Function Test (SGPT, Alkaline Phosphar, S.Bilirubin)",
         testPrice: 1000,
       },
       {

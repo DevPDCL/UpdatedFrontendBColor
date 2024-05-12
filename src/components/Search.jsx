@@ -299,8 +299,8 @@ const Search = () => {
             >
               <p class="text-sm text-gray-900 ">
                 <form className="max-w-7xl mx-auto ">
-                  <div className="grid md:grid-cols-12  md:gap-0">
-                    <div className="relative z-0 col-span-3   p-1 w-full mb-0 group">
+                  <div className="grid md:grid-cols-8  md:gap-0">
+                    <div className="relative z-0 col-span-2   p-1 w-full mb-0 group">
                       <select
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  focus:outline-none focus:ring-0 focus:border-PDCL-green  text-gray-900 bg-gray-300 placeholder-gray-900  peer pl-2"
                         onChange={(e) => setSelectedBranch1(e.target.value)}
@@ -318,7 +318,7 @@ const Search = () => {
                         ))}
                       </select>
                     </div>
-                    <div className="relative z-0 w-full p-1 col-span-3 mb-0 group">
+                    <div className="relative z-0 w-full p-1 col-span-2 mb-0 group">
                       <select
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
                         onChange={(e) =>
@@ -338,7 +338,7 @@ const Search = () => {
                         ))}
                       </select>
                     </div>
-                    <div className="relative col-span-3 p-1 mb-0 group">
+                    <div className="relative col-span-2 p-1 mb-0 group">
                       <select
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
                         onChange={(e) => setSelectedDay(e.target.value)}
@@ -364,7 +364,7 @@ const Search = () => {
                         ))}
                       </select>
                     </div>
-                    <div className="relative col-span-3 p-1 mb-0 group">
+                    <div className="relative col-span-2 p-1 mb-0 group">
                       <label
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  text-gray-900 bg-gray-300 pl-2   peer"
                         layout
@@ -384,7 +384,7 @@ const Search = () => {
                         />
                       </label>
                     </div>
-                    <div className="relative col-span-12 mb-1 group ">
+                    <div className="relative col-span-8 mb-1 group ">
                       <input
                         className="block py-2.5 px-0 w-full text-sm rounded-lg  focus:outline-none focus:ring-0 focus:border-PDCL-green  text-gray-900 bg-gray-300 placeholder-gray-900  peer pl-2"
                         required

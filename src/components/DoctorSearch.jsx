@@ -21,95 +21,6 @@ const searchBoxVariants = {
   hover: { scale: 1.03 },
 };
 
-
-
-// const DoctorCard = ({ doctor }) => {
-//   // const renderWorkingDays = (chambers) => {
-//   //   const allDays = chambers.flatMap((chamber) =>
-//   //     chamber.weekday.map((wd) => wd.day)
-//   //   );
-//   //   const uniqueDays = Array.from(new Set(allDays));
-
-//   //   // Split the days into two columns for rendering
-//   //   const midpoint = Math.ceil(uniqueDays.length / 2);
-//   //   const firstColumn = uniqueDays.slice(0, midpoint);
-//   //   const secondColumn = uniqueDays.slice(midpoint);
-
-//   //   return (
-//   //     <div className="flex">
-//   //       <ul className="list-disc pl-5 w-1/2">
-//   //         {firstColumn.map((day, index) => (
-//   //           <li key={index}>{day}</li>
-//   //         ))}
-//   //       </ul>
-//   //       <ul className="list-disc pl-5 w-1/2">
-//   //         {secondColumn.map((day, index) => (
-//   //           <li key={index}>{day}</li>
-//   //         ))}
-//   //       </ul>
-//   //     </div>
-//   //   );
-//   // };
-//   const cardBackgroundColor =
-//     doctor.drGender === "Female"
-//       ? "bg-gradient-to-b from-[#F5FFFA]/20 to-[#fce8f3]/90"
-//       : "bg-gradient-to-b from--[#F5FFFA]/20 to-[#f0fff0]/90";
-
-//   const backgroundColor =
-//     doctor.drGender === "Female" ? "bg-[#fce8f3]" : "bg-[#f0fff0]";
-
-//   const textColor =
-//     doctor.drGender === "Female" ? "text-[#5E2750]" : "text-[#006642]";
-
-//   return (
-//     <Link to={`/doctordetail/${doctor.drID}`} className="doctor-card-link">
-//       <div
-//         className={`transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300  card-container text-gray-500 ${cardBackgroundColor} shadow-2xl rounded-2xl sm:w-[299px] flex flex-col justify-between`}>
-//         <div>
-//           <div className="card-header relative w-full">
-//             {doctor.image ? (
-//               <img
-//                 src={doctor.image}
-//                 alt={`${doctor.drName}'s picture`}
-//                 className="w-full shadow-xl rounded-3xl object-cover p-2"
-//               />
-//             ) : (
-//               <div className="no-image font-ubuntu flex justify-center items-center h-36">
-//                 No Image Available
-//               </div>
-//             )}
-//           </div>
-//           <div className={`card-name ${backgroundColor} p-2 pt-4 text-center`}>
-//             <h1
-//               className={`${textColor} font-ubuntu font-bold text-xl truncate`}>
-//               {doctor.drName}
-//             </h1>
-//           </div>
-//           <div className="card-body p-4">
-//             <p className="text-sm py-2">
-//               <strong>Specialization:</strong> {doctor.drSpecilist}
-//             </p>
-//             <p className="text-sm py-2">
-//               <strong>Degrees:</strong> {doctor.drDegree}
-//             </p>
-//             {/* <p className="text-sm">
-//             <strong>Branch:</strong>{" "}
-//             {doctor.chember
-//               .map((ch) => `${ch.branch}, Room: ${ch.room}`)
-//               .join("; ")}
-//           </p> */}
-//             {/* <div className="py-2 text-sm">
-//             <strong>Working Days:</strong>
-//             {renderWorkingDays(doctor.chember)}
-//           </div> */}
-//           </div>
-//         </div>
-//       </div>
-//     </Link>
-//   );
-// };
-
-
 const DoctorCard = ({ doctor }) => {
     const cardBackgroundColor =
       doctor.drGender === "Female"
@@ -342,7 +253,7 @@ const DoctorSearch = () => {
             whileTap={{ scale: 0.9 }}
             variants={buttonVariants}
             whileHover="hover">
-            Female
+            Female Doctors
             <motion.input
               type="checkbox"
               checked={showFemaleDoctors}
