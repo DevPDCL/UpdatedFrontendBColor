@@ -1037,14 +1037,6 @@ const notice = [
       'Today, a total pay order of Rs. 52 lakhs, 66 thousand 598 Taka, on behalf of Popular Diagnostic Center Ltd., under the fund "Bangladesh Workers Welfare Foundation", was formally handed over to the Honorable Inspector General of Factory and Institution Inspection Department, Mr. Mohammad Abdur Rahim Khan.',
   },
   {
-    noticeID: 2,
-    noticeImage: RamadanNotice24,
-    noticeHead:
-      "Ramadan Time Schedule Update for Dhanmondi Head Office and Other Branches",
-    noticeDetail:
-      "Government of Bangladesh recommended our diagnostic centre for testing #COVID-19 for the passengers who will travel abroad. ",
-  },
-  {
     noticeID: 3,
     noticeImage: InsuranceCoverageEmployee,
     noticeHead:
@@ -1089,6 +1081,14 @@ const notice = [
       "We Introduce 1152 slice CT Scan at Dhanmondi Head Office 1st time in Bangladesh ",
     noticeDetail:
       "We Introduce 1152 slice CT Scan at Dhanmondi Head Office 1st time in Bangladesh",
+  },
+  {
+    noticeID: 2,
+    noticeImage: RamadanNotice24,
+    noticeHead:
+      "Ramadan Time Schedule Update for Dhanmondi Head Office and Other Branches",
+    noticeDetail:
+      "Government of Bangladesh recommended our diagnostic centre for testing #COVID-19 for the passengers who will travel abroad. ",
   },
 ];
 

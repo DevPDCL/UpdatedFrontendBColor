@@ -69,23 +69,24 @@ const Tech = ({ message, children }) => {
                   </h2>
                   <ul className="text-white dark:text-gray-400 font-medium">
                     <li className="mb-4">
-                      <a href="#" className="font-ubuntu hover:underline">
+                      <a
+                        href="https://www.popular-pharma.com/"
+                        className="font-ubuntu hover:underline">
                         Popular Pharmaceuticals
                       </a>
                     </li>
                     <li className="mb-4">
-                      <a href="#" className="font-ubuntu hover:underline">
+                      <a
+                        href="https://www.pmch-bd.org/"
+                        className="font-ubuntu hover:underline">
                         Popular Medical College
                       </a>
                     </li>
                     <li className="mb-4">
-                      <a href="#" className="font-ubuntu hover:underline">
+                      <a
+                        href="https://www.popular-hospital.com/"
+                        className="font-ubuntu hover:underline">
                         Popular Medical College Hospital
-                      </a>
-                    </li>
-                    <li className="mb-4">
-                      <a href="#" className="font-ubuntu hover:underline">
-                        Management Team
                       </a>
                     </li>
                   </ul>

@@ -67,15 +67,6 @@ const PackageCard = ({ packageData }) => {
 const Health = () => {
   return (
     <div className="bg-[#ffffff]">
-      <div className=" fixed top-[10%] left-[0%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-20 mix-blend-multiply  animate-blob animation-delay-2000">
-        {" "}
-      </div>
-      <div className=" fixed top-[20%] left-[35%] w-[50%] h-[50%] bg-[#1b7ced] blur-3xl rounded-full opacity-10 mix-blend-multiply animate-blob animation-delay-4000">
-        {" "}
-      </div>
-      <div className=" fixed top-[25%] left-[65%] w-[50%] h-[50%] bg-[#B2D8B2] blur-3xl rounded-full opacity-20 mix-blend-multiply animate-blob animation-delay-6000">
-        {" "}
-      </div>
       <Sidemenu />
       <div className="flex flex-col pt-[80px] mx-auto max-w-7xl">
         <h2 className="text-gray-900/50 pb-5 text-center pl-2 text-[28px] font-bold font-ubuntu">

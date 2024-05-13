@@ -145,7 +145,7 @@ const DoctorDetail = () => {
               </h2>
               <hr className="p-2"></hr>
               {relatedDoctors.length > 0 ? (
-                <div className="grid grid-cols-3 text-[#006642]">
+                <div className="grid grid-cols-2 text-[#006642]">
                   {relatedDoctors.map((doctor) => (
                     <div key={doctor.drID} className="text-center my-2">
                       <Link to={`/doctordetail/${doctor.drID}`}>
@@ -325,56 +325,56 @@ const DoctorDetail = () => {
           <div className="w-full md:w-1/12 px-2">
             {/* Advertise grid */}
             <div className="flex flex-col items-center font-bold  h-full  gap-16">
-              <a href="https://www.popular-pharma.com/products/519">
-                <div className="hw-full m-2 p-2 text-center text-gray-600">
+              <a href="https://www.popular-pharma.com/products/82">
+                <div className="hw-full m-2 p-2 mx-auto text-gray-600">
                   {" "}
                   <img src={Adecard} alt="Suggested Medicines" />
-                  <h1 className=" text-[#ea7726] flex">
-                    Vono <span className="text-[#087b41]">max</span>
+                  <h1 className=" text-gray-800 flex justify-center">
+                    Adec <span className="text-[#ea7726]">ard</span>
                   </h1>
                 </div>
               </a>
               <a href="https://www.popular-pharma.com/products/519">
-                <div className="hw-full m-2 p-2 text-center text-gray-600">
+                <div className="hw-full m-2 p-2 mx-auto text-gray-600">
                   {" "}
                   <img src={Vonomax} alt="Suggested Medicines" />
-                  <h1 className=" text-[#ea7726] flex">
+                  <h1 className=" text-[#ea7726] flex justify-center">
                     Vono <span className="text-[#087b41]">max</span>
                   </h1>
                 </div>
               </a>
               <a href="https://www.popular-pharma.com/products/82">
-                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
+                <div className="hw-full m-2 p-2 mx-auto text-gray-600 ">
                   {" "}
                   <img src={Ambrosol} alt="Suggested Medicines" />
-                  <h1 className=" text-gray-800 flex">
-                    Adec <span className="text-[#ea7726]">ard</span>
+                  <h1 className="flex justify-center">
+                    Ambro<span className="text-[#087b41]">sol</span>
+                  </h1>
+                </div>
+              </a>
+              <a href="https://www.popular-pharma.com/products/68">
+                <div className="hw-full m-2 p-2 mx-auto text-gray-600 ">
+                  {" "}
+                  <img src={Amlovas} alt="Suggested Medicines" />
+                  <h1 className="flex justify-center">
+                    Amlo<span className="text-red-700">vas</span>
+                  </h1>
+                </div>
+              </a>
+              <a href="https://www.popular-pharma.com/products/117">
+                <div className="hw-full mx-auto m-2 p-2 text-gray-600 ">
+                  {" "}
+                  <img src={Anorel} alt="Suggested Medicines" />
+                  <h1 className="flex justify-center">
+                    Ano<span className="text-blue-800">rel</span>
                   </h1>
                 </div>
               </a>
               <a href="https://www.popular-pharma.com/products/129">
-                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
-                  {" "}
-                  <img src={Amlovas} alt="Suggested Medicines" />
-                  <h1 className=" text-[#087b41] flex">
-                    Caber <span className="text-[#ea7726]">gol</span>
-                  </h1>
-                </div>
-              </a>
-                            <a href="https://www.popular-pharma.com/products/129">
-                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
-                  {" "}
-                  <img src={Anorel} alt="Suggested Medicines" />
-                  <h1 className=" text-[#087b41] flex">
-                    Caber <span className="text-[#ea7726]">gol</span>
-                  </h1>
-                </div>
-              </a>
-                            <a href="https://www.popular-pharma.com/products/129">
-                <div className="hw-full m-2 p-2 text-center text-gray-600 ">
+                <div className="hw-full m-2 p-2 mx-auto text-gray-600 ">
                   {" "}
                   <img src={Cebergol} alt="Suggested Medicines" />
-                  <h1 className=" text-[#087b41] flex">
+                  <h1 className=" text-blue-700 flex justify-center">
                     Caber <span className="text-[#ea7726]">gol</span>
                   </h1>
                 </div>
