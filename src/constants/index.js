@@ -41880,6 +41880,476 @@ const healthPackages = [
 const doctorData1 = {
   doctors: [
     {
+      drID: 8,
+      drName: "Prof. Dr. Md. Asadul Kabir",
+      drSpecilist: "Medicine",
+      drDegree:
+        "MBBS,FCPS,MD,DEM Sir Salimullah Medical College & Mitford Hospital",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
+
+      chember: [
+        {
+          branch: "Shantinagar",
+          building: "Bhaban-1",
+          room: "304",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "03:00 PM - 06:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "03:00 PM - 06:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "03:00 PM - 06:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "03:00 PM - 06:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "03:00 PM - 06:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "03:00 PM - 06:00 PM",
+            },
+          ],
+          assistantName: "Chan Miah",
+          assistantGender: "Male",
+          ext: "2249",
+          assistantMobile: "01736131369",
+        },
+      ],
+      drNumber: "01711364552",
+      email: "mnislam3512@gmail.com",
+      drGender: "Male",
+      newPatient: "1000",
+      oldPatient: "500",
+      report: "Free",
+      image: PROF_DR_MD_ASADUL_KABIR,
+    },
+
+    {
+      drID: 7,
+      drName: "Prof. Dr. Abu Hena Mostafa Kamal",
+      drSpecilist: "Medicine",
+      drDegree:
+        "MBBS,FCPS (Medicine) Professor & Head, Dept. of Medicine Holy Family Red Crescent Medical College",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
+
+      chember: [
+        {
+          branch: "Shantinagar",
+          building: "Bhaban-2",
+          room: "304",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "03:00 PM - 05:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "03:00 PM - 05:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "03:00 PM - 05:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "03:00 PM - 05:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "03:00 PM - 05:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "03:00 PM - 05:00 PM",
+            },
+          ],
+          assistantName: "Chan Miah",
+          assistantGender: "Male",
+          ext: "2249",
+          assistantMobile: "01736131369",
+        },
+      ],
+      drNumber: "01711364552",
+      email: "mnislam3512@gmail.com",
+      drGender: "Male",
+      newPatient: "1000",
+      oldPatient: "500",
+      report: "Free",
+      image: PROF_DR_ABU_HENA_MOSTAFA_KAMAL,
+    },
+    {
+      drID: 13,
+      drName: "Prof. Dr. Md. Ashraful Islam",
+      drSpecilist: "ENT, Head & Neck Surgery",
+      drDegree:
+        "MBBS, FCPS, FICS (USA), Fellow in Otology Harvard Medical School, USA. Bangladesh Medical College & Hospital, Dhaka.",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
+
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-5",
+          room: "301",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "10:00 AM - 05:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "09:00 AM - 05:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "10:00 AM - 04:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "10:00 AM - 04:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "10:00 AM - 04:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "10:00 AM - 04:00 PM",
+            },
+          ],
+          assistantName: "Rahim",
+          assistantGender: "Male",
+          ext: "113321",
+          assistantMobile: "01727264236",
+        },
+      ],
+      drNumber: "01711527954",
+      email: "",
+      drGender: "Male",
+      newPatient: "1500",
+      oldPatient: "1500",
+      report: "500",
+      image: PROF_DR_MD_ASHRAFUL_ISLAM,
+    },
+    {
+      drID: 6,
+      drName: "Prof. Dr. Aparna Das",
+      drSpecilist: "Medicine",
+      drDegree:
+        "MBBS,FCPS,MD,DEM Sir Salimullah Medical College & Mitford Hospital",
+      currPractice:
+        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
+
+      chember: [
+        {
+          branch: "Shantinagar",
+          building: "Bhaban-2",
+          room: "304",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "04:00 PM - 06:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "04:00 PM - 06:00 PM",
+            },
+          ],
+          assistantName: "Anis",
+          assistantGender: "Male",
+          ext: "111421",
+          assistantMobile: "01768431923",
+        },
+      ],
+      drNumber: "01711563450",
+      email: "mnislam3512@gmail.com",
+      drGender: "Female",
+      newPatientVisit: "2000",
+      oldPatient: "2000",
+      report: "Free",
+      image: PROF_DR_APARNA_DAS,
+    },
+    {
+      drID: 14,
+      drName: "Prof. Dr. Md. Monjurul Alam",
+      drSpecilist: "ENT, Head & Neck Surgery",
+      drDegree:
+        "MBBS, FCPS, MS (ENT), FICS (USA), Microear Surgery (Bangkok, Mumbai, Malaysia), FESS & Plastic Surgery (Delhi, Chennai, Singapore). BSMMU.",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
+
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-2",
+          room: "603",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "05:30 PM - 08:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "05:30 PM - 08:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "05:30 PM - 08:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "05:30 PM - 08:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "05:30 PM - 08:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "05:30 PM - 08:00 PM",
+            },
+          ],
+          assistantName: "Mozaffor",
+          assistantGender: "Male",
+          ext: "112623",
+          assistantMobile: "01720248764",
+        },
+      ],
+      drNumber: "01819227717",
+      email: "",
+      drGender: "Male",
+      newPatient: "1000",
+      oldPatient: "500",
+      report: "200",
+      image: PROF_DR_MD_MONJURUL_ALAM,
+    },
+    {
+      drID: 28,
+      drName: "Dr. Bithi Debnath",
+      drSpecilist: "Child Neurology",
+      drDegree:
+        "MBBS (DMC), BCS (Health), FCPS (Pediatrics), FCPS (Pediatric Neurology), Fellowship in Autism (South Korea). Associate Prof. National Institute of Neurosciences & Hospital, Dhaka.",
+      currPractice:
+        "Associate Prof. National Institute of Neurosciences & Hospital, Dhaka.",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-2",
+          room: "313",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "05:00 PM - 08:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "05:00 PM - 08:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: DrBithiDebnath,
+    },
+    {
+      drID: 15,
+      drName: "Dr. Md. Mahbub Alam",
+      drSpecilist: "ENT, Head & Neck Surgery",
+      drDegree:
+        "MBBS(Dhaka), BCS (Health), FCPS (ENT), Advanced Trained in Microear Sugery, Endoscopic Sinus Surgery & Cochlear, Implant Surgery (Chennai, India), Shaheed Suhrawardy Medical College and Hospital",
+      currPractice:
+        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-3",
+          room: "206",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "03:00 PM - 05:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "03:00 PM - 05:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "03:00 PM - 05:00 PM",
+            },
+          ],
+          assistantName: "Bithi",
+          assistantGender: "Female",
+          ext: "103200",
+          assistantMobile: "01921509008",
+        },
+      ],
+      drNumber: "01846594948",
+      email: "",
+      drGender: "Male",
+      newPatient: "1000",
+      oldPatient: "700",
+      report: "Free",
+      image: DR_MD_MAHBUB_ALAM,
+    },
+    {
+      drID: 16,
+      drName: "Prof. Dr. Mohammad Safiuddin",
+      drSpecilist: "Cardiology",
+      drDegree:
+        "MBBS (Dhaka), MD (Cardiology), DTCD (DU), FRCP (Eden) FACC (USA), FCCP (USA), FESC, FRCP (Glasgow). (BSMMU)",
+      currPractice:
+        "Former Head of the Department of Cardiology, Dhaka Medical College Hospital",
+
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-1",
+          room: "308",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "06:00 PM - 09:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "06:00 PM - 09:00 PM",
+            },
+            {
+              day: "Monday",
+              time: "06:00 PM - 09:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "06:00 PM - 09:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "06:00 PM - 09:00 PM",
+            },
+            {
+              day: "Thursday",
+              time: "06:00 PM - 09:00 PM",
+            },
+          ],
+          assistantName: "Prodip",
+          assistantGender: "Male",
+          ext: "111328",
+          assistantMobile: "01912293311",
+        },
+      ],
+      drNumber: "01713009932",
+      email: "mnislam3512@gmail.com",
+      drGender: "Male",
+      newPatient: "1500",
+      oldPatient: "1500",
+      report: "500",
+      image: PROF_DR_MOHAMMAD_SAFIUDDIN,
+    },
+
+    {
+      drID: 17,
+      drName: "Prof. Dr. Shakil Ghafur",
+      drSpecilist: "Cardiology",
+      drDegree:
+        "MBBS,DTCD (Chest), MD (Cardiology) Advanced Training In Invasive Cardiology Clinical & Interventional Cardiologist. Professor & Ex. Head, Dept. of Cardiology Rangpur Medicial College & Hospital, Rangpur.",
+      currPractice:
+        "Former Head of the Department of Cardiology, Dhaka Medical College Hospital",
+      chember: [
+        {
+          branch: "Dhanmondi",
+          building: "Bhaban-1",
+          room: "201",
+          weekday: [
+            {
+              day: "Saturday",
+              time: "10:00 AM - 01:00 PM",
+            },
+            {
+              day: "Sunday",
+              time: "10:00 AM - 01:00 PM",
+            },
+            {
+              day: "Monday",
+              ttime: "10:00 AM - 01:00 PM",
+            },
+            {
+              day: "Tuesday",
+              time: "10:00 AM - 01:00 PM",
+            },
+            {
+              day: "Wednesday",
+              time: "10:00 AM - 01:00 PM",
+            },
+          ],
+          assistantName: "Ive",
+          assistantGender: "Female",
+          ext: "114202",
+          assistantMobile: "01749211995",
+        },
+      ],
+      drNumber: "01711440532",
+      email: "",
+      drGender: "Male",
+      newPatient: "1200",
+      oldPatient: "800",
+      report: "500",
+      image: PROF_DR_SHAKIL_GHAFUR,
+    },
+
+    {
       drID: 1,
       drName: "Asso. Prof. Dr. Ashraful islam",
       drSpecilist: "Orthopaedic Surgery",
@@ -41970,6 +42440,42 @@ const doctorData1 = {
       oldPatient: "500",
       report: "Free",
       image: ASST_PROF_DR_UTHPOL_KUMAR_DATTA,
+    },
+    {
+      drID: 27,
+      drName: "Dr. Ayesha Siddika",
+      drSpecilist: "Skin/Dermatology",
+      drDegree:
+        "MBBS, BCS (Health), MCPS (Dermatology), MD (Dermatology) - Dhaka Medical College, Dhaka.",
+      currPractice: "MD, Dhaka Medical College, Dhaka",
+      chember: [
+        {
+          branch: "Barisal",
+          building: "Bhaban-1",
+          room: "212",
+          weekday: [
+            {
+              day: "Thursday",
+              time: "05:00 PM - 11:00 PM",
+            },
+            {
+              day: "Friday",
+              time: "09:00 AM - 08:00 PM",
+            },
+          ],
+          assistantName: "Sumon",
+          assistantGender: "Male",
+          ext: "111323",
+          assistantMobile: "01722357969",
+        },
+      ],
+      drNumber: "01711890508",
+      email: "",
+      drGender: "Female",
+      newPatient: "1500",
+      oldPatient: "1000",
+      report: "Free",
+      image: DrAyeshaSiddika,
     },
     {
       drID: 3,
@@ -42102,168 +42608,6 @@ const doctorData1 = {
       image: PROF_DR_BISWAS_AKHTAR_HOSSAIN,
     },
 
-    {
-      drID: 6,
-      drName: "Prof. Dr. Aparna Das",
-      drSpecilist: "Medicine",
-      drDegree:
-        "MBBS,FCPS,MD,DEM Sir Salimullah Medical College & Mitford Hospital",
-      currPractice:
-        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
-
-      chember: [
-        {
-          branch: "Shantinagar",
-          building: "Bhaban-2",
-          room: "304",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "04:00 PM - 06:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "04:00 PM - 06:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "04:00 PM - 06:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "04:00 PM - 06:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "04:00 PM - 06:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "04:00 PM - 06:00 PM",
-            },
-          ],
-          assistantName: "Anis",
-          assistantGender: "Male",
-          ext: "111421",
-          assistantMobile: "01768431923",
-        },
-      ],
-      drNumber: "01711563450",
-      email: "mnislam3512@gmail.com",
-      drGender: "Female",
-      newPatientVisit: "2000",
-      oldPatient: "2000",
-      report: "Free",
-      image: PROF_DR_APARNA_DAS,
-    },
-    {
-      drID: 7,
-      drName: "Prof. Dr. Abu Hena Mostafa Kamal",
-      drSpecilist: "Medicine",
-      drDegree:
-        "MBBS,FCPS (Medicine) Professor & Head, Dept. of Medicine Holy Family Red Crescent Medical College",
-      currPractice:
-        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
-
-      chember: [
-        {
-          branch: "Shantinagar",
-          building: "Bhaban-2",
-          room: "304",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "03:00 PM - 05:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "03:00 PM - 05:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "03:00 PM - 05:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "03:00 PM - 05:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "03:00 PM - 05:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "03:00 PM - 05:00 PM",
-            },
-          ],
-          assistantName: "Chan Miah",
-          assistantGender: "Male",
-          ext: "2249",
-          assistantMobile: "01736131369",
-        },
-      ],
-      drNumber: "01711364552",
-      email: "mnislam3512@gmail.com",
-      drGender: "Male",
-      newPatient: "1000",
-      oldPatient: "500",
-      report: "Free",
-      image: PROF_DR_ABU_HENA_MOSTAFA_KAMAL,
-    },
-    {
-      drID: 8,
-      drName: "Prof. Dr. Md. Asadul Kabir",
-      drSpecilist: "Medicine",
-      drDegree:
-        "MBBS,FCPS,MD,DEM Sir Salimullah Medical College & Mitford Hospital",
-      currPractice:
-        "Former Head of the Department of Medicine, Dhaka Medical College Hospital",
-
-      chember: [
-        {
-          branch: "Shantinagar",
-          building: "Bhaban-1",
-          room: "304",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "03:00 PM - 06:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "03:00 PM - 06:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "03:00 PM - 06:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "03:00 PM - 06:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "03:00 PM - 06:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "03:00 PM - 06:00 PM",
-            },
-          ],
-          assistantName: "Chan Miah",
-          assistantGender: "Male",
-          ext: "2249",
-          assistantMobile: "01736131369",
-        },
-      ],
-      drNumber: "01711364552",
-      email: "mnislam3512@gmail.com",
-      drGender: "Male",
-      newPatient: "1000",
-      oldPatient: "500",
-      report: "Free",
-      image: PROF_DR_MD_ASADUL_KABIR,
-    },
     {
       drID: 9,
       drName: "Prof. Dr. Md. Faizul Islam Chowdhury",
@@ -42516,258 +42860,7 @@ const doctorData1 = {
       report: "300",
       image: PROF_DR_AHAMED_RAQUIB,
     },
-    {
-      drID: 13,
-      drName: "Prof. Dr. Md. Ashraful Islam",
-      drSpecilist: "ENT, Head & Neck Surgery",
-      drDegree:
-        "MBBS, FCPS, FICS (USA), Fellow in Otology Harvard Medical School, USA. Bangladesh Medical College & Hospital, Dhaka.",
-      currPractice:
-        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
 
-      chember: [
-        {
-          branch: "Dhanmondi",
-          building: "Bhaban-5",
-          room: "301",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "10:00 AM - 05:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "09:00 AM - 05:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "10:00 AM - 04:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "10:00 AM - 04:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "10:00 AM - 04:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "10:00 AM - 04:00 PM",
-            },
-          ],
-          assistantName: "Rahim",
-          assistantGender: "Male",
-          ext: "113321",
-          assistantMobile: "01727264236",
-        },
-      ],
-      drNumber: "01711527954",
-      email: "",
-      drGender: "Male",
-      newPatient: "1500",
-      oldPatient: "1500",
-      report: "500",
-      image: PROF_DR_MD_ASHRAFUL_ISLAM,
-    },
-    {
-      drID: 14,
-      drName: "Prof. Dr. Md. Monjurul Alam",
-      drSpecilist: "ENT, Head & Neck Surgery",
-      drDegree:
-        "MBBS, FCPS, MS (ENT), FICS (USA), Microear Surgery (Bangkok, Mumbai, Malaysia), FESS & Plastic Surgery (Delhi, Chennai, Singapore). BSMMU.",
-      currPractice:
-        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
-
-      chember: [
-        {
-          branch: "Dhanmondi",
-          building: "Bhaban-2",
-          room: "603",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "05:30 PM - 08:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "05:30 PM - 08:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "05:30 PM - 08:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "05:30 PM - 08:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "05:30 PM - 08:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "05:30 PM - 08:00 PM",
-            },
-          ],
-          assistantName: "Mozaffor",
-          assistantGender: "Male",
-          ext: "112623",
-          assistantMobile: "01720248764",
-        },
-      ],
-      drNumber: "01819227717",
-      email: "",
-      drGender: "Male",
-      newPatient: "1000",
-      oldPatient: "500",
-      report: "200",
-      image: PROF_DR_MD_MONJURUL_ALAM,
-    },
-    {
-      drID: 15,
-      drName: "Dr. Md. Mahbub Alam",
-      drSpecilist: "ENT, Head & Neck Surgery",
-      drDegree:
-        "MBBS(Dhaka), BCS (Health), FCPS (ENT), Advanced Trained in Microear Sugery, Endoscopic Sinus Surgery & Cochlear, Implant Surgery (Chennai, India), Shaheed Suhrawardy Medical College and Hospital",
-      currPractice:
-        "Former Head of the Department of ENT, Dhaka Medical College Hospital",
-      chember: [
-        {
-          branch: "Dhanmondi",
-          building: "Bhaban-3",
-          room: "206",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "03:00 PM - 05:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "03:00 PM - 05:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "03:00 PM - 05:00 PM",
-            },
-          ],
-          assistantName: "Bithi",
-          assistantGender: "Female",
-          ext: "103200",
-          assistantMobile: "01921509008",
-        },
-      ],
-      drNumber: "01846594948",
-      email: "",
-      drGender: "Male",
-      newPatient: "1000",
-      oldPatient: "700",
-      report: "Free",
-      image: DR_MD_MAHBUB_ALAM,
-    },
-    {
-      drID: 16,
-      drName: "Prof. Dr. Mohammad Safiuddin",
-      drSpecilist: "Cardiology",
-      drDegree:
-        "MBBS (Dhaka), MD (Cardiology), DTCD (DU), FRCP (Eden) FACC (USA), FCCP (USA), FESC, FRCP (Glasgow). (BSMMU)",
-      currPractice:
-        "Former Head of the Department of Cardiology, Dhaka Medical College Hospital",
-
-      chember: [
-        {
-          branch: "Dhanmondi",
-          building: "Bhaban-1",
-          room: "308",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "06:00 PM - 09:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "06:00 PM - 09:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "06:00 PM - 09:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "06:00 PM - 09:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "06:00 PM - 09:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "06:00 PM - 09:00 PM",
-            },
-          ],
-          assistantName: "Prodip",
-          assistantGender: "Male",
-          ext: "111328",
-          assistantMobile: "01912293311",
-        },
-      ],
-      drNumber: "01713009932",
-      email: "mnislam3512@gmail.com",
-      drGender: "Male",
-      newPatient: "1500",
-      oldPatient: "1500",
-      report: "500",
-      image: PROF_DR_MOHAMMAD_SAFIUDDIN,
-    },
-    {
-      drID: 17,
-      drName: "Prof. Dr. Shakil Ghafur",
-      drSpecilist: "Cardiology",
-      drDegree:
-        "MBBS,DTCD (Chest), MD (Cardiology) Advanced Training In Invasive Cardiology Clinical & Interventional Cardiologist. Professor & Ex. Head, Dept. of Cardiology Rangpur Medicial College & Hospital, Rangpur.",
-      currPractice:
-        "Former Head of the Department of Cardiology, Dhaka Medical College Hospital",
-      chember: [
-        {
-          branch: "Dhanmondi",
-          building: "Bhaban-1",
-          room: "201",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "10:00 AM - 01:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "10:00 AM - 01:00 PM",
-            },
-            {
-              day: "Monday",
-              ttime: "10:00 AM - 01:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "10:00 AM - 01:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "10:00 AM - 01:00 PM",
-            },
-          ],
-          assistantName: "Ive",
-          assistantGender: "Female",
-          ext: "114202",
-          assistantMobile: "01749211995",
-        },
-      ],
-      drNumber: "01711440532",
-      email: "",
-      drGender: "Male",
-      newPatient: "1200",
-      oldPatient: "800",
-      report: "500",
-      image: PROF_DR_SHAKIL_GHAFUR,
-    },
     {
       drID: 18,
       drName: "Dr. Md. Mahbub Alam",
@@ -43211,95 +43304,6 @@ const doctorData1 = {
       newPatient: "1500",
       oldPatient: "1000",
       report: "Free",
-    },
-    {
-      drID: 27,
-      drName: "Dr. Ayesha Siddika",
-      drSpecilist: "Skin/Dermatology",
-      drDegree:
-        "MBBS, BCS (Health), MCPS (Dermatology), MD (Dermatology) - Dhaka Medical College, Dhaka.",
-      currPractice: "MD, Dhaka Medical College, Dhaka",
-      chember: [
-        {
-          branch: "Barisal",
-          building: "Bhaban-1",
-          room: "212",
-          weekday: [
-            {
-              day: "Thursday",
-              time: "05:00 PM - 11:00 PM",
-            },
-            {
-              day: "Friday",
-              time: "09:00 AM - 08:00 PM",
-            },
-          ],
-          assistantName: "Sumon",
-          assistantGender: "Male",
-          ext: "111323",
-          assistantMobile: "01722357969",
-        },
-      ],
-      drNumber: "01711890508",
-      email: "",
-      drGender: "Female",
-      newPatient: "1500",
-      oldPatient: "1000",
-      report: "Free",
-      image: DrAyeshaSiddika,
-    },
-    {
-      drID: 28,
-      drName: "Dr. Bithi Debnath",
-      drSpecilist: "Child Neurology",
-      drDegree:
-        "MBBS (DMC), BCS (Health), FCPS (Pediatrics), FCPS (Pediatric Neurology), Fellowship in Autism (South Korea). Associate Prof. National Institute of Neurosciences & Hospital, Dhaka.",
-      currPractice:
-        "Associate Prof. National Institute of Neurosciences & Hospital, Dhaka.",
-      chember: [
-        {
-          branch: "Dhanmondi",
-          building: "Bhaban-2",
-          room: "313",
-          weekday: [
-            {
-              day: "Saturday",
-              time: "05:00 PM - 08:00 PM",
-            },
-            {
-              day: "Sunday",
-              time: "05:00 PM - 08:00 PM",
-            },
-            {
-              day: "Monday",
-              time: "05:00 PM - 08:00 PM",
-            },
-            {
-              day: "Tuesday",
-              time: "05:00 PM - 08:00 PM",
-            },
-            {
-              day: "Wednesday",
-              time: "05:00 PM - 08:00 PM",
-            },
-            {
-              day: "Thursday",
-              time: "05:00 PM - 08:00 PM",
-            },
-          ],
-          assistantName: "Sumon",
-          assistantGender: "Male",
-          ext: "111323",
-          assistantMobile: "01722357969",
-        },
-      ],
-      drNumber: "01711890508",
-      email: "",
-      drGender: "Female",
-      newPatient: "1500",
-      oldPatient: "1000",
-      report: "Free",
-      image: DrBithiDebnath,
     },
   ],
 };

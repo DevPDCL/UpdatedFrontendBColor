@@ -215,12 +215,6 @@ const Works = () => {
             <ProjectCard key={project.id} {...project} />
           ))}
         </div>
-
-        <a href="/">
-          <p className="text-gray-500 pt-1 text-end pr-20 text-[20px] font-medium font-ubuntu">
-            View More.....
-          </p>
-        </a>
       </div>
       <section className="w-full h-[400px] pt-20  relative justify-top items-bottom">
         <video
@@ -237,9 +231,8 @@ const Works = () => {
           <h1 className="text-white text-[32px]  font-ubuntu font-bold">
             Do you need Emergency Medical Care? <br></br> Call @ 10636
           </h1>
-          <p className="text-white text-[14px] font-medium">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br>{" "}
-            Quisque porttitor dictum turpis nec gravida.
+          <p className="text-white text-[16px] mt-5 font-medium">
+            or 09666 787801. You can also reach us by the <br/> email: info@populardiagnostic.com
           </p>
           <div className="flex flex-row">
             <button className="bg-white border rounded mt-10 m-2 p-3 hover:bg-[#00664a] hover:text-white">
