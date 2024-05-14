@@ -1,5 +1,5 @@
 // DoctorDetail.js
-
+import Marquee from "react-fast-marquee";
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { doctorData1 } from "../constants"; // Import your doctor data
@@ -69,7 +69,8 @@ const DoctorDetail = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="256"
                       height="256"
-                      viewBox="0 0 256 256">
+                      viewBox="0 0 256 256"
+                    >
                       <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
                         <circle
                           cx="58.145"
@@ -128,7 +129,8 @@ const DoctorDetail = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor">
+                    stroke="currentColor"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -185,7 +187,8 @@ const DoctorDetail = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor">
+                    stroke="currentColor"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -216,7 +219,8 @@ const DoctorDetail = () => {
                     <div className="px-4 py-2">
                       <a
                         className="text-[#006642]"
-                        href="mailto:jane@example.com">
+                        href="mailto:jane@example.com"
+                      >
                         {email}
                       </a>
                     </div>
@@ -226,11 +230,13 @@ const DoctorDetail = () => {
               <Link
                 to="http://appointment.populardiagnostic.com/appointment"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <button
                   className="block w-full text-[#006642] text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4"
                   onClick={handleClick1}
-                  type="button">
+                  type="button"
+                >
                   Book an Appointment
                 </button>
               </Link>
@@ -245,7 +251,8 @@ const DoctorDetail = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5"
-                      viewBox="0 0 90 90">
+                      viewBox="0 0 90 90"
+                    >
                       <path
                         d="M51.948 73.273H38.052c-1.104 0-2-0.896-2-2v-9.621h-9.621c-1.104 0-2-0.896-2-2V45.757c0-1.104 0.896-2 2-2h9.621v-9.62c0-1.104 0.896-2 2-2h13.896c1.104 0 2 0.896 2 2v9.62h9.62c1.104 0 2 0.896 2 2v13.895c0 1.104-0.896 2-2 2h-9.62v9.621C53.948 72.378 53.053 73.273 51.948 73.273z M40.052 69.273h9.896v-9.621c0-1.104 0.896-2 2-2h9.62v-9.895h-9.62c-1.104 0-2-0.896-2-2v-9.62h-9.896v9.62c0 1.104-0.896 2-2 2h-9.621v9.895h9.621c1.104 0 2 0.896 2 2V69.273z"
                         fill="#006642"
@@ -268,11 +275,13 @@ const DoctorDetail = () => {
                     display: "grid",
                     gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
                     gap: "20px",
-                  }}>
+                  }}
+                >
                   {selectedDoctor.chember.map((chamber, index) => (
                     <div
                       key={index}
-                      className="chamber-card p-4 border border-gray-300 rounded-lg">
+                      className="chamber-card p-4 border border-gray-300 rounded-lg"
+                    >
                       <h3 className="font-medium text-center">
                         {chamber.branch} Branch
                       </h3>
@@ -288,12 +297,14 @@ const DoctorDetail = () => {
                                 <tr>
                                   <th
                                     scope="col"
-                                    className="text-sm font-medium text-gray-900 px-6 py-4">
+                                    className="text-sm font-medium text-gray-900 px-6 py-4"
+                                  >
                                     Day
                                   </th>
                                   <th
                                     scope="col"
-                                    className="text-sm font-medium text-gray-900 px-6 py-4">
+                                    className="text-sm font-medium text-gray-900 px-6 py-4"
+                                  >
                                     Time
                                   </th>
                                 </tr>
@@ -322,63 +333,66 @@ const DoctorDetail = () => {
             </div>
             {/* End of profile tab */}
           </div>
-          <div className="w-full md:w-1/12 px-2">
+
+          <div className="md:w-1/12 h-screen">
             {/* Advertise grid */}
-            <div className="flex flex-col items-center font-bold  h-full  gap-16">
-              <a href="https://www.popular-pharma.com/products/82">
-                <div className="hw-full m-2 p-2 mx-auto text-gray-600">
-                  {" "}
-                  <img src={Adecard} alt="Suggested Medicines" />
-                  <h1 className=" text-gray-800 flex justify-center">
-                    Adec <span className="text-[#ea7726]">ard</span>
-                  </h1>
-                </div>
-              </a>
-              <a href="https://www.popular-pharma.com/products/519">
-                <div className="hw-full m-2 p-2 mx-auto text-gray-600">
-                  {" "}
-                  <img src={Vonomax} alt="Suggested Medicines" />
-                  <h1 className=" text-[#ea7726] flex justify-center">
-                    Vono <span className="text-[#087b41]">max</span>
-                  </h1>
-                </div>
-              </a>
-              <a href="https://www.popular-pharma.com/products/82">
-                <div className="hw-full m-2 p-2 mx-auto text-gray-600 ">
-                  {" "}
-                  <img src={Ambrosol} alt="Suggested Medicines" />
-                  <h1 className="flex justify-center">
-                    Ambro<span className="text-[#087b41]">sol</span>
-                  </h1>
-                </div>
-              </a>
-              <a href="https://www.popular-pharma.com/products/68">
-                <div className="hw-full m-2 p-2 mx-auto text-gray-600 ">
-                  {" "}
-                  <img src={Amlovas} alt="Suggested Medicines" />
-                  <h1 className="flex justify-center">
-                    Amlo<span className="text-red-700">vas</span>
-                  </h1>
-                </div>
-              </a>
-              <a href="https://www.popular-pharma.com/products/117">
-                <div className="hw-full mx-auto m-2 p-2 text-gray-600 ">
-                  {" "}
-                  <img src={Anorel} alt="Suggested Medicines" />
-                  <h1 className="flex justify-center">
-                    Ano<span className="text-blue-800">rel</span>
-                  </h1>
-                </div>
-              </a>
-              <a href="https://www.popular-pharma.com/products/129">
-                <div className="hw-full m-2 p-2 mx-auto text-gray-600 ">
-                  {" "}
-                  <img src={Cebergol} alt="Suggested Medicines" />
-                  <h1 className=" text-blue-700 flex justify-center">
-                    Caber <span className="text-[#ea7726]">gol</span>
-                  </h1>
-                </div>
-              </a>
+            <div className="flex flex-col items-center overflow-x-hidden font-bold h-full">
+              <Marquee direction="up" className="h-full">
+                <a href="https://www.popular-pharma.com/products/82">
+                  <div className="p-10 text-gray-600">
+                    {" "}
+                    <img src={Adecard} alt="Suggested Medicines" />
+                    <h1 className=" text-gray-800 flex justify-center">
+                      Adec <span className="text-[#ea7726]">ard</span>
+                    </h1>
+                  </div>
+                </a>
+                <a href="https://www.popular-pharma.com/products/519">
+                  <div className="p-10 text-gray-600">
+                    {" "}
+                    <img src={Vonomax} alt="Suggested Medicines" />
+                    <h1 className=" text-[#ea7726] flex justify-center">
+                      Vono <span className="text-[#087b41]">max</span>
+                    </h1>
+                  </div>
+                </a>
+                <a href="https://www.popular-pharma.com/products/82">
+                  <div className="p-10 text-gray-600 ">
+                    {" "}
+                    <img src={Ambrosol} alt="Suggested Medicines" />
+                    <h1 className="flex justify-center">
+                      Ambro<span className="text-[#087b41]">sol</span>
+                    </h1>
+                  </div>
+                </a>
+                <a href="https://www.popular-pharma.com/products/68">
+                  <div className="p-10 text-gray-600 ">
+                    {" "}
+                    <img src={Amlovas} alt="Suggested Medicines" />
+                    <h1 className="flex justify-center">
+                      Amlo<span className="text-red-700">vas</span>
+                    </h1>
+                  </div>
+                </a>
+                <a href="https://www.popular-pharma.com/products/117">
+                  <div className="p-10 text-gray-600 ">
+                    {" "}
+                    <img src={Anorel} alt="Suggested Medicines" />
+                    <h1 className="flex justify-center">
+                      Ano<span className="text-blue-800">rel</span>
+                    </h1>
+                  </div>
+                </a>
+                <a href="https://www.popular-pharma.com/products/129">
+                  <div className="p-10 text-gray-600 ">
+                    {" "}
+                    <img src={Cebergol} alt="Suggested Medicines" />
+                    <h1 className=" text-blue-700 flex justify-center">
+                      Caber <span className="text-[#ea7726]">gol</span>
+                    </h1>
+                  </div>
+                </a>
+              </Marquee>
             </div>
             {/* End of Advertise grid */}
           </div>
