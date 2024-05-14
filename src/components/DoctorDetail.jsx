@@ -43,6 +43,7 @@ const DoctorDetail = () => {
     );
   });
 
+  
   return (
     <div className="doctor-detail bg-gray-100">
       <div className="sm:container mx-auto py-10 px-5">
@@ -69,8 +70,7 @@ const DoctorDetail = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="256"
                       height="256"
-                      viewBox="0 0 256 256"
-                    >
+                      viewBox="0 0 256 256">
                       <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
                         <circle
                           cx="58.145"
@@ -98,10 +98,6 @@ const DoctorDetail = () => {
               <h3 className="text-gray-600 font-lg font-medium leading-6">
                 Specialization: {drSpecilist}
               </h3>
-              <div className="text-sm text-gray-500 hover:text-gray-600 leading-6">
-                <p>Degrees: {drDegree}</p>
-                {/* Display other relevant details */}
-              </div>
               <ul className="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
                 <li className="flex items-center py-3">
                   <span>Status</span>
@@ -110,10 +106,6 @@ const DoctorDetail = () => {
                       Active
                     </span>
                   </span>
-                </li>
-                <li className="flex items-center py-3">
-                  <span>Member since</span>
-                  <span className="ml-auto">Nov 07, 2016</span>
                 </li>
               </ul>
             </div>
@@ -129,8 +121,7 @@ const DoctorDetail = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
+                    stroke="currentColor">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -187,8 +178,7 @@ const DoctorDetail = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
+                    stroke="currentColor">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -201,26 +191,16 @@ const DoctorDetail = () => {
               </div>
               <div className="text-gray-700">
                 <div className="grid md:grid-cols-2 text-sm">
-                  <div className="grid grid-cols-2">
-                    <div className="px-4 py-2 font-semibold">Full Name</div>
-                    <div className="px-4 py-2">{drName}</div>
+                  <div className="col-span-1">
+                    <div className="px-4 py-2 font-semibold">Degrees:</div>
+                    <div className="px-4 py-2">{drDegree}</div>
                   </div>
-                  <div className="grid grid-cols-2">
-                    <div className="px-4 py-2 font-semibold">Gender</div>
-                    <div className="px-4 py-2">{drGender}</div>
-                  </div>
-                  <div className="grid grid-cols-2">
-                    <div className="px-4 py-2 font-semibold">Contact No.</div>
-                    <div className="px-4 py-2">+88 {drNumber}</div>
-                  </div>
-
-                  <div className="grid grid-cols-2">
-                    <div className="px-4 py-2 font-semibold">Email</div>
+                  <div className="col-span-1">
+                    <div className="px-4 py-2 font-semibold">Experience</div>
                     <div className="px-4 py-2">
                       <a
                         className="text-[#006642]"
-                        href="mailto:jane@example.com"
-                      >
+                        href="mailto:jane@example.com">
                         {email}
                       </a>
                     </div>
@@ -230,13 +210,11 @@ const DoctorDetail = () => {
               <Link
                 to="http://appointment.populardiagnostic.com/appointment"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <button
                   className="block w-full text-[#006642] text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4"
                   onClick={handleClick1}
-                  type="button"
-                >
+                  type="button">
                   Book an Appointment
                 </button>
               </Link>
@@ -251,8 +229,7 @@ const DoctorDetail = () => {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5"
-                      viewBox="0 0 90 90"
-                    >
+                      viewBox="0 0 90 90">
                       <path
                         d="M51.948 73.273H38.052c-1.104 0-2-0.896-2-2v-9.621h-9.621c-1.104 0-2-0.896-2-2V45.757c0-1.104 0.896-2 2-2h9.621v-9.62c0-1.104 0.896-2 2-2h13.896c1.104 0 2 0.896 2 2v9.62h9.62c1.104 0 2 0.896 2 2v13.895c0 1.104-0.896 2-2 2h-9.62v9.621C53.948 72.378 53.053 73.273 51.948 73.273z M40.052 69.273h9.896v-9.621c0-1.104 0.896-2 2-2h9.62v-9.895h-9.62c-1.104 0-2-0.896-2-2v-9.62h-9.896v9.62c0 1.104-0.896 2-2 2h-9.621v9.895h9.621c1.104 0 2 0.896 2 2V69.273z"
                         fill="#006642"
@@ -275,20 +252,20 @@ const DoctorDetail = () => {
                     display: "grid",
                     gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
                     gap: "20px",
-                  }}
-                >
+                  }}>
                   {selectedDoctor.chember.map((chamber, index) => (
                     <div
                       key={index}
-                      className="chamber-card p-4 border border-gray-300 rounded-lg"
-                    >
+                      className="chamber-card p-4 border border-gray-300 rounded-lg">
                       <h3 className="font-medium text-center">
                         {chamber.branch} Branch
                       </h3>
                       <p className="text-center">
                         {chamber.building}, Room: {chamber.room}
                       </p>
-                      <div className="text-center">Visiting Hours</div>
+                      <div className="text-center font-bold text-gray-700 pt-2 text-[24px]">
+                        Schedule
+                      </div>
                       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
                         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
                           <div className="overflow-hidden">
@@ -297,14 +274,12 @@ const DoctorDetail = () => {
                                 <tr>
                                   <th
                                     scope="col"
-                                    className="text-sm font-medium text-gray-900 px-6 py-4"
-                                  >
+                                    className="text-sm font-medium text-gray-900 px-6 py-4">
                                     Day
                                   </th>
                                   <th
                                     scope="col"
-                                    className="text-sm font-medium text-gray-900 px-6 py-4"
-                                  >
+                                    className="text-sm font-medium text-gray-900 px-6 py-4">
                                     Time
                                   </th>
                                 </tr>
