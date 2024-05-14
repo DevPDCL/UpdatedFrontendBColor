@@ -21,6 +21,7 @@ import {
   Director,
   Error,
   Tech,
+  Dmd,
 } from "./components";
 import Home from "./adminpanel/Home";
 import Stats from "./adminpanel/Stats";
@@ -30,10 +31,6 @@ import Csample from "./adminpanel/Csample";
 import Ccomplain from "./adminpanel/Ccomplain";
 import Management from "./adminpanel/Management";
 import "./index.css";
-
-
-
-
 
 
 const App = () => {
@@ -46,8 +43,6 @@ const App = () => {
     </div>
   );
 };
-
-
 const DoctorDetail = lazy( ()=> import("./components/DoctorDetail"))
 const DoctorSearch = lazy(() => import("./components/DoctorSearch"));
 
@@ -85,6 +80,7 @@ const routes = [
       { path: "/branch", element: <Branch /> },
       { path: "/director", element: <Director /> },
       { path: "/chairman", element: <Chairman /> },
+      { path: "/Dmd", element: <Dmd /> },
       { path: "/notice", element: <Notice /> },
       { path: "/contact", element: <Contact /> },
       { path: "/health", element: <Health /> },

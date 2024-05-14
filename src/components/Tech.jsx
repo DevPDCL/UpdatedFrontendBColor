@@ -34,10 +34,10 @@ const Tech = ({ message, children }) => {
   return (
     <>
       <footer className="flex flex-row flex-wrap justify-center">
-        <div className="bg-[#00664a] mx-auto w-full ">
+        <div className="bg-[#00664a] mx-auto w-full">
           <Sidemenu />
           <form className="max-w-screen-xl mx-auto sm:w-[80%] items-center justify-center">
-            <div className="grid md:grid-cols-3   md:gap-1 ">
+            <div className="grid md:grid-cols-3 md:gap-1 ">
               <div className=" p-10  text-start">
                 <h2 className="mb-6 text-[18px] font-bold font-ubuntu text-white uppercase dark:text-white">
                   Contact Us
