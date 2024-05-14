@@ -334,7 +334,7 @@ const DoctorDetail = () => {
             {/* End of profile tab */}
           </div>
 
-          <div className="md:w-1/12 h-screen">
+          <div className="md:w-1/12 h-screen hidden sm:block">
             {/* Advertise grid */}
             <div className="flex flex-col items-center overflow-x-hidden font-bold h-full">
               <Marquee direction="up" className="h-full">
