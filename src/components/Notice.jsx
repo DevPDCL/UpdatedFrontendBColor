@@ -21,17 +21,14 @@ const ProjectCard = (
   return (
     <>
       <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-        <div className="bg-gradient-to-b from--[#F5FFFA]/20 to-[#f0fff0]/90 shadow-2xl rounded-2xl h-auto sm:w-[299px] w-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
+        <div className="mx-auto mb-10 max-w-[370px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300">
           <Popover placement="center">
             <PopoverHandler>
-              <div
-                className="relative w-full h-[150px]"
-                data-modal-target="default-modal"
-                data-modal-toggle="default-modal">
+              <div class="mb-8  rounded">
                 <img
                   src={noticeImage}
                   alt="project_image"
-                  className="w-full h-[150px] rounded-md object-cover sm:w-[299px] opacity-95"
+                  class="w-full max-h-[250px]"
                 />
               </div>
             </PopoverHandler>
@@ -40,7 +37,8 @@ const ProjectCard = (
                 <div
                   className="relative w-auto h-auto"
                   data-modal-target="default-modal"
-                  data-modal-toggle="default-modal">
+                  data-modal-toggle="default-modal"
+                >
                   <img
                     src={noticeImage}
                     alt="project_image"
@@ -49,17 +47,17 @@ const ProjectCard = (
                 </div>
 
                 <div>
-                  <p className="text-[#006642] font-ubuntu font-bold text-[15px]">
+                  <p className="text-gray-900 font-ubuntu font-bold text-[18px]">
                     {noticeHead}
                   </p>
-                  <p className="text-gray-900">{noticeDetail}</p>
+                  <p className="text-gray-600">{noticeDetail}</p>
                 </div>
               </div>
             </PopoverContent>
           </Popover>
 
           <div className="mt-0 p-5">
-            <p className="text-[#006642] font-ubuntu text-[15px]">
+            <p className="text-gray-900 font-ubuntu text-[18px]">
               {noticeHead}
             </p>
           </div>
@@ -85,7 +83,7 @@ function Notice({ imageSrc, altText, content }) {
         </div>
       </motion.div>
 
-      <div className=" flex mx-auto pb-10 pt-2 p-3 sm:w-[80%] max-w-7xl justify-center flex-wrap gap-7">
+      <div className=" flex mx-auto pb-10 pt-2 p-3  max-w-7xl justify-center flex-wrap gap-11">
         {notice.map((project, noticeID) => (
           <ProjectCard
             key={`noticeID-${noticeID}`}
