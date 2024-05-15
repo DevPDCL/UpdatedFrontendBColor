@@ -194,7 +194,7 @@ const testimonials = [
     name: "Mr. Ahmed",
     designation: "CFO",
     company: "Biman Bangladesh",
-    image: BRACBank,
+    image: BangladeshBiman,
   },
   {
     testimonial:
@@ -202,7 +202,7 @@ const testimonials = [
     name: "Mr. Hasan",
     designation: "Chairperson",
     company: "Brac Bank",
-    image: DMP,
+    image: BRACBank,
   },
 ];
 

@@ -96,7 +96,7 @@ const Navbar = () => {
 
 
 return (
-  <div className="sticky top-[1px] z-30 shadow-2xl">
+  <div className="sticky top-[0px] z-30 shadow-2xl">
     <div className="antialiased bg-gray-100 dark-mode:bg-gray-900">
       <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
