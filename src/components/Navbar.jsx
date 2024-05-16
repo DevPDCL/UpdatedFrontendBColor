@@ -56,7 +56,7 @@ const Dropdown = ({ title, children, openDropdown, setOpenDropdown }) => {
         </svg>
       </button>
       {isOpen && (
-        <div className="absolute left-0 mt-2 md:-ml-[550px]  bg-white rounded-b-xl shadow-lg">
+        <div className="absolute left-0 mt-2 md:-ml-[550px] h-[300px] overflow-auto bg-white rounded-b-xl shadow-lg">
           {children}
         </div>
       )}
