@@ -12,8 +12,6 @@ import DMP from "./Logos/DMP.webp";
 import GP from "./Logos/GP.webp";
 import Nestle from "./Logos/Nestle.webp";
 
-
-
 import healthConsultation from "./healthConsultation.mp4";
 import healthDiagnosis from "./healthDiagnosis.mp4";
 import healthPackage from "./healthPackages.mp4";
@@ -22,7 +20,6 @@ import Amarlab from "./Logos/Amarlab.webp";
 import Hajj from "./Logos/Hajj.webp";
 import PureHealth from "./Logos/PureHealth.webp";
 import Arogga from "./Logos/Arogga.webp";
-
 
 import Badda from "./PDCLbranches/Badda.webp";
 import Barishal from "./PDCLbranches/Barishal.webp";
@@ -100,7 +97,6 @@ import InsuranceCoverageEmployee from "./Notice/InsuranceCoverageEmployee.webp";
 import ISOCertified90012015 from "./Notice/ISOCertified90012015.webp";
 import RamadanNotice24 from "./Notice/RamadanNotice24.webp";
 
-
 import ASSO_PROF_DR_ASHRAFUL_ISLAM from "./DoctorImage/ASSO_PROF_DR_ASHRAFUL_ISLAM.webp";
 import ASST_PROF_DR_HENA_KHATUN from "./DoctorImage/ASST_PROF_DR_HENA_KHATUN.webp";
 import ASST_PROF_DR_UTHPOL_KUMAR_DATTA from "./DoctorImage/ASST_PROF_DR_UTHPOL_KUMAR_DATTA.webp";
@@ -131,9 +127,6 @@ import DrBithiDebnath from "./DoctorImage/DrBithiDebnath.webp";
 
 import drBackground from "./DoctorImage/drBackground.webp";
 
-
-
-
 import Adecard from "./Med/Adecard.webp";
 import Ambrosol from "./Med/Ambrosol.webp";
 import Amlovas from "./Med/Amlovas.webp";
@@ -141,7 +134,11 @@ import Vonomax from "./Med/Vonomax.webp";
 import Anorel from "./Med/Anorel.webp";
 import Cebergol from "./Med/Cebergol.webp";
 
-
+import MRI from "./OurTechnologies/MRI.webp";
+import CT from "./OurTechnologies/CT.webp";
+import BMD from "./OurTechnologies/BMD.webp";
+import ECG from "./OurTechnologies/ECG.webp";
+import Lithotripsy from "./OurTechnologies/Lithotripsy.webp";
 
 export {
   logo,
@@ -268,5 +265,11 @@ export {
   Ambrosol,
   Amlovas,
   Vonomax,
-  Anorel, Cebergol,
+  Anorel,
+  Cebergol,
+  MRI,
+  CT,
+  BMD,
+  ECG,
+  Lithotripsy,
 };

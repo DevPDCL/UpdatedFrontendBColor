@@ -115,7 +115,42 @@ import {
   BAT,
   BeximcoPharma,
   Beximco,
+  MRI,
+  CT,
+  BMD,
+  ECG,
+  Lithotripsy,
 } from "../assets";
+
+
+
+const ourTechnologies = [
+  {
+    id: 1,
+    name: "MRI",
+    image: MRI,
+  },
+  {
+    id: 2,
+    name: "CT",
+    image: CT,
+  },
+  {
+    id: 3,
+    name: "BMD",
+    image: BMD,
+  },
+  {
+    id: 4,
+    name: "ECG",
+    image: ECG,
+  },
+  {
+    id: 5,
+    name: "Lithotripsy",
+    image: Lithotripsy,
+  },
+];
 
 
 
@@ -43320,4 +43355,5 @@ export {
   reportDownload,
   doctorData1,
   healthPackages,
+  ourTechnologies,
 };
