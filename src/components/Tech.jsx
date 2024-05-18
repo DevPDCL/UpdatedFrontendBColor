@@ -34,7 +34,7 @@ const Tech = ({ message, children }) => {
   return (
     <>
       <footer className="flex flex-row flex-wrap justify-center">
-        <div className="bg-[#00664a] mx-auto w-full">
+        <div className="bg-[#00984a] mx-auto w-full">
           <Sidemenu />
           <form className="max-w-screen-xl mx-auto sm:w-[80%] items-center justify-center">
             <div className="grid md:grid-cols-3 md:gap-1 ">
@@ -71,6 +71,7 @@ const Tech = ({ message, children }) => {
                     <li className="mb-4">
                       <a
                         href="https://www.popular-pharma.com/"
+                        target="_blank"
                         className="font-ubuntu hover:underline">
                         Popular Pharmaceuticals
                       </a>
@@ -78,6 +79,7 @@ const Tech = ({ message, children }) => {
                     <li className="mb-4">
                       <a
                         href="https://www.pmch-bd.org/"
+                        target="_blank"
                         className="font-ubuntu hover:underline">
                         Popular Medical College
                       </a>
@@ -85,6 +87,7 @@ const Tech = ({ message, children }) => {
                     <li className="mb-4">
                       <a
                         href="https://www.popular-hospital.com/"
+                        target="_blank"
                         className="font-ubuntu hover:underline">
                         Popular Medical College Hospital
                       </a>
@@ -122,7 +125,7 @@ const Tech = ({ message, children }) => {
             </div>
           </form>
         </div>
-        <div className="bg-[#00664a]  shadow-lg mx-auto w-full ">
+        <div className="bg-[#00984a]  shadow-lg mx-auto w-full ">
           <div className=" flex mx-auto p-3 sm:w-[80%] justify-evenly max-w-screen-xl flex-wrap "></div>
           <ImageComponent
             src={img}

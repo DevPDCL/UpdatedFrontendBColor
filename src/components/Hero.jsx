@@ -52,7 +52,7 @@ const Hero = () => {
           muted
         />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-white flex justify-center items-center backdrop-blur-sm p-10">
-          <div className="mt-0 sm:mt-[250px]">
+          <div className="mt-0 sm:mt-[10px]">
             <motion.div
               initial="hidden"
               animate="visible"
@@ -68,7 +68,7 @@ const Hero = () => {
                 animate="visible"
                 variants={buttonVariants}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="mt-4 bg-[#006642] text-white py-2 px-4 rounded">
+                className="mt-4 bg-[#00984a] text-white py-2 px-4 rounded">
                 {contentSets[activeIndex].buttonText}
               </motion.button>
             </motion.div>

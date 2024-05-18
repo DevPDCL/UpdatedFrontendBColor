@@ -108,7 +108,7 @@ const Search = () => {
         doctor.drGender === "Female" ? "bg-[#fce8f3]" : "bg-[#f0fff0]";
 
       const textColor =
-        doctor.drGender === "Female" ? "text-[#5E2750]" : "text-[#006642]";
+        doctor.drGender === "Female" ? "text-[#5E2750]" : "text-[#00984a]";
       return (
         <Link to={`/doctordetail/${doctor.drID}`}>
           <li
@@ -229,7 +229,7 @@ const Search = () => {
   return (
     <>
       <div
-        className={`${styles.paddingX} -mt-[50px] sm:mt-[60px] flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center   flex-col text-gray-900`}
+        className={`${styles.paddingX} -mt-[50px] sm:-mt-[100px] flex relative z-10 max-w-7xl mx-auto inset-1 justify-center items-bottom text-center   flex-col text-gray-900`}
       >
         
           <div class="mb-4 ">
@@ -238,10 +238,10 @@ const Search = () => {
                 <a
                   href="#"
                   data-tabs-target="styled-profile"
-                  className={`inline-block w-full p-3 rounded text-gray-900 bg-[#00664a] border-r border-gray-200   focus:ring-1 focus:ring-white ${
+                  className={`inline-block w-full p-3 rounded text-gray-900 border-r border-gray-200  focus:ring-1 focus:ring-white ${
                     activeTab === "styled-profile"
                       ? "bg-[#ffffff] text-gray-900"
-                      : "bg-[#00664a] text-white"
+                      : "bg-[#00984a] text-white"
                   } "active focus:outline-none "
                         : ""
                     `}
@@ -255,10 +255,10 @@ const Search = () => {
                 <a
                   href="#"
                   data-tabs-target="styled-profile1"
-                  className={`inline-block w-full p-3 rounded bg-[#00664a] border-r border-gray-200  focus:ring-1 focus:ring-white ${
+                  className={`inline-block w-full p-3 rounded border-r border-gray-200  focus:ring-1 focus:ring-white ${
                     activeTab === "styled-profile1"
                       ? "bg-[#ffffff] text-gray-900"
-                      : "bg-[#00664a] text-white"
+                      : "bg-[#00984a] text-white"
                   } "active focus:outline-none "
                         : ""
                     `}
@@ -272,10 +272,10 @@ const Search = () => {
                 <a
                   href="#"
                   data-tabs-target="styled-profile2"
-                  className={`inline-block w-full p-3 rounded text-gray-900 bg-[#00664a] border-r border-gray-200   focus:ring-1 focus:ring-white ${
+                  className={`inline-block w-full p-3 rounded text-gray-900 border-r border-gray-200   focus:ring-1 focus:ring-white ${
                     activeTab === "styled-profile2"
                       ? "bg-[#ffffff] text-gray-900"
-                      : "bg-[#00664a] text-white"
+                      : "bg-[#00984a] text-white"
                   } "active focus:outline-none "
                         : ""
                     `}
@@ -447,7 +447,7 @@ const Search = () => {
                       >
                         <button
                           type="button"
-                          className="text-gray-600 w-full rounded block col-span-12 mb-2 h-[43px] hover:text-gray-900 border bg-gray-300 shadow-2xl  border-none focus:ring-4 focus:outline-none focus:ring-[#006642] font-ubuntu text-[16px] font-bold px-5 py-2.5 text-center "
+                          className="text-gray-600 w-full rounded block col-span-12 mb-2 h-[43px] hover:text-gray-900 border bg-gray-300 shadow-2xl  border-none focus:ring-4 focus:outline-none focus:ring-[#00984a] font-ubuntu text-[16px] font-bold px-5 py-2.5 text-center "
                           onClick={handleClick1}
                         >
                           Make An Appointment{" "}
@@ -534,7 +534,7 @@ const Search = () => {
                                       />
                                       <button
                                         type="submit"
-                                        class="text-white absolute  end-0 bottom-1 top-1 m-1 bg-[#00664a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 "
+                                        class="text-white absolute  end-0 bottom-1 top-1 m-1 bg-[#00984a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 "
                                       >
                                         Send
                                       </button>
@@ -555,7 +555,7 @@ const Search = () => {
                                       />
                                       <button
                                         type="submit"
-                                        class="text-white absolute end-0  bottom-0 top-0 m-1 bg-[#00664a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 "
+                                        class="text-white absolute end-0  bottom-0 top-0 m-1 bg-[#00984a] hover:bg-blue-800  font-medium rounded text-sm px-4 py-2 "
                                       >
                                         Send
                                       </button>{" "}
@@ -599,7 +599,7 @@ const Search = () => {
                                 <div className="relative z-0 col-span-2 w-full  group">
                                   <button
                                     type="button"
-                                    className={`text-gray-600 w-full rounded block col-span-2 mb-0 h-[35px] hover:text-gray-900 border bg-gray-300 shadow-2xl  border-none focus:ring-4 focus:outline-none focus:ring-[#006642] font-ubuntu text-[16px] font-bold px-4  text-center   ${
+                                    className={`text-gray-600 w-full rounded block col-span-2 mb-0 h-[35px] hover:text-gray-900 border bg-gray-300 shadow-2xl  border-none focus:ring-4 focus:outline-none focus:ring-[#00984a] font-ubuntu text-[16px] font-bold px-4  text-center   ${
                                       isVisible ? "" : "hidden"
                                     }`}
                                     onClick={(handleClick, handleSearchClick)}
